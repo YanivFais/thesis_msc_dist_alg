@@ -1,0 +1,44 @@
+\begin{table*}
+\centering\scriptsize
+\begin{tabular}{|| l || c | c | c | c | c|| c | c || c | c || c | c | c ||}
+\hline
+& \#radios  & \multicolumn{3}{|c|}{throughput}  & Delay & \multicolumn{4}{|c||}{delay based on hops} & hops & drops & \PER \\
+\hline
+& per node & min & sum & max & max & \multicolumn{2}{|c||}{max} & \multicolumn{2}{|c||}{min} & avr & max & avr \\
+\hline
+& & Mbps & Mbps & Mbps & sec & \#hops & sec & \#hops & sec & & \% & \% \\
+\hline\hline
+\algA & 1 & 0.512 & 12.08 & 4.544  & 2.25 & 14 & 2.25 & 1 & 0.2 & 7.17 & 0.7 & 1.85 \\
+\algB & 3 & 0.064 &  8.9  & 1.568  &  \textbf{24}  &  9 &  23  & 1 & 1.35 & 4.5 & 24  & 1.09 \\
+\algBS & 1 & 0.402  & 5.02 & 0.4342 & 1.5 & 9  & 1.32  & 1 & 0.95 & 4.5   & 0   & 0.15 \\
+\algC & 3 & 0.064 & 4.32  & 1.2 & 3.9 & 14 & 2.6 & 1 & 1.2 & 7.17 & \textbf{95}   & 5.54 \\
+\algD & 3 & 0 & 3.14  & 0.704  & 4.9 & 12 & 2.4  & 1 & 1.3  & 6.67  & \textbf{78}   & 6.63 \\
+\algE & 1 & 0.1548  & 4.26  & 0.8  & \textbf{19}  & 12 & 15  & 1 & 3.7  & 6.67  &  0.5   & 0.87 \\
+\hline
+\end{tabular}
+\caption{Comparison of the benchmarks for the grid scenario with $k=12$ requests and $d^*_i=10$Mbps for each stream. The experiment's duration is $25$ seconds. }
+\label{table_grid}\label{tbl:grid}
+%\end{table*}
+
+
+%\begin{table*}
+\centering\scriptsize
+\begin{tabular}{|| l || c | c | c | c | c|| c | c || c | c || c | c | c ||}
+\hline
+& \#radios  & \multicolumn{3}{|c|}{throughput}  & Delay & \multicolumn{4}{|c||}{delay based on hops} & hops & drops & \PER \\
+\hline
+& per node & min & sum & max & max & \multicolumn{2}{|c||}{max} & \multicolumn{2}{|c||}{min} & avr & max & avr \\
+\hline
+& & Mbps & Mbps & Mbps & sec & \#hops & sec & \#hops & sec & & \% & \% \\
+\hline\hline
+\algA & 1 &  2.37 & 32.1  & 2.97 & 1.23 & 2 & 1.23 & 2 & 0.68 & 2 & 0   & 0 \\
+\algB & 3 & 4.82 & 56.2 & 4.88  & 2.5  & 2  & 2.5  & 2 & 1  & 2     & 34   & 0 \\
+\algBS & 1 & 1.98 & 30.4 & 2.78  & \textbf{5.35}  & 2  & 4.1  & 2 & 0.35  & 2     & 0   & 0 \\
+\algC & 3 & 1.35  & 18.4 & 1.75  & 1.5 & 2 & 1.5  & 2 & 1 & 2 & \textbf{36}  & 3 \\
+\algD & 3 &  1.3 & 17.7 & 1.7 & 1.7 & 2 & 1.7  & 2 & 1 & 2 & \textbf{14}  & 2.48 \\
+\algE & 1 &  0.85 & 15.42 & 1.75 & 2.64  & 2 & 2.64 & 2 & 4  & 2 & 0.65 & 0 \\
+\hline
+\end{tabular}
+\caption{Comparison of the benchmarks for the circle scenario with $k=12$ requests and $d^*_i=10$Mbps for each stream. The experiment's duration is $25$ seconds. }
+\label{table_circle}\label{tbl:circle}
+\end{table*}

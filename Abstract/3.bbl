@@ -1,0 +1,135 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{CKM{\etalchar{+}}08}
+
+\bibitem[ABL05]{alicherry2005joint11}
+M.~Alicherry, R.~Bhatia, and L.E. Li.
+\newblock {Joint channel assignment and routing for throughput optimization in
+  multi-radio wireless mesh networks}.
+\newblock In {\em Proceedings of the 11th annual international conference on
+  Mobile computing and networking}, pages 58--72. ACM, 2005.
+
+\bibitem[Awe87]{awerbuch1987optimal}
+B.~Awerbuch.
+\newblock {Optimal distributed algorithms for minimum weight spanning tree,
+  counting, leader election, and related problems}.
+\newblock In {\em Proceedings of the nineteenth annual ACM symposium on Theory
+  of computing}, pages 230--240. ACM, 1987.
+
+\bibitem[BR03]{behzad2004performance}
+A.~Behzad and I.~Rubin.
+\newblock {On the performance of graph-based scheduling algorithms for packet
+  radio networks}.
+\newblock In {\em Global Telecommunications Conference, 2003. GLOBECOM'03.
+  IEEE}, volume~6, pages 3432--3436. IEEE, 2003.
+
+\bibitem[BSTZ07]{buragohain2007improved}
+C.~Buragohain, S.~Suri, C.~T{\'o}th, and Y.~Zhou.
+\newblock {Improved throughput bounds for interference-aware routing in
+  wireless networks}.
+\newblock {\em Computing and Combinatorics}, pages 210--221, 2007.
+
+\bibitem[Cha09]{chafekarPhD}
+D.R. Chafekar.
+\newblock {\em {Capacity Characterization of Multi-Hop Wireless Networks-A
+  Cross Layer Approach}}.
+\newblock PhD thesis, Virginia Polytechnic Institute and State University,
+  2009.
+
+\bibitem[CKM{\etalchar{+}}08]{ChafekarCapacity}
+D.~Chafekar, VSA Kumart, M.V. Marathe, S.~Parthasarathy, and A.~Srinivasan.
+\newblock {Approximation algorithms for computing capacity of wireless networks
+  with SINR constraints}.
+\newblock In {\em INFOCOM 2008. The 27th Conference on Computer Communications.
+  IEEE}, pages 1166--1174. IEEE, 2008.
+
+\bibitem[DPZ04]{draves2004routing}
+R.~Draves, J.~Padhye, and B.~Zill.
+\newblock {Routing in multi-radio, multi-hop wireless mesh networks}.
+\newblock In {\em Proceedings of the 10th annual international conference on
+  Mobile computing and networking}, pages 114--128. ACM, 2004.
+
+\bibitem[Gal68]{gallager1968information}
+R.G. Gallager.
+\newblock {\em {Information theory and reliable communication}}.
+\newblock John Wiley \& Sons, Inc. New York, NY, USA, 1968.
+
+\bibitem[GK00]{gupta2000capacity}
+P.~Gupta and P.R. Kumar.
+\newblock {The capacity of wireless networks}.
+\newblock {\em IEEE Transactions on information theory}, 46(2):388--404, 2000.
+
+\bibitem[GOW07]{goussevskaia2007complexity}
+O.~Goussevskaia, Y.A. Oswald, and R.~Wattenhofer.
+\newblock {Complexity in geometric {SINR} }.
+\newblock In {\em Proceedings of the 8th ACM international symposium on Mobile
+  ad hoc networking and computing}, pages 100--109. ACM, 2007.
+
+\bibitem[JPPQ05]{jain2005impact}
+K.~Jain, J.~Padhye, V.N. Padmanabhan, and L.~Qiu.
+\newblock {Impact of interference on multi-hop wireless network performance}.
+\newblock {\em Wireless networks}, 11(4):471--487, 2005.
+
+\bibitem[Kes11]{K10}
+T.~Kesselheim.
+\newblock {A constant-factor approximation for wireless capacity maximization
+  with power control in the SINR model}.
+\newblock In {\em Proceedings of the 22nd ACM-SIAM Symposium on Discrete
+  Algorithms (SODA)}, 2011.
+
+\bibitem[KMPS04]{kumar2004end}
+VS~Kumar, M.V. Marathe, S.~Parthasarathy, and A.~Srinivasan.
+\newblock {End-to-end packet-scheduling in wireless ad-hoc networks}.
+\newblock In {\em Proceedings of the fifteenth annual ACM-SIAM symposium on
+  Discrete algorithms}, pages 1021--1030. Society for Industrial and Applied
+  Mathematics, 2004.
+
+\bibitem[KMPS05]{kumar2005algorithmic}
+VS~Kumar, M.V. Marathe, S.~Parthasarathy, and A.~Srinivasan.
+\newblock {Algorithmic aspects of capacity in wireless networks}.
+\newblock In {\em Proceedings of the 2005 ACM SIGMETRICS international
+  conference on Measurement and modeling of computer systems}, pages 133--144.
+  ACM, 2005.
+
+\bibitem[KPS{\etalchar{+}}06]{khan2006application}
+S.~Khan, Y.~Peng, E.~Steinbach, M.~Sgroi, and W.~Kellerer.
+\newblock {Application-driven cross-layer optimization for video streaming over
+  wireless networks}.
+\newblock {\em Communications Magazine, IEEE}, 44(1):122--130, 2006.
+
+\bibitem[MDS10]{marina2010topology}
+M.K. Marina, S.R. Das, and A.P. Subramanian.
+\newblock {A topology control approach for utilizing multiple channels in
+  multi-radio wireless mesh networks}.
+\newblock {\em Computer Networks}, 54(2):241--256, 2010.
+
+\bibitem[MWW06]{moscibroda2006protocol}
+T.~Moscibroda, R.~Wattenhofer, and Y.~Weber.
+\newblock {Protocol design beyond graph-based models}.
+\newblock {\em Hotnets}, 2006.
+
+\bibitem[Sha05]{shan2005cross}
+Y.~Shan.
+\newblock {Cross-layer techniques for adaptive video streaming over wireless
+  networks}.
+\newblock {\em EURASIP journal on applied signal processing}, 2005:220--228,
+  2005.
+
+\bibitem[SYZ{\etalchar{+}}05]{setton2005cross}
+E.~Setton, T.~Yoo, X.~Zhu, A.~Goldsmith, and B.~Girod.
+\newblock {Cross-layer design of ad hoc networks for real-time video
+  streaming}.
+\newblock {\em Wireless Communications, IEEE}, 12(4):59--65, 2005.
+
+\bibitem[vDS05]{van2005cross}
+M.~van Der~Schaar.
+\newblock {Cross-layer wireless multimedia transmission: challenges,
+  principles, and new paradigms}.
+\newblock {\em Wireless Communications, IEEE}, 12(4):50--58, 2005.
+
+\bibitem[Wan09]{wan2009multiflows}
+P.J. Wan.
+\newblock {Multiflows in multihop wireless networks}.
+\newblock In {\em Proceedings of the tenth ACM international symposium on
+  Mobile ad hoc networking and computing}, pages 85--94. ACM, 2009.
+
+\end{thebibliography}

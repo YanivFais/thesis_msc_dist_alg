@@ -1,0 +1,101 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage{amsfonts,fullpage,times}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{color}
+\usepackage{epsfig,graphicx}
+\usepackage{algorithm,algorithmic}
+\usepackage{color}
+\usepackage{url}
+\IfFileExists{srcltx.sty}{\usepackage[active]{srcltx}}{}
+\usepackage{setspace}
+%\doublespacing
+%\usepackage{pstricks,pst-node,pst-tree}
+ %\usepackage{pslatex}
+\usepackage{comment}
+\usepackage{enumerate}
+%%\DeclareGraphicsRule{.jpg}{eps}{*}{`jpeg2ps #1}
+\onehalfspacing
+%\usepackage{subfigure}
+%\operatorname{argmin}
+\DeclareMathOperator*{\argmin}{argmin}
+
+\newcommand{\algA}{\text{Main}}
+\newcommand{\algB}{\text{Shortest}}
+\newcommand{\algC}{\text{MainNoSched}}
+\newcommand{\algD}{\text{MFNoSched}}
+\newcommand{\algE}{\text{MFSched}}
+
+\newcommand{\anote}[1]{\begin{quote}%
+                    \textbf{Author's personal note:} #1%
+                    \end{quote}}
+\newcommand{\mdnote}[1]{ \marginpar{\tiny\bf
+             \begin{minipage}[t]{0.5in}
+               \raggedright #1
+            \end{minipage}}}
+\sloppy
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%\begin{titlepage}
+  \title{Communication Model - Algorithm's Implementation Progress Report
+ \\ {\small \textsc{(DRAFT - APRIL)}}
+}
+\author{%
+Guy Even\thanks{School of Electrical Engineering,
+Tel-Aviv Univ., Tel-Aviv 69978, Israel.
+\protect\url{guy@eng.tau.ac.il}}
+\and
+Shimon (Moni) Shahar\thanks{School of Electrical Engineering,
+Tel-Aviv Univ., Tel-Aviv 69978, Israel.
+\protect\url{moni@eng.tau.ac.il}}
+\and
+Alexander Zadorojniy\thanks{School of Electrical Engineering,
+Tel-Aviv Univ., Tel-Aviv 69978, Israel.
+\protect\url{sasha@eng.tau.ac.il}}
+%
+}
+
+\begin{table}
+\centering\small
+\begin{tabular}{|| l || c | c | c | c|| c | c || c | c || c | c | c ||}
+\hline
+& \multicolumn{3}{|c|}{Throughput}  & Delay & \multicolumn{4}{|c||}{Delay\_str} & Hops & Drops & PER \\
+\hline
+& min & sum & max & max & \multicolumn{2}{|c||}{max} & \multicolumn{2}{|c||}{min} & avr & max & avr \\
+\hline
+& Mbps & Mbps & Mbps & sec & \#hops & sec & \#hops & sec & & \% & \% \\
+\hline\hline
+\algA & 0.336 & 9.776  & 4.416 & 2.1 & 13 & 0.78 & 1 & 0.21 & 6.667 & 0.19 & 1.35 \\
+\algB & 0.24  & 11.808 & 2.752 & 3.8 & 9  & 3.8  & 1 & 1.35 & 4.5   & 20   & 1.225 \\
+\algC & 0.016 & 4.064  & 1.456 & 3.8 & 13 & 1.8  & 1 & 1.05 & 6.667 & 21   & 4.53 \\
+\algD & 0.064 & 3.232  & 0.96  & 3.8 & 15 & 1.8  & 2 & 1.4  & 7.33  & 20   & 1.35 \\
+\algE & 0.09  & 2.504  & 0.53  & 15  & 15 & 4.5  & 2 & 4    & 7.33  &  0   & 1.03 \\
+\hline
+\end{tabular}
+\caption{Grid 12r}
+\label{table_mcs}
+\end{table}
+
+
+\begin{table}
+\centering\small
+\begin{tabular}{|| l || c | c | c | c|| c | c || c | c || c | c | c ||}
+\hline
+& \multicolumn{3}{|c|}{Throughput}  & Delay & \multicolumn{4}{|c||}{Delay\_str} & Hops & Drops & PER \\
+\hline
+& min & sum & max & max & \multicolumn{2}{|c||}{max} & \multicolumn{2}{|c||}{min} & avr & max & avr \\
+\hline
+& Mbps & Mbps & Mbps & sec & \#hops & sec & \#hops & sec & & \% & \% \\
+\hline\hline
+\algA & 1.616 & 28.24  & 2.688 & 0.47 & 22 & 0.43 & 2 & 0.47 & 3.667 & 0   & 0 \\
+\algB & 4.592 & 57.888 & 4.88  & 1.1  & 2  & 1.1  & 2 & 1.1  & 2     & 1   & 0 \\
+\algC & 0.72  & 14.784 & 1.76  & 1.95 & 22 & 1.9  & 2 & 1.95 & 3.667 & 14  & 3.52 \\
+\algD & 0.576 & 14.736 & 1.888 & 2.25 & 22 & 1.9  & 2 & 2.25 & 3.667 & 17  & 4.02 \\
+\algE & 1.042 & 18.537 & 1.823 & 2.3  & 22 & 0.95 & 2 & 2.3  & 3.667 & 0.9 & 0 \\
+\hline
+\end{tabular}
+\caption{Circle 12d}
+\label{table_mcs}
+\end{table}
+\end{document}

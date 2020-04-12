@@ -1,0 +1,21 @@
+
+# filename: mchost1.mrt
+# routing table for mobile host3
+# author: Sorin Cocorada
+
+
+ifconfig:
+
+# interface 0 to router
+name: wlan  inet_addr: 192.168.0.3   MTU: 2300
+Groups: 224.0.0.10
+
+ifconfigend.
+
+route:
+
+default:        0.0.0.0      0.0.0.0         G   0   wlan
+224.0.0.10      0.0.0.0      240.0.0.0       G   0   wlan
+
+routeend.
+
