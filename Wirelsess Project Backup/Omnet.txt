@@ -1,0 +1,34 @@
+[18:00 26/12] [19:00 18/1] [16:00 3/3] [14:30 8/3] [10:00 15/3][20/3]
+
+1. Download from http://www.microsoft.com/express/download/#webInstall Visual c++ 2008 express edition (you may also download the MSDN package).
+	i. register the program (help->register), registration is free.
+3. Download Omnet++, http://www.omnetpp.org/filemgmt/viewcat.php?cid=2
+	i. read the 'Readme.MinGW' file in the /doc foldr (for windows installation).
+		a. Start mingwenv.cmd
+		b. In the shell(unless there are changes in configure.user file):
+			* > ./configure (==> TCL based (!!))
+			* >make
+			* By default the samples (in the 'samples' dir) will run
+			  using the Tcl/Tk environment.
+			* Starting the IDE by, >omnetpp
+		c. For Reconfiguration of  the libraries please adress paragraph 3. 
+		   in 'Readme.MinGW' file.
+4. On the welcome screen, do the Tic-toc tutorial (it doesn't uses the IDE but gives some 
+   understanding of the environment). (making a NED file, making a .cc file for a module, getName()
+   command, cMessage object, etc.)
+5. Open the HELP window and read "A QUICK OVERVIEW OF THE OMNeT++ 4.0 IDE" - you should be able to
+   do the 'tictoc' tutorial without using external editors.
+6. Move on to the next tutorial "Enhancing the 2-node TicToc" (Adding watchs (e.g. WATCH), 
+   limiting the number of messgaes, adding deubug output using EV variable, coloring compontets and
+   changing the modules picture, extracting parameters from the 'ned' file using 'par', 
+   using wildcards in 'ini' file, inheritence, modeling processing time using self messages and the 
+   'scheduleAt()' command, Random numbers and parameters, 'bubble' command, Timeout, canceling timers
+   using 'cancelEvent()' command [also in D'tors], retransmission of the same message).
+7. Move on to the next tutorial "Turning it into a real network" (vector gates, module vector,
+   the 'getIndex()' command, defining channels using the 'types' command,  two-way connections using
+   inout gates, defining a new message class).
+8. The next two tutorials concern statistics gathering, most intersting topic that will be studied
+   later.
+9. A Mobility framwork (MiXiM):
+	i. download from: https://sourceforge.net/projects/mixim/
+	ii. Add the new project and build it CTL+b.
