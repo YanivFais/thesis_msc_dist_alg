@@ -1,0 +1,7 @@
+<area shape="rect" href="org.mixim.tests.power.deviceTestAll.SimpleHost.html" title="Compound Module SimpleHost" alt="" coords="251,80,339,107">
+<area shape="rect" href="org.mixim.modules.power.battery.BatteryStats.html" title="Simple Module BatteryStats" alt="" coords="5,155,99,181">
+<area shape="rect" href="org.mixim.tests.power.utils.DeviceDuty.html" title="Simple Module DeviceDuty" alt="" coords="123,155,208,181">
+<area shape="rect" href="org.mixim.tests.power.utils.DeviceDutySimple.html" title="Simple Module DeviceDutySimple" alt="" coords="232,155,357,181">
+<area shape="rect" href="org.mixim.base.modules.BaseUtility.html" title="Simple Module BaseUtility" alt="" coords="381,155,464,181">
+<area shape="rect" href="org.mixim.modules.power.battery.SimpleBattery.html" title="Simple Module SimpleBattery" alt="" coords="488,155,592,181">
+<area shape="rect" href="org.mixim.tests.power.deviceTestAll.Network.html" title="Compound Module Network" alt="" coords="259,5,331,32">

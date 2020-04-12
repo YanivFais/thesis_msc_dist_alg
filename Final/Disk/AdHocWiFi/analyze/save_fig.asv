@@ -1,0 +1,11 @@
+function save_fig(fig,name,close_fig);
+
+	          print(fig, '-depsc2','-r1200',['eps/',name,'.eps'],'PaperType');
+	          print(fig, '-djpeg',['jpg/',name,'.jpg']);
+              if (exist('octave','var')==0)
+                saveas(fig,['fig/',name,'.fig'],'fig');
+              end
+              if (close_fig)
+                  close(fig);
+              end
+end

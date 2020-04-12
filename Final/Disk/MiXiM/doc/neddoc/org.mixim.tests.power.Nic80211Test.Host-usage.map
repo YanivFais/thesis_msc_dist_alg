@@ -1,0 +1,10 @@
+<area shape="rect" href="org.mixim.tests.power.Nic80211Test.Host.html" title="Compound Module Host" alt="" coords="461,80,533,107">
+<area shape="rect" href="org.mixim.base.modules.BaseNetwLayer.html" title="Simple Module BaseNetwLayer" alt="" coords="5,155,117,181">
+<area shape="rect" href="org.mixim.modules.power.battery.BatteryStats.html" title="Simple Module BatteryStats" alt="" coords="141,155,235,181">
+<area shape="rect" href="org.mixim.modules.nic.Nic80211Battery.html" title="Compound Module Nic80211Battery" alt="" coords="259,155,373,181">
+<area shape="rect" href="org.mixim.base.modules.BaseArp.html" title="Simple Module BaseArp" alt="" coords="397,155,469,181">
+<area shape="rect" href="org.mixim.modules.mobility.ConstSpeedMobility.html" title="Simple Module ConstSpeedMobility" alt="" coords="493,155,629,181">
+<area shape="rect" href="org.mixim.base.modules.BaseUtility.html" title="Simple Module BaseUtility" alt="" coords="653,155,736,181">
+<area shape="rect" href="org.mixim.modules.application.BurstApplLayerBattery.html" title="Simple Module BurstApplLayerBattery" alt="" coords="760,155,912,181">
+<area shape="rect" href="org.mixim.modules.power.battery.SimpleBattery.html" title="Simple Module SimpleBattery" alt="" coords="936,155,1040,181">
+<area shape="rect" href="org.mixim.tests.power.Nic80211Test.Sim.html" title="Compound Module Sim" alt="" coords="461,5,533,32">

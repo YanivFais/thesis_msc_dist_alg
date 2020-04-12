@@ -1,0 +1,131 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body>
+<h2 class="comptitle">Simple Module <i>SimpleNetwLayer</i></h2>
+<b>Package:</b> org.mixim.examples.CSMAMac<br/><b>File: <a href="examples-CSMAMac-SimpleNetwLayer.ned.html">examples/CSMAMac/SimpleNetwLayer.ned</a></b><br/><p><b>C++ definition: <a href="../../doc/doxy/a00129.html" target="mainframe">click here</a></b></p>
+<p>(no description)</p><img src="org.mixim.examples.CSMAMac.SimpleNetwLayer-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="org.mixim.examples.CSMAMac.SimpleNetwLayer.html" title="SimpleNetwLayer" alt="SimpleNetwLayer" coords="0,0,159,40">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="org.mixim.examples.CSMAMac.SimpleNetwLayer-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="org.mixim.examples.CSMAMac.SimpleNetwLayer.html" title="Simple Module SimpleNetwLayer" alt="" coords="5,80,128,107">
+<area shape="rect" href="org.mixim.examples.CSMAMac.PhyMacHost.html" title="Compound Module PhyMacHost" alt="" coords="19,5,115,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="org.mixim.examples.CSMAMac.SimpleNetwLayer-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="org.mixim.examples.CSMAMac.SimpleNetwLayer.html" title="Simple Module SimpleNetwLayer" alt="" coords="5,5,128,32">
+</map>
+<h3 class="subtitle">Used in compound modules:</h3>
+<p>If a module type shows up more than once, that means it has been defined in more than one NED file.</p>
+<table>
+<tr>
+   <td>
+      <a href="org.mixim.examples.CSMAMac.PhyMacHost.html">PhyMacHost</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">ip</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">isSwitch</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">maxTtl</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">boredTime</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Gates:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Direction</th>
+      <th>Size</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">lowerGateIn</xsl:if></td>
+   <td width="100"><i>input</i></td>
+   <td width="50"></td>   <td>
+<p>from the Mac layer</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">lowerGateOut</xsl:if></td>
+   <td width="100"><i>output</i></td>
+   <td width="50"></td>   <td>
+<p>to the Mac layer</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">lowerControlIn</xsl:if></td>
+   <td width="100"><i>input</i></td>
+   <td width="50"></td>   <td>
+<p>control from the Mac layer</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">lowerControlOut</xsl:if></td>
+   <td width="100"><i>output</i></td>
+   <td width="50"></td>   <td>
+<p>control to the Mac layer</p>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #800000; font-weight: bold; ">simple</span><span style="color: #000000; "> </span><span style="color: #000000; ">SimpleNetwLayer</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">ip</span><span style="color: #000000; ">;
+        </span><span style="color: #000080; font-weight: bold; ">bool</span><span style="color: #000000; "> </span><span style="color: #000000; ">isSwitch</span><span style="color: #000000; ">;
+        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">maxTtl</span><span style="color: #000000; ">;
+        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">boredTime</span><span style="color: #000000; ">;
+    </span><span style="color: #800000; font-weight: bold; ">gates</span><span style="color: #000000; ">:
+
+        </span><span style="color: #000080; font-weight: bold; ">input</span><span style="color: #000000; "> </span><span style="color: #000000; ">lowerGateIn</span><span style="color: #000000; ">; 	</span><span style="color: #808080; font-style: italic; ">// from the Mac layer
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">output</span><span style="color: #000000; "> </span><span style="color: #000000; ">lowerGateOut</span><span style="color: #000000; ">; 	</span><span style="color: #808080; font-style: italic; ">// to the Mac layer
+</span><span style="color: #000000; ">
+        </span><span style="color: #000080; font-weight: bold; ">input</span><span style="color: #000000; "> </span><span style="color: #000000; ">lowerControlIn</span><span style="color: #000000; ">; 	</span><span style="color: #808080; font-style: italic; ">// control from the Mac layer        
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">output</span><span style="color: #000000; "> </span><span style="color: #000000; ">lowerControlOut</span><span style="color: #000000; ">; 	</span><span style="color: #808080; font-style: italic; ">// control to the Mac layer
+</span><span style="color: #000000; ">
+}
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

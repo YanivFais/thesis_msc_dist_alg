@@ -1,0 +1,65 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body>
+<h2 class="comptitle">NED File <i>modules/connectionManager/UnitDisk.ned</i></h2>
+<table class="typetable">
+   <tr>
+      <th>Name</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td>
+      <a href="org.mixim.modules.connectionManager.UnitDisk.html">UnitDisk</a>
+      <i> (simple&nbsp;module)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">// - mode:c++ -//- //////////////////////////////////////////////////////////
+// file:        UnitDisk.ned
+//
+// author:      Tom Parker
+//
+// copyright:   (C) 2006 Parallel and Distributed Systems Group (PDS) at
+//              Technische Universiteit Delft, The Netherlands.
+//
+//              This program is free software; you can redistribute it 
+//              and/or modify it under the terms of the GNU General Public 
+//              License as published by the Free Software Foundation; either
+//              version 2 of the License, or (at your option) any later 
+//              version.
+//              For further information see file COPYING 
+//              in the top level directory
+/////////////////////////////////////////////////////////////////////////////
+// description: propagation layer: unit disk model
+////////////////////////////////////////////////////////////////////////////
+</span><span style="color: #000000; ">
+</span><span style="color: #800000; font-weight: bold; ">package</span><span style="color: #000000; "> </span><span style="color: #000000; ">org</span><span style="color: #000000; ">.</span><span style="color: #000000; ">mixim</span><span style="color: #000000; ">.</span><span style="color: #000000; ">modules</span><span style="color: #000000; ">.</span><span style="color: #000000; ">connectionManager</span><span style="color: #000000; ">;
+
+</span><span style="color: #800000; font-weight: bold; ">simple</span><span style="color: #000000; "> </span><span style="color: #000000; ">UnitDisk</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #808080; font-style: italic; ">// debug switch
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">bool</span><span style="color: #000000; "> </span><span style="color: #000000; ">debug</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// debug switch
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">radioRange</span><span style="color: #000000; ">;
+
+        </span><span style="color: #808080; font-style: italic; ">// below are unused here, but needed for BasePhyLayer
+</span><span style="color: #000000; ">        </span><span style="color: #808080; font-style: italic; ">// maximum sending power used for this network (in mW)
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">pMax</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// maximum sending power used for this network (in mW)
+</span><span style="color: #000000; ">        </span><span style="color: #808080; font-style: italic; ">// minimum signal attenuation threshold (in dBm)
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">sat</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// minimum signal attenuation threshold (in dBm)
+</span><span style="color: #000000; ">        </span><span style="color: #808080; font-style: italic; ">// minimum path loss coefficient
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">alpha</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// minimum path loss coefficient
+</span><span style="color: #000000; ">        </span><span style="color: #808080; font-style: italic; ">// minimum carrier frequency of the channel (in Hz)
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">carrierFrequency</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// minimum carrier frequency of the channel (in Hz)
+</span><span style="color: #000000; ">}
+
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

@@ -1,0 +1,8 @@
+<area shape="rect" href="org.mixim.examples.multiConnectionManager.PhyMacHost.html" title="Compound Module PhyMacHost" alt="" coords="319,80,415,107">
+<area shape="rect" href="org.mixim.base.modules.BaseNetwLayer.html" title="Simple Module BaseNetwLayer" alt="" coords="5,155,117,181">
+<area shape="rect" href="org.mixim.base.modules.BaseMobility.html" title="Simple Module BaseMobility" alt="" coords="141,155,237,181">
+<area shape="rect" href="org.mixim.examples.multiConnectionManager.PhyMacNic.html" title="Compound Module PhyMacNic" alt="" coords="261,155,349,181">
+<area shape="rect" href="org.mixim.modules.application.BurstApplLayer.html" title="Simple Module BurstApplLayer" alt="" coords="373,155,483,181">
+<area shape="rect" href="org.mixim.base.modules.BaseArp.html" title="Simple Module BaseArp" alt="" coords="507,155,579,181">
+<area shape="rect" href="org.mixim.base.modules.BaseUtility.html" title="Simple Module BaseUtility" alt="" coords="603,155,685,181">
+<area shape="rect" href="org.mixim.examples.multiConnectionManager.Network.html" title="Compound Module Network" alt="" coords="331,5,403,32">

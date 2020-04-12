@@ -1,0 +1,13 @@
+Ratio for flow: 1 is: 1
+Ratio for flow: 2 is: 0
+Ratio for flow: 3 is: 1
+Ratio for flow: 4 is: 1
+Ratio for flow: 5 is: 1
+Ratio for flow: 6 is: 1
+Ratio for flow: 7 is: 1
+Ratio for flow: 8 is: 1
+Ratio for flow: 9 is: 1
+Ratio for flow: 10 is: 0
+Ratio for flow: 11 is: 1
+Ratio for flow: 12 is: 1
+Oveall ratio is: 0

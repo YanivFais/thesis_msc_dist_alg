@@ -1,0 +1,315 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body>
+<h2 class="comptitle">Simple Module <i>PhyLayer</i></h2>
+<b>Package:</b> org.mixim.modules.phy<br/><b>File: <a href="modules-phy-PhyLayer.ned.html">modules/phy/PhyLayer.ned</a></b><br/><p><b>C++ definition: <a href="../../doc/doxy/a00109.html" target="mainframe">click here</a></b></p>
+
+<p>Physical layer module which knows how to initialize the Deciders
+and AnalogueModels from the modules directory.
+See the classes documentation for details.</p>
+<img src="org.mixim.modules.phy.PhyLayer-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="org.mixim.modules.phy.PhyLayer.html" title="PhyLayer" alt="PhyLayer" coords="0,0,104,40">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="org.mixim.modules.phy.PhyLayer-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="org.mixim.modules.phy.PhyLayer.html" title="Simple Module PhyLayer" alt="" coords="153,80,228,107">
+<area shape="rect" href="org.mixim.examples.baseNetwork.BaseNic.html" title="Compound Module BaseNic" alt="" coords="5,5,77,32">
+<area shape="rect" href="org.mixim.modules.nic.Nic80211.html" title="Compound Module Nic80211" alt="" coords="101,5,176,32">
+<area shape="rect" href="org.mixim.examples.multiConnectionManager.PhyMacNic.html" title="Compound Module PhyMacNic" alt="" coords="200,5,288,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="org.mixim.modules.phy.PhyLayer-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="org.mixim.modules.phy.PhyLayer.html" title="Simple Module PhyLayer" alt="" coords="27,80,101,107">
+<area shape="rect" href="org.mixim.modules.phy.PhyLayerBattery.html" title="Simple Module PhyLayerBattery" alt="" coords="5,155,123,181">
+<area shape="rect" href="org.mixim.base.phyLayer.BasePhyLayer.html" title="Simple Module BasePhyLayer" alt="" coords="11,5,117,32">
+</map>
+<h3 class="subtitle">Extends:</h3>
+<table>
+<tr>
+   <td>
+      <a href="org.mixim.base.phyLayer.BasePhyLayer.html">BasePhyLayer</a>
+      <i> (simple&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>Basic physical layer module.
+See the class "<a href="org.mixim.base.phyLayer.BasePhyLayer.html">BasePhyLayer</a>" documentation.</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Known subclasses:</h3>
+<table>
+<tr>
+   <td>
+      <a href="org.mixim.modules.phy.PhyLayerBattery.html">PhyLayerBattery</a>
+      <i> (simple&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>Physical layer module which knows how to initialize the Deciders
+and AnalogueModels from the modules directory.
+See the classes documentation for details.</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Used in compound modules:</h3>
+<p>If a module type shows up more than once, that means it has been defined in more than one NED file.</p>
+<table>
+<tr>
+   <td>
+      <a href="org.mixim.examples.baseNetwork.BaseNic.html">BaseNic</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>This NIC implements an 802.11 network interface card.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="org.mixim.modules.nic.Nic80211.html">Nic80211</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>This NIC implements an 802.11 network interface card.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="org.mixim.examples.CSMAMac.PhyMacNic.html">PhyMacNic</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="org.mixim.examples.multiConnectionManager.PhyMacNic.html">PhyMacNic</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr class="inherited">
+   <td width="150">coreDebug</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>   <td></td>
+</tr>
+<tr class="inherited">
+   <td width="150">headerLength</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">0</td>   <td>
+<p>defines the length of the phy header (/preamble)</p>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">usePropagationDelay</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>Should transmission delay be simulated?</p>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">thermalNoise</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>the strength of the thermal noise [dBm]</p>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">useThermalNoise</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>should thermal noise be considered?</p>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">analogueModels</td>
+   <td width="100">
+      <i>xml</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>Specification of the analogue models to use and their parameters</p>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">decider</td>
+   <td width="100">
+      <i>xml</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>Specification of the decider to use and its parameters</p>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">sensitivity</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>The sensitivity of the physical layer [dBm]</p>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">maxTXPower</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>The maximum transimission power of the physical layer [mW]</p>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">timeRXToTX</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>switchTimes [s]:</p>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">timeRXToSleep</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">timeTXToRX</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td></td>
+</tr>
+<tr class="inherited">
+   <td width="150">timeTXToSleep</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">timeSleepToRX</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td></td>
+</tr>
+<tr class="inherited">
+   <td width="150">timeSleepToTX</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">initialRadioState</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>   <td>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Properties:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td width="150">class</td>
+   <td width="100"><i>PhyLayer</i></td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Gates:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Direction</th>
+      <th>Size</th>
+      <th>Description</th>
+   </tr>
+<tr class="inherited">
+   <td width="150">upperGateIn</xsl:if></td>
+   <td width="100"><i>input</i></td>
+   <td width="50"></td>   <td>
+<p>from the MAC layer</p>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">upperGateOut</xsl:if></td>
+   <td width="100"><i>output</i></td>
+   <td width="50"></td>   <td>
+<p>to the MAC layer</p>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">upperControlIn</xsl:if></td>
+   <td width="100"><i>input</i></td>
+   <td width="50"></td>   <td>
+<p>control from the MAC layer</p>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">upperControlOut</xsl:if></td>
+   <td width="100"><i>output</i></td>
+   <td width="50"></td>   <td>
+<p>control to the MAC layer</p>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">radioIn</xsl:if></td>
+   <td width="100"><i>input</i></td>
+   <td width="50"></td>   <td>
+<p>for sendDirect from other physical layers</p>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">// Physical layer module which knows how to initialize the Deciders
+// and AnalogueModels from the modules directory.
+// See the classes documentation for details.
+</span><span style="color: #800000; font-weight: bold; ">simple</span><span style="color: #000000; "> </span><span style="color: #000000; ">PhyLayer</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #000000; "> </span><span style="color: #000000; ">BasePhyLayer</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000000; font-weight: bold; ">@class</span><span style="color: #000000; ">(</span><span style="color: #000000; ">PhyLayer</span><span style="color: #000000; ">);
+}
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

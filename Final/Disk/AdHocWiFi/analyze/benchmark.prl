@@ -1,0 +1,152 @@
+
+my $gen = 1;
+my $sim = 1;
+my $mat = 1;
+
+@scenarios = (
+
+ 	
+ 	{
+ 	Dir => "../../experiments/grid_100_1000_41_1_8r",
+  	Generator => $gen,
+ 	Scheduler => $gen,
+ 	Simulation => $sim,
+ 	Analyze => $mat,
+ 	}
+ 	,
+ 	{
+ 	Dir => "../../experiments/grid_49_500_41_1_8r",
+  	Generator => $gen,
+ 	Scheduler => $gen,
+ 	Simulation => $sim,
+ 	Analyze => $mat,
+ 	}
+ 	,
+ 	{
+ 	Dir => "../../experiments/grid_49_750_41_1_8r",
+  	Generator => $gen,
+ 	Scheduler => $gen,
+ 	Simulation => $sim,
+ 	Analyze => $mat,
+ 	}
+ 	,
+ 	{
+ 	Dir => "../../experiments/grid_49_1000_41_1_8r",
+  	Generator => $gen,
+ 	Scheduler => $gen,
+ 	Simulation => $sim,
+ 	Analyze => $mat,
+ 	}
+ 	,
+ 	{
+ 	Dir => "../../experiments/grid_49_1250_41_1_8r",
+  	Generator => $gen,
+ 	Scheduler => $gen,
+ 	Simulation => $sim,
+ 	Analyze => $mat,
+ 	}
+ 	,
+ 	{
+ 	Dir => "../../experiments/grid_49_1500_41_1_8r",
+  	Generator => $gen,
+ 	Scheduler => $gen,
+ 	Simulation => $sim,
+ 	Analyze => $mat,
+ 	}
+ 	,
+ 	{
+ 	Dir => "../../experiments/grid_49_500_41_50_8r",
+  	Generator => $gen,
+ 	Scheduler => $gen,
+ 	Simulation => $sim,
+ 	Analyze => $mat,
+ 	}
+ 	,
+ 	{
+ 	Dir => "../../experiments/grid_49_750_41_50_8r",
+  	Generator => $gen,
+ 	Scheduler => $gen,
+ 	Simulation => $sim,
+ 	Analyze => $mat,
+ 	}
+ 	,
+ 	{
+ 	Dir => "../../experiments/grid_49_1000_41_50_8r",
+  	Generator => $gen,
+ 	Scheduler => $gen,
+ 	Simulation => $sim,
+ 	Analyze => $mat,
+ 	}
+ 	,
+ 	{
+ 	Dir => "../../experiments/grid_49_1250_41_50_8r",
+  	Generator => $gen,
+ 	Scheduler => $gen,
+ 	Simulation => $sim,
+ 	Analyze => $mat,
+ 	}
+ 	,
+ 	{
+ 	Dir => "../../experiments/grid_49_1500_41_50_8r",
+  	Generator => $gen,
+ 	Scheduler => $gen,
+ 	Simulation => $sim,
+ 	Analyze => $mat,
+ 	}
+ 	,
+ 	{
+ 	Dir => "../../experiments/grid_225_1000_41_1_8r",
+  	Generator => $gen,
+ 	Scheduler => $gen,
+ 	Simulation => $sim,
+ 	Analyze => $mat,
+ 	}
+ 	,
+ 	{
+ 	Dir => "../../experiments/grid_225_1000_41_50_8r",
+  	Generator => $gen,
+ 	Scheduler => $gen,
+ 	Simulation => $sim,
+ 	Analyze => $mat,
+ 	}
+ 	,
+ 	{
+ 	Dir => "../../experiments/grid_100_1000_41_1_8r",
+  	Generator => $gen,
+ 	Scheduler => $gen,
+ 	Simulation => $sim,
+ 	Analyze => $mat,
+ 	}
+ 	,
+ 	{
+ 	Dir => "../../experiments/grid_100_1000_41_50_8r",
+  	Generator => $gen,
+ 	Scheduler => $gen,
+ 	Simulation => $sim,
+ 	Analyze => $mat,
+ 	}
+ 	
+	);
+
+
+@configurations  = (
+	{
+	Name => "Main",
+	Params => "USE_SMART_SCHEDULER, int, 1\nROUTER_TYPE, int, 4\nALLOW_ADDING_SLOTS, int, 0\n",
+	},
+	,
+	{
+	Name => "ShortestPath",
+	Params => "USE_SMART_SCHEDULER, int, 0\nROUTER_TYPE, int, 2\nALLOW_ADDING_SLOTS, int, 0\n",
+	},
+	{
+	Name => "MultiCommFlowSched",
+	Params => "USE_SMART_SCHEDULER, int, 1\nROUTER_TYPE, int, 3\nALLOW_ADDING_SLOTS, int, 1\n",
+	}
+      ,
+      {
+	Name => "MultiCommFlowNoSched",
+	Params => "USE_SMART_SCHEDULER, int, 0\nROUTER_TYPE, int, 3\nALLOW_ADDING_SLOTS, int, 0\n",
+      }
+
+); 

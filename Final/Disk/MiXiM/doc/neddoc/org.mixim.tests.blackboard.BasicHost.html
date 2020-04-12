@@ -1,0 +1,148 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body>
+<h2 class="comptitle">Compound Module <i>BasicHost</i></h2>
+<b>Package:</b> org.mixim.tests.blackboard<br/><b>File: <a href="tests-blackboard-BasicHost.ned.html">tests/blackboard/BasicHost.ned</a></b><br/><p>(no description)</p><img src="org.mixim.tests.blackboard.BasicHost-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="org.mixim.base.modules.BaseUtility.html" title="BaseUtility" alt="BaseUtility" coords="37,64,67,89">
+<area shape="rect" href="org.mixim.tests.blackboard.StateChanger.html" title="StateChanger" alt="StateChanger" coords="37,124,67,149">
+<area shape="rect" href="org.mixim.tests.blackboard.StateVisualize.html" title="StateVisualize" alt="StateVisualize" coords="187,64,217,89">
+<area shape="rect" href="org.mixim.tests.blackboard.StateView.html" title="StateView" alt="StateView" coords="187,144,217,169">
+<area shape="rect" href="org.mixim.tests.blackboard.TestStateSub.html" title="TestStateSub" alt="TestStateSub" coords="187,194,217,219">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="org.mixim.tests.blackboard.BasicHost-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="org.mixim.tests.blackboard.BasicHost.html" title="Compound Module BasicHost" alt="" coords="228,80,308,107">
+<area shape="rect" href="org.mixim.tests.blackboard.StateView.html" title="Simple Module StateView" alt="" coords="5,155,85,181">
+<area shape="rect" href="org.mixim.base.modules.BaseUtility.html" title="Simple Module BaseUtility" alt="" coords="109,155,192,181">
+<area shape="rect" href="org.mixim.tests.blackboard.StateVisualize.html" title="Simple Module StateVisualize" alt="" coords="216,155,320,181">
+<area shape="rect" href="org.mixim.tests.blackboard.TestStateSub.html" title="Simple Module TestStateSub" alt="" coords="344,155,443,181">
+<area shape="rect" href="org.mixim.tests.blackboard.StateChanger.html" title="Simple Module StateChanger" alt="" coords="467,155,565,181">
+<area shape="rect" href="org.mixim.tests.blackboard.Network.html" title="Compound Module Network" alt="" coords="232,5,304,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="org.mixim.tests.blackboard.BasicHost-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="org.mixim.tests.blackboard.BasicHost.html" title="Compound Module BasicHost" alt="" coords="5,5,85,32">
+</map>
+<h3 class="subtitle">Used in compound modules:</h3>
+<p>If a module type shows up more than once, that means it has been defined in more than one NED file.</p>
+<table>
+<tr>
+   <td>
+      <a href="org.mixim.tests.blackboard.Network.html">Network</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">numHosts</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>parameters for the framework</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">appendDisplay</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120"></td>   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">color</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120"></td>   <td>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Properties:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td width="150">display</td>
+   <td width="100"><i>bgb=250,250,$color,,;bgp=10,10</i></td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Unassigned submodule parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td><a href="org.mixim.base.modules.BaseUtility.html">blackboard</a>.coreDebug</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>debug switch for the base framework</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #800000; font-weight: bold; ">module</span><span style="color: #000000; "> </span><span style="color: #000000; ">BasicHost</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #808080; font-style: italic; ">// parameters for the framework
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">numHosts</span><span style="color: #000000; ">;
+        </span><span style="color: #000080; font-weight: bold; ">string</span><span style="color: #000000; "> </span><span style="color: #000000; ">appendDisplay</span><span style="color: #000000; ">;
+        </span><span style="color: #000080; font-weight: bold; ">string</span><span style="color: #000000; "> </span><span style="color: #000000; ">color</span><span style="color: #000000; ">;
+
+        </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;bgb=250,250,$color,,;bgp=10,10&quot;</span><span style="color: #000000; ">);
+    </span><span style="color: #800000; font-weight: bold; ">submodules</span><span style="color: #000000; ">:
+        </span><span style="color: #000000; ">blackboard</span><span style="color: #000000; ">: </span><span style="color: #000000; ">BaseUtility</span><span style="color: #000000; "> {
+            </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+                </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=50,30;b=30,25&quot;</span><span style="color: #000000; ">);
+        }
+        </span><span style="color: #000000; ">statechanger</span><span style="color: #000000; ">: </span><span style="color: #000000; ">StateChanger</span><span style="color: #000000; "> {
+            </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+                </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=50,90;b=30,25&quot;</span><span style="color: #000000; ">);
+        }
+        </span><span style="color: #000000; ">statevisualize</span><span style="color: #000000; ">: </span><span style="color: #000000; ">StateVisualize</span><span style="color: #000000; "> {
+            </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+                </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=200,30;b=30,25&quot;</span><span style="color: #000000; ">);
+        }
+        </span><span style="color: #000000; ">stateview</span><span style="color: #000000; ">: </span><span style="color: #000000; ">StateView</span><span style="color: #000000; "> {
+            </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+                </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=200,110;b=30,25&quot;</span><span style="color: #000000; ">);
+        }
+        </span><span style="color: #000000; ">testparam</span><span style="color: #000000; ">: </span><span style="color: #000000; ">TestStateSub</span><span style="color: #000000; "> {
+            </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+                </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=200,160;b=30,25&quot;</span><span style="color: #000000; ">);
+
+        }
+    </span><span style="color: #800000; font-weight: bold; ">connections</span><span style="color: #000000; ">:
+
+}
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

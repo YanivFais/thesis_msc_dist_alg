@@ -1,0 +1,78 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body>
+<h2 class="comptitle">NED File <i>examples/baseNetwork/BaseNetwork.ned</i></h2>
+<table class="typetable">
+   <tr>
+      <th>Name</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td>
+      <a href="org.mixim.examples.baseNetwork.BaseNetwork.html">BaseNetwork</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="org.mixim.examples.baseNetwork.baseSim.html">baseSim</a>
+      <i> (network)</i>
+   </td>
+   <td>
+
+<p>basic example simulation MiXiM</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #800000; font-weight: bold; ">package</span><span style="color: #000000; "> </span><span style="color: #000000; ">org</span><span style="color: #000000; ">.</span><span style="color: #000000; ">mixim</span><span style="color: #000000; ">.</span><span style="color: #000000; ">examples</span><span style="color: #000000; ">.</span><span style="color: #000000; ">baseNetwork</span><span style="color: #000000; ">;
+
+</span><span style="color: #800000; font-weight: bold; ">import</span><span style="color: #000000; "> </span><span style="color: #000000; ">org</span><span style="color: #000000; ">.</span><span style="color: #000000; ">mixim</span><span style="color: #000000; ">.</span><span style="color: #000000; ">base</span><span style="color: #000000; ">.</span><span style="color: #000000; ">connectionManager</span><span style="color: #000000; ">.</span><span style="color: #000000; ">ConnectionManager</span><span style="color: #000000; ">;
+</span><span style="color: #800000; font-weight: bold; ">import</span><span style="color: #000000; "> </span><span style="color: #000000; ">org</span><span style="color: #000000; ">.</span><span style="color: #000000; ">mixim</span><span style="color: #000000; ">.</span><span style="color: #000000; ">base</span><span style="color: #000000; ">.</span><span style="color: #000000; ">modules</span><span style="color: #000000; ">.</span><span style="color: #000000; ">BaseWorldUtility</span><span style="color: #000000; ">;
+
+
+</span><span style="color: #800000; font-weight: bold; ">module</span><span style="color: #000000; "> </span><span style="color: #000000; ">BaseNetwork</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">playgroundSizeX</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">m</span><span style="color: #000000; ">); </span><span style="color: #808080; font-style: italic; ">// x size of the area the nodes are in (in meters)
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">playgroundSizeY</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">m</span><span style="color: #000000; ">); </span><span style="color: #808080; font-style: italic; ">// y size of the area the nodes are in (in meters)
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">playgroundSizeZ</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">m</span><span style="color: #000000; ">); </span><span style="color: #808080; font-style: italic; ">// z size of the area the nodes are in (in meters)
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">numNodes</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// total number of hosts in the network
+</span><span style="color: #000000; ">
+        </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;bgb=$playgroundSizeX,$playgroundSizeY,white,,;bgp=0,0&quot;</span><span style="color: #000000; ">);
+    </span><span style="color: #800000; font-weight: bold; ">submodules</span><span style="color: #000000; ">:
+        </span><span style="color: #000000; ">connectionManager</span><span style="color: #000000; ">: </span><span style="color: #000000; ">ConnectionManager</span><span style="color: #000000; "> {
+         	</span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+                </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=150,0;b=42,42,rect,green,,;i=abstract/multicast&quot;</span><span style="color: #000000; ">);   
+        }
+        </span><span style="color: #000000; ">world</span><span style="color: #000000; ">: </span><span style="color: #000000; ">BaseWorldUtility</span><span style="color: #000000; "> {
+            </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+                </span><span style="color: #000000; ">playgroundSizeX</span><span style="color: #000000; "> = </span><span style="color: #000000; ">playgroundSizeX</span><span style="color: #000000; ">;
+                </span><span style="color: #000000; ">playgroundSizeY</span><span style="color: #000000; "> = </span><span style="color: #000000; ">playgroundSizeY</span><span style="color: #000000; ">;
+                </span><span style="color: #000000; ">playgroundSizeZ</span><span style="color: #000000; "> = </span><span style="color: #000000; ">playgroundSizeZ</span><span style="color: #000000; ">;
+                </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=30,0;i=misc/globe&quot;</span><span style="color: #000000; ">);
+        }
+        </span><span style="color: #000000; ">node</span><span style="color: #000000; ">[</span><span style="color: #000000; ">numNodes</span><span style="color: #000000; ">]: </span><span style="color: #000000; ">BaseNode</span><span style="color: #000000; "> {
+            </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+                </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=170,50;i=device/wifilaptop&quot;</span><span style="color: #000000; ">);
+        }
+    </span><span style="color: #800000; font-weight: bold; ">connections</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">allowunconnected</span><span style="color: #000000; ">:
+
+}
+
+
+</span><span style="color: #808080; font-style: italic; ">// basic example simulation MiXiM
+</span><span style="color: #800000; font-weight: bold; ">network</span><span style="color: #000000; "> </span><span style="color: #000000; ">baseSim</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #000000; "> </span><span style="color: #000000; ">BaseNetwork</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+}
+
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

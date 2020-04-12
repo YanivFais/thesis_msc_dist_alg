@@ -1,0 +1,494 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body>
+<h2 class="comptitle">Compound Module <i>PhyMacHost</i></h2>
+<b>Package:</b> org.mixim.examples.CSMAMac<br/><b>File: <a href="examples-CSMAMac-PhyMacHost.ned.html">examples/CSMAMac/PhyMacHost.ned</a></b><br/><p>(no description)</p><img src="org.mixim.examples.CSMAMac.PhyMacHost-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="org.mixim.base.modules.BaseUtility.html" title="BaseUtility" alt="BaseUtility" coords="112,86,152,126">
+<area shape="rect" href="org.mixim.base.modules.BaseMobility.html" title="BaseMobility" alt="BaseMobility" coords="112,156,152,196">
+<area shape="rect" href="org.mixim.base.modules.BaseArp.html" title="BaseArp" alt="BaseArp" coords="187,259,217,284">
+<area shape="rect" href="org.mixim.examples.CSMAMac.SimpleNetwLayer.html" title="SimpleNetwLayer" alt="SimpleNetwLayer" coords="22,41,102,71">
+<area shape="rect" href="org.mixim.examples.CSMAMac.PhyMacNic.html" title="PhyMacNic" alt="PhyMacNic" coords="42,192,82,232">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="org.mixim.examples.CSMAMac.PhyMacHost-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="org.mixim.examples.CSMAMac.PhyMacHost.html" title="Compound Module PhyMacHost" alt="" coords="215,80,311,107">
+<area shape="rect" href="org.mixim.base.modules.BaseMobility.html" title="Simple Module BaseMobility" alt="" coords="5,155,101,181">
+<area shape="rect" href="org.mixim.base.modules.BaseArp.html" title="Simple Module BaseArp" alt="" coords="125,155,197,181">
+<area shape="rect" href="org.mixim.base.modules.BaseUtility.html" title="Simple Module BaseUtility" alt="" coords="221,155,304,181">
+<area shape="rect" href="org.mixim.examples.CSMAMac.PhyMacNic.html" title="Compound Module PhyMacNic" alt="" coords="328,155,416,181">
+<area shape="rect" href="org.mixim.examples.CSMAMac.SimpleNetwLayer.html" title="Simple Module SimpleNetwLayer" alt="" coords="440,155,563,181">
+<area shape="rect" href="org.mixim.examples.CSMAMac.Network.html" title="Compound Module Network" alt="" coords="227,5,299,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="org.mixim.examples.CSMAMac.PhyMacHost-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="org.mixim.examples.CSMAMac.PhyMacHost.html" title="Compound Module PhyMacHost" alt="" coords="5,5,101,32">
+</map>
+<h3 class="subtitle">Used in compound modules:</h3>
+<p>If a module type shows up more than once, that means it has been defined in more than one NED file.</p>
+<table>
+<tr>
+   <td>
+      <a href="org.mixim.examples.CSMAMac.Network.html">Network</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">numHosts</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>total number of hosts in the network</p>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Properties:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td width="150">display</td>
+   <td width="100"><i>bgb=180,200,white,,;bgp=10,10</i></td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Gates:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Direction</th>
+      <th>Size</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">radioIn</xsl:if></td>
+   <td width="100"><i>input</i></td>
+   <td width="50"></td>   <td>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Unassigned submodule parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td><a href="org.mixim.base.modules.BaseUtility.html">utility</a>.coreDebug</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>debug switch for the base framework</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.base.modules.BaseMobility.html">mobility</a>.coreDebug</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>debug switch for the core framework</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.base.modules.BaseMobility.html">mobility</a>.x</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>x coordinate of the nodes' position (-1 = random)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.base.modules.BaseMobility.html">mobility</a>.y</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>y coordinate of the nodes' position (-1 = random)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.base.modules.BaseMobility.html">mobility</a>.z</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>z coordinate of the nodes' position (-1 = random)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.base.modules.BaseArp.html">arp</a>.coreDebug</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>debug switch for the core framework</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.CSMAMac.SimpleNetwLayer.html">net</a>.ip</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.CSMAMac.SimpleNetwLayer.html">net</a>.isSwitch</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.CSMAMac.SimpleNetwLayer.html">net</a>.maxTtl</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.CSMAMac.SimpleNetwLayer.html">net</a>.boredTime</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.CSMAMac.PhyMacNic.html">nic</a>.<a href="org.mixim.modules.phy.PhyLayer.html">phy</a>.coreDebug</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.CSMAMac.PhyMacNic.html">nic</a>.<a href="org.mixim.modules.phy.PhyLayer.html">phy</a>.headerLength</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">0</td>
+   <td>
+<p>defines the length of the phy header (/preamble)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.CSMAMac.PhyMacNic.html">nic</a>.<a href="org.mixim.modules.phy.PhyLayer.html">phy</a>.usePropagationDelay</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>Should transmission delay be simulated?</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.CSMAMac.PhyMacNic.html">nic</a>.<a href="org.mixim.modules.phy.PhyLayer.html">phy</a>.thermalNoise</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>the strength of the thermal noise [dBm]</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.CSMAMac.PhyMacNic.html">nic</a>.<a href="org.mixim.modules.phy.PhyLayer.html">phy</a>.useThermalNoise</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>should thermal noise be considered?</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.CSMAMac.PhyMacNic.html">nic</a>.<a href="org.mixim.modules.phy.PhyLayer.html">phy</a>.analogueModels</td>
+   <td width="100">
+      <i>xml</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>Specification of the analogue models to use and their parameters</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.CSMAMac.PhyMacNic.html">nic</a>.<a href="org.mixim.modules.phy.PhyLayer.html">phy</a>.decider</td>
+   <td width="100">
+      <i>xml</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>Specification of the decider to use and its parameters</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.CSMAMac.PhyMacNic.html">nic</a>.<a href="org.mixim.modules.phy.PhyLayer.html">phy</a>.sensitivity</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>The sensitivity of the physical layer [dBm]</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.CSMAMac.PhyMacNic.html">nic</a>.<a href="org.mixim.modules.phy.PhyLayer.html">phy</a>.maxTXPower</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>The maximum transimission power of the physical layer [mW]</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.CSMAMac.PhyMacNic.html">nic</a>.<a href="org.mixim.modules.phy.PhyLayer.html">phy</a>.timeRXToTX</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>switchTimes [s]:</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.CSMAMac.PhyMacNic.html">nic</a>.<a href="org.mixim.modules.phy.PhyLayer.html">phy</a>.timeRXToSleep</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.CSMAMac.PhyMacNic.html">nic</a>.<a href="org.mixim.modules.phy.PhyLayer.html">phy</a>.timeTXToRX</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.CSMAMac.PhyMacNic.html">nic</a>.<a href="org.mixim.modules.phy.PhyLayer.html">phy</a>.timeTXToSleep</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.CSMAMac.PhyMacNic.html">nic</a>.<a href="org.mixim.modules.phy.PhyLayer.html">phy</a>.timeSleepToRX</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.CSMAMac.PhyMacNic.html">nic</a>.<a href="org.mixim.modules.phy.PhyLayer.html">phy</a>.timeSleepToTX</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.CSMAMac.PhyMacNic.html">nic</a>.<a href="org.mixim.modules.phy.PhyLayer.html">phy</a>.initialRadioState</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>
+   <td>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.CSMAMac.PhyMacNic.html">nic</a>.<a href="org.mixim.modules.mac.CSMAMacLayer.html">mac</a>.notAffectedByHostState</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120">false</td>
+   <td>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.CSMAMac.PhyMacNic.html">nic</a>.<a href="org.mixim.modules.mac.CSMAMacLayer.html">mac</a>.coreDebug</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>debug switch</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.CSMAMac.PhyMacNic.html">nic</a>.<a href="org.mixim.modules.mac.CSMAMacLayer.html">mac</a>.headerLength</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>length of the MAC packet header (in bits)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.CSMAMac.PhyMacNic.html">nic</a>.<a href="org.mixim.modules.mac.CSMAMacLayer.html">mac</a>.slotDuration</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>how long is a slot? [s]</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.CSMAMac.PhyMacNic.html">nic</a>.<a href="org.mixim.modules.mac.CSMAMacLayer.html">mac</a>.difs</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>maximum time between a packet and its ack [s]</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.CSMAMac.PhyMacNic.html">nic</a>.<a href="org.mixim.modules.mac.CSMAMacLayer.html">mac</a>.maxTxAttempts</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>maximum number of transmission attempts</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.CSMAMac.PhyMacNic.html">nic</a>.<a href="org.mixim.modules.mac.CSMAMacLayer.html">mac</a>.queueLength</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>length of the MAC queue</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.CSMAMac.PhyMacNic.html">nic</a>.<a href="org.mixim.modules.mac.CSMAMacLayer.html">mac</a>.defaultChannel</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>default channel</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.CSMAMac.PhyMacNic.html">nic</a>.<a href="org.mixim.modules.mac.CSMAMacLayer.html">mac</a>.bitrate</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>bit rate [bps]</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.CSMAMac.PhyMacNic.html">nic</a>.<a href="org.mixim.modules.mac.CSMAMacLayer.html">mac</a>.txPower</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>tx power [mW]</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.CSMAMac.PhyMacNic.html">nic</a>.<a href="org.mixim.modules.mac.CSMAMacLayer.html">mac</a>.contentionWindow</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>contention window</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #800000; font-weight: bold; ">module</span><span style="color: #000000; "> </span><span style="color: #000000; ">PhyMacHost</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">numHosts</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// total number of hosts in the network
+</span><span style="color: #000000; ">
+        </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;bgb=180,200,white,,;bgp=10,10&quot;</span><span style="color: #000000; ">);
+    </span><span style="color: #800000; font-weight: bold; ">gates</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">input</span><span style="color: #000000; "> </span><span style="color: #000000; ">radioIn</span><span style="color: #000000; ">;
+
+    </span><span style="color: #800000; font-weight: bold; ">submodules</span><span style="color: #000000; ">:
+        </span><span style="color: #000000; ">utility</span><span style="color: #000000; ">: </span><span style="color: #000000; ">BaseUtility</span><span style="color: #000000; "> {
+            </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+                </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=130,60;i=block/blackboard&quot;</span><span style="color: #000000; ">);
+        }
+        </span><span style="color: #000000; ">mobility</span><span style="color: #000000; ">: </span><span style="color: #000000; ">BaseMobility</span><span style="color: #000000; "> {
+            </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+                </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=130,130;i=block/cogwheel&quot;</span><span style="color: #000000; ">);
+        }
+        </span><span style="color: #000000; ">arp</span><span style="color: #000000; ">: </span><span style="color: #000000; ">BaseArp</span><span style="color: #000000; "> {
+            </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=200,225;b=30,25&quot;</span><span style="color: #000000; ">);
+        }
+        </span><span style="color: #000000; ">net</span><span style="color: #000000; ">: </span><span style="color: #000000; ">SimpleNetwLayer</span><span style="color: #000000; "> {
+            </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+                </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=60,10;b=80,30,rect,white,,&quot;</span><span style="color: #000000; ">);
+        }
+        </span><span style="color: #000000; ">nic</span><span style="color: #000000; ">: </span><span style="color: #000000; ">PhyMacNic</span><span style="color: #000000; "> {
+            </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+                </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;b=32,30;p=60,166;i=block/ifcard&quot;</span><span style="color: #000000; ">);
+        }
+    </span><span style="color: #800000; font-weight: bold; ">connections</span><span style="color: #000000; ">:
+        </span><span style="color: #000000; ">nic</span><span style="color: #000000; ">.</span><span style="color: #000000; ">upperGateOut</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">--&gt;</span><span style="color: #000000; "> { </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;ls=black;m=m,25,50,25,0&quot;</span><span style="color: #000000; ">); } </span><span style="color: #800000; font-weight: bold; ">--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">net</span><span style="color: #000000; ">.</span><span style="color: #000000; ">lowerGateIn</span><span style="color: #000000; ">;
+        </span><span style="color: #000000; ">nic</span><span style="color: #000000; ">.</span><span style="color: #000000; ">upperGateIn</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">&lt;--</span><span style="color: #000000; "> { </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;ls=black;m=m,15,50,15,0&quot;</span><span style="color: #000000; ">); } </span><span style="color: #800000; font-weight: bold; ">&lt;--</span><span style="color: #000000; "> </span><span style="color: #000000; ">net</span><span style="color: #000000; ">.</span><span style="color: #000000; ">lowerGateOut</span><span style="color: #000000; ">;
+        </span><span style="color: #000000; ">nic</span><span style="color: #000000; ">.</span><span style="color: #000000; ">upperControlOut</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">--&gt;</span><span style="color: #000000; "> { </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;ls=red;m=m,75,50,75,0&quot;</span><span style="color: #000000; ">); } </span><span style="color: #800000; font-weight: bold; ">--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">net</span><span style="color: #000000; ">.</span><span style="color: #000000; ">lowerControlIn</span><span style="color: #000000; ">;
+        </span><span style="color: #000000; ">nic</span><span style="color: #000000; ">.</span><span style="color: #000000; ">upperControlIn</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">&lt;--</span><span style="color: #000000; "> { </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;ls=red;m=m,85,0,85,0&quot;</span><span style="color: #000000; ">); } </span><span style="color: #800000; font-weight: bold; ">&lt;--</span><span style="color: #000000; "> </span><span style="color: #000000; ">net</span><span style="color: #000000; ">.</span><span style="color: #000000; ">lowerControlOut</span><span style="color: #000000; ">;
+
+        </span><span style="color: #000000; ">radioIn</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">nic</span><span style="color: #000000; ">.</span><span style="color: #000000; ">radioIn</span><span style="color: #000000; ">;
+
+}
+
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

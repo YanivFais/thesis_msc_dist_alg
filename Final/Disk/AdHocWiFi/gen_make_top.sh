@@ -1,0 +1,1 @@
+opp_makemake -f --nolink -O out -d analogueModels -d CSMAMac -d Mac80211 -d baseNetwork -d multiConnectionManager -L../out/gcc-debug/tests/testUtils -L../out/gcc-debug/base -L../out/gcc-debug/tests/power/utils -L../out/gcc-debug/modules -d AdHocWiFi

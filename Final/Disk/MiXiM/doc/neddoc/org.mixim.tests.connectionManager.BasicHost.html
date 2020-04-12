@@ -1,0 +1,209 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body>
+<h2 class="comptitle">Compound Module <i>BasicHost</i></h2>
+<b>Package:</b> org.mixim.tests.connectionManager<br/><b>File: <a href="tests-connectionManager-BasicHost.ned.html">tests/connectionManager/BasicHost.ned</a></b><br/>
+<p>The BasicHost is a compound module that implements a very
+simple host. It only consists of basic modules and is the
+most basic host you can create for the MF</p>
+<p><b>Author:</b> Daniel Willkomm</p>
+<img src="org.mixim.tests.connectionManager.BasicHost-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="org.mixim.base.modules.BaseUtility.html" title="BaseUtility" alt="BaseUtility" coords="120,94,145,119">
+<area shape="rect" href="org.mixim.base.modules.BaseMobility.html" title="BaseMobility" alt="BaseMobility" coords="117,166,147,186">
+<area shape="rect" href="org.mixim.tests.connectionManager.TestNic.html" title="TestNic" alt="TestNic" coords="46,197,78,227">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="org.mixim.tests.connectionManager.BasicHost-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="org.mixim.tests.connectionManager.BasicHost.html" title="Compound Module BasicHost" alt="" coords="127,80,207,107">
+<area shape="rect" href="org.mixim.base.modules.BaseMobility.html" title="Simple Module BaseMobility" alt="" coords="5,155,101,181">
+<area shape="rect" href="org.mixim.base.modules.BaseUtility.html" title="Simple Module BaseUtility" alt="" coords="125,155,208,181">
+<area shape="rect" href="org.mixim.tests.connectionManager.TestNic.html" title="Compound Module TestNic" alt="" coords="232,155,304,181">
+<area shape="rect" href="org.mixim.tests.connectionManager.Network.html" title="Compound Module Network" alt="" coords="131,5,203,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="org.mixim.tests.connectionManager.BasicHost-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="org.mixim.tests.connectionManager.BasicHost.html" title="Compound Module BasicHost" alt="" coords="5,5,85,32">
+</map>
+<h3 class="subtitle">Used in compound modules:</h3>
+<p>If a module type shows up more than once, that means it has been defined in more than one NED file.</p>
+<table>
+<tr>
+   <td>
+      <a href="org.mixim.tests.connectionManager.Network.html">Network</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+<p><b>Author:</b> Karl Wessel</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">numHosts</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>total number of hosts in the network</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">phyLayer</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>physical layer type</p>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Properties:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td width="150">display</td>
+   <td width="100"><i>bgb=180,200,white,,;bgp=10,10</i></td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Gates:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Direction</th>
+      <th>Size</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">radioIn</xsl:if></td>
+   <td width="100"><i>input</i></td>
+   <td width="50"></td>   <td>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Unassigned submodule parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td><a href="org.mixim.base.modules.BaseUtility.html">blackboard</a>.coreDebug</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>debug switch for the base framework</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.base.modules.BaseMobility.html">mobility</a>.coreDebug</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>debug switch for the core framework</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.base.modules.BaseMobility.html">mobility</a>.x</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>x coordinate of the nodes' position (-1 = random)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.base.modules.BaseMobility.html">mobility</a>.y</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>y coordinate of the nodes' position (-1 = random)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.base.modules.BaseMobility.html">mobility</a>.z</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>z coordinate of the nodes' position (-1 = random)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.connectionManager.TestNic.html">nic</a>.<a href="org.mixim.tests.connectionManager.CMPhyLayer.html">phy</a>.usePropagationDelay</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">// The BasicHost is a compound module that implements a very
+// simple host. It only consists of basic modules and is the
+// most basic host you can create for the MF
+//
+// </span><span style="color: #000080; ">@author</span><span style="color: #808080; font-style: italic; "> Daniel Willkomm
+</span><span style="color: #800000; font-weight: bold; ">module</span><span style="color: #000000; "> </span><span style="color: #000000; ">BasicHost</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">numHosts</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// total number of hosts in the network
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">string</span><span style="color: #000000; "> </span><span style="color: #000000; ">phyLayer</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">//physical layer type
+</span><span style="color: #000000; ">
+        </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;bgb=180,200,white,,;bgp=10,10&quot;</span><span style="color: #000000; ">);
+    </span><span style="color: #800000; font-weight: bold; ">gates</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">input</span><span style="color: #000000; "> </span><span style="color: #000000; ">radioIn</span><span style="color: #000000; ">;
+
+    </span><span style="color: #800000; font-weight: bold; ">submodules</span><span style="color: #000000; ">:
+        </span><span style="color: #000000; ">blackboard</span><span style="color: #000000; ">: </span><span style="color: #000000; ">BaseUtility</span><span style="color: #000000; "> {
+            </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+                </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=130,60;b=25,25,,black,,&quot;</span><span style="color: #000000; ">);
+        }
+        </span><span style="color: #000000; ">mobility</span><span style="color: #000000; ">: </span><span style="color: #000000; ">BaseMobility</span><span style="color: #000000; "> {
+            </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+                </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=130,130;i=cogwheel2&quot;</span><span style="color: #000000; ">);
+        }
+        </span><span style="color: #000000; ">nic</span><span style="color: #000000; ">: </span><span style="color: #000000; ">TestNic</span><span style="color: #000000; "> {
+            </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+                </span><span style="color: #000000; ">phyLayerType</span><span style="color: #000000; "> = </span><span style="color: #000000; ">phyLayer</span><span style="color: #000000; ">;
+
+                </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;b=32,30;p=60,166;i=iface&quot;</span><span style="color: #000000; ">);
+        }
+    </span><span style="color: #800000; font-weight: bold; ">connections</span><span style="color: #000000; ">:
+
+        </span><span style="color: #000000; ">radioIn</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">nic</span><span style="color: #000000; ">.</span><span style="color: #000000; ">radioIn</span><span style="color: #000000; ">;
+
+}
+
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

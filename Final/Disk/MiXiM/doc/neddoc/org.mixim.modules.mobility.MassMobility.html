@@ -1,0 +1,221 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body>
+<h2 class="comptitle">Simple Module <i>MassMobility</i></h2>
+<b>Package:</b> org.mixim.modules.mobility<br/><b>File: <a href="modules-mobility-MassMobility.ned.html">modules/mobility/MassMobility.ned</a></b><br/><p><b>C++ definition: <a href="../../doc/doxy/a00095.html" target="mainframe">click here</a></b></p>
+
+<p>This is a random mobility model for a mobile host with a mass. It is the
+one used in "Optimized Smooth Handoffs in Mobile IP" by Perkins &amp; Wang.</p>
+<p>"An MH moves within the room according to the following pattern. It moves
+along a straight line for a certain period of time before it makes a turn.
+This moving period is a random number, normally distributed with average of
+5 seconds and standard deviation of 0.1 second. When it makes a turn, the
+new direction (angle) in which it will move is a normally distributed
+random number with average equal to the previous direction and standard
+deviation of 30 degrees. Its speed is also a normally distributed random
+number, with a controlled average, ranging from 0.1 to 0.45 (unit/sec), and
+standard deviation of 0.01 (unit/sec). A new such random number is picked
+as its speed when it makes a turn. This pattern of mobility is intended to
+model node movement during which the nodes have momentum, and thus do not
+start, stop, or turn abruptly. When it hits a wall, it reflects off the
+wall at the same angle; in our simulated world, there is little other
+choice."</p>
+<p>This implementation can be parameterized a bit more, via the changeInterval,
+changeAngleBy and changeSpeedBy parameters. The parameters described above
+correspond to the following settings:</p>
+  <ul><ul><li>changeInterval = normal(5, 0.1)</li>
+  <li>changeAngleBy = normal(0, 30)</li>
+  <li>speed = normal(avgSpeed, 0.01)</li></ul></ul>
+<p><b>See also:</b> <a href="org.mixim.base.connectionManager.ConnectionManager.html">ConnectionManager</a></p>
+<p><b>Author:</b> Emin Ilker Cetinbas, Andras Varga</p>
+<img src="org.mixim.modules.mobility.MassMobility-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="org.mixim.modules.mobility.MassMobility.html" title="MassMobility" alt="MassMobility" coords="0,0,129,40">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="org.mixim.modules.mobility.MassMobility-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="org.mixim.modules.mobility.MassMobility.html" title="Simple Module MassMobility" alt="" coords="5,5,104,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="org.mixim.modules.mobility.MassMobility-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="org.mixim.modules.mobility.MassMobility.html" title="Simple Module MassMobility" alt="" coords="5,80,104,107">
+<area shape="rect" href="org.mixim.base.modules.BaseMobility.html" title="Simple Module BaseMobility" alt="" coords="7,5,103,32">
+</map>
+<h3 class="subtitle">Extends:</h3>
+<table>
+<tr>
+   <td>
+      <a href="org.mixim.base.modules.BaseMobility.html">BaseMobility</a>
+      <i> (simple&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>Module which is responsible for mobility
+related information like position and movement
+<a href="org.mixim.base.modules.BaseMobility.html">BaseMobility</a> itself defines a static mobility
+pattern (means only a position, no movement).
+Mobility modules which extend from this module
+willd efien more complex movement patterns.</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr class="inherited">
+   <td width="150">notAffectedByHostState</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120">true</td>   <td></td>
+</tr>
+<tr class="inherited">
+   <td width="150">coreDebug</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>debug switch for the core framework</p>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">x</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>x coordinate of the nodes' position (-1 = random)</p>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">y</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>y coordinate of the nodes' position (-1 = random)</p>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">z</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>z coordinate of the nodes' position (-1 = random)</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">debug</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>debug switch</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">changeInterval</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>frequency of changing speed and angle (can be random) [s]</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">changeAngleBy</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>change angle by this much (can be random) [deg]</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">speed</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>speed (can be random, updated every changeInterval) [m/s]</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">updateInterval</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>time interval to update the hosts position [seconds]</p>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Properties:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td width="150">class</td>
+   <td width="100"><i>MassMobility</i></td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// This is a random mobility model for a mobile host with a mass. It is the
+// one used in &quot;Optimized Smooth Handoffs in Mobile IP&quot; by Perkins &amp; Wang.
+//
+// &quot;An MH moves within the room according to the following pattern. It moves
+// along a straight line for a certain period of time before it makes a turn.
+// This moving period is a random number, normally distributed with average of
+// 5 seconds and standard deviation of 0.1 second. When it makes a turn, the
+// new direction (angle) in which it will move is a normally distributed
+// random number with average equal to the previous direction and standard
+// deviation of 30 degrees. Its speed is also a normally distributed random
+// number, with a controlled average, ranging from 0.1 to 0.45 (unit/sec), and
+// standard deviation of 0.01 (unit/sec). A new such random number is picked
+// as its speed when it makes a turn. This pattern of mobility is intended to
+// model node movement during which the nodes have momentum, and thus do not
+// start, stop, or turn abruptly. When it hits a wall, it reflects off the
+// wall at the same angle; in our simulated world, there is little other
+// choice.&quot;
+//
+// This implementation can be parameterized a bit more, via the changeInterval,
+// changeAngleBy and changeSpeedBy parameters. The parameters described above
+// correspond to the following settings:
+//    - changeInterval = normal(5, 0.1)
+//    - changeAngleBy = normal(0, 30)
+//    - speed = normal(avgSpeed, 0.01)
+//
+// </span><span style="color: #000080; ">@see</span><span style="color: #808080; font-style: italic; "> ConnectionManager
+// </span><span style="color: #000080; ">@author</span><span style="color: #808080; font-style: italic; "> Emin Ilker Cetinbas, Andras Varga
+//
+</span><span style="color: #800000; font-weight: bold; ">simple</span><span style="color: #000000; "> </span><span style="color: #000000; ">MassMobility</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #000000; "> </span><span style="color: #000000; ">BaseMobility</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000000; font-weight: bold; ">@class</span><span style="color: #000000; ">(</span><span style="color: #000000; ">MassMobility</span><span style="color: #000000; ">);
+        </span><span style="color: #000080; font-weight: bold; ">bool</span><span style="color: #000000; "> </span><span style="color: #000000; ">debug</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// debug switch
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">volatile</span><span style="color: #000000; "> </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">changeInterval</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">s</span><span style="color: #000000; ">); </span><span style="color: #808080; font-style: italic; ">// frequency of changing speed and angle (can be random) [s]
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">volatile</span><span style="color: #000000; "> </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">changeAngleBy</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">deg</span><span style="color: #000000; ">); </span><span style="color: #808080; font-style: italic; ">// change angle by this much (can be random) [deg]
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">volatile</span><span style="color: #000000; "> </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">speed</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">mps</span><span style="color: #000000; ">); </span><span style="color: #808080; font-style: italic; ">// speed (can be random, updated every changeInterval) [m/s]
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">updateInterval</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">s</span><span style="color: #000000; ">); </span><span style="color: #808080; font-style: italic; ">// time interval to update the hosts position [seconds]
+</span><span style="color: #000000; ">}
+
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

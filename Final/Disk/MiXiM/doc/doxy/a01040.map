@@ -1,0 +1,4 @@
+<area shape="rect" href="$a00007.html" title="Base class for any power source." alt="" coords="5,5,99,32">
+<area shape="rect" href="$a00026.html" title="residual capacity of battery" alt="" coords="123,5,216,32">
+<area shape="rect" href="$a00071.html" title="HostState is published by the battery to announce host failure." alt="" coords="240,5,320,32">
+<area shape="rect" href="$a00059.html" title="per&#45;device/per&#45;account record of battery consumption, is passed to BatteryStats on..." alt="" coords="344,5,435,32">

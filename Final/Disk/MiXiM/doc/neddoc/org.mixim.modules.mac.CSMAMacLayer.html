@@ -1,0 +1,286 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body>
+<h2 class="comptitle">Simple Module <i>CSMAMacLayer</i></h2>
+<b>Package:</b> org.mixim.modules.mac<br/><b>File: <a href="modules-mac-CSMAMacLayer.ned.html">modules/mac/CSMAMacLayer.ned</a></b><br/><p><b>C++ definition: <a href="../../doc/doxy/a00017.html" target="mainframe">click here</a></b></p>
+
+<p>CSMA MAC protocol</p>
+<img src="org.mixim.modules.mac.CSMAMacLayer-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="org.mixim.modules.mac.CSMAMacLayer.html" title="CSMAMacLayer" alt="CSMAMacLayer" coords="0,0,143,40">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="org.mixim.modules.mac.CSMAMacLayer-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="org.mixim.modules.mac.CSMAMacLayer.html" title="Simple Module CSMAMacLayer" alt="" coords="88,80,203,107">
+<area shape="rect" href="org.mixim.examples.baseNetwork.BaseNic.html" title="Compound Module BaseNic" alt="" coords="5,5,77,32">
+<area shape="rect" href="org.mixim.examples.multiConnectionManager.PhyMacNic.html" title="Compound Module PhyMacNic" alt="" coords="101,5,189,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="org.mixim.modules.mac.CSMAMacLayer-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="org.mixim.modules.mac.CSMAMacLayer.html" title="Simple Module CSMAMacLayer" alt="" coords="5,80,120,107">
+<area shape="rect" href="org.mixim.base.modules.BaseMacLayer.html" title="Simple Module BaseMacLayer" alt="" coords="9,5,116,32">
+</map>
+<h3 class="subtitle">Extends:</h3>
+<table>
+<tr>
+   <td>
+      <a href="org.mixim.base.modules.BaseMacLayer.html">BaseMacLayer</a>
+      <i> (simple&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>Base module for every mac layer module</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Used in compound modules:</h3>
+<p>If a module type shows up more than once, that means it has been defined in more than one NED file.</p>
+<table>
+<tr>
+   <td>
+      <a href="org.mixim.examples.baseNetwork.BaseNic.html">BaseNic</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>This NIC implements an 802.11 network interface card.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="org.mixim.examples.CSMAMac.PhyMacNic.html">PhyMacNic</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="org.mixim.examples.multiConnectionManager.PhyMacNic.html">PhyMacNic</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr class="inherited">
+   <td width="150">notAffectedByHostState</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120">false</td>   <td>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">coreDebug</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>debug switch</p>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">headerLength</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>length of the MAC packet header (in bits)</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">slotDuration</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>how long is a slot? [s]</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">difs</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>maximum time between a packet and its ack [s]</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">maxTxAttempts</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>maximum number of transmission attempts</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">queueLength</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>length of the MAC queue</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">defaultChannel</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>default channel</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">bitrate</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>bit rate [bps]</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">txPower</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>tx power [mW]</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">contentionWindow</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>contention window</p>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Properties:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td width="150">class</td>
+   <td width="100"><i>CSMAMacLayer</i></td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Gates:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Direction</th>
+      <th>Size</th>
+      <th>Description</th>
+   </tr>
+<tr class="inherited">
+   <td width="150">upperGateIn</xsl:if></td>
+   <td width="100"><i>input</i></td>
+   <td width="50"></td>   <td>
+<p>from application layer</p>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">upperGateOut</xsl:if></td>
+   <td width="100"><i>output</i></td>
+   <td width="50"></td>   <td>
+<p>to application layer</p>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">upperControlIn</xsl:if></td>
+   <td width="100"><i>input</i></td>
+   <td width="50"></td>   <td>
+<p>control from application layer</p>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">upperControlOut</xsl:if></td>
+   <td width="100"><i>output</i></td>
+   <td width="50"></td>   <td>
+<p>control to application layer</p>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">lowerGateIn</xsl:if></td>
+   <td width="100"><i>input</i></td>
+   <td width="50"></td>   <td>
+<p>from NIC</p>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">lowerGateOut</xsl:if></td>
+   <td width="100"><i>output</i></td>
+   <td width="50"></td>   <td>
+<p>to NIC</p>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">lowerControlIn</xsl:if></td>
+   <td width="100"><i>input</i></td>
+   <td width="50"></td>   <td>
+<p>control from NIC</p>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">lowerControlOut</xsl:if></td>
+   <td width="100"><i>output</i></td>
+   <td width="50"></td>   <td>
+<p>control to NIC</p>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// CSMA MAC protocol
+//
+</span><span style="color: #800000; font-weight: bold; ">simple</span><span style="color: #000000; "> </span><span style="color: #000000; ">CSMAMacLayer</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #000000; "> </span><span style="color: #000000; ">BaseMacLayer</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000000; font-weight: bold; ">@class</span><span style="color: #000000; ">(</span><span style="color: #000000; ">CSMAMacLayer</span><span style="color: #000000; ">);
+        </span><span style="color: #808080; font-style: italic; ">// how long is a slot? [s]
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">slotDuration</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">s</span><span style="color: #000000; ">);
+        </span><span style="color: #808080; font-style: italic; ">// maximum time between a packet and its ack [s]
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">difs</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">s</span><span style="color: #000000; ">);
+        </span><span style="color: #808080; font-style: italic; ">// maximum number of transmission attempts
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">maxTxAttempts</span><span style="color: #000000; ">;
+        </span><span style="color: #808080; font-style: italic; ">// length of the MAC queue
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">queueLength</span><span style="color: #000000; ">;
+        </span><span style="color: #808080; font-style: italic; ">// default channel 
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">defaultChannel</span><span style="color: #000000; ">;
+        </span><span style="color: #808080; font-style: italic; ">// bit rate [bps]
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">bitrate</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">bps</span><span style="color: #000000; ">);
+        </span><span style="color: #808080; font-style: italic; ">//tx power [mW]
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">txPower</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">mW</span><span style="color: #000000; ">);
+        </span><span style="color: #808080; font-style: italic; ">// contention window
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">contentionWindow</span><span style="color: #000000; ">;
+}
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

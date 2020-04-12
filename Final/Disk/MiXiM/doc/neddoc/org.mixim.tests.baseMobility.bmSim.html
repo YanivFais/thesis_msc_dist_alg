@@ -1,0 +1,248 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body>
+<h2 class="comptitle">Network <i>bmSim</i></h2>
+<b>Package:</b> org.mixim.tests.baseMobility<br/><b>File: <a href="tests-baseMobility-Network.ned.html">tests/baseMobility/Network.ned</a></b><br/><p>(no description)</p><img src="org.mixim.tests.baseMobility.bmSim-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="org.mixim.base.modules.BaseWorldUtility.html" title="BaseWorldUtility" alt="BaseWorldUtility" coords="52,96,92,136">
+<area shape="rect" href="org.mixim.tests.baseMobility.TestHost.html" title="TestHost" alt="TestHost" coords="36,82,68,111">
+<area shape="rect" href="org.mixim.tests.baseMobility.CrashHost.html" title="CrashHost" alt="CrashHost" coords="36,82,68,111">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="org.mixim.tests.baseMobility.bmSim-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="org.mixim.tests.baseMobility.bmSim.html" title="Network bmSim" alt="" coords="135,5,207,32">
+<area shape="rect" href="org.mixim.tests.baseMobility.CrashHost.html" title="Compound Module CrashHost" alt="" coords="5,80,88,107">
+<area shape="rect" href="org.mixim.base.modules.BaseWorldUtility.html" title="Simple Module BaseWorldUtility" alt="" coords="112,80,229,107">
+<area shape="rect" href="org.mixim.tests.baseMobility.TestHost.html" title="Compound Module TestHost" alt="" coords="253,80,325,107">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="org.mixim.tests.baseMobility.bmSim-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="org.mixim.tests.baseMobility.bmSim.html" title="Network bmSim" alt="" coords="5,5,77,32">
+</map>
+<h3 class="subtitle">Parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">playgroundSizeX</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>x size of the area the nodes are in (in meters)</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">playgroundSizeY</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>y size of the area the nodes are in (in meters)</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">playgroundSizeZ</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>z size of the area the nodes are in (in meters)</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">numHosts</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>total number of hosts in the network</p>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Properties:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td width="150">isNetwork</td>
+   <td width="100"><i></i></td>
+   <td></td>
+</tr>
+<tr>
+   <td width="150">display</td>
+   <td width="100"><i>bgb=$playgroundSizeX,$playgroundSizeY,white,,;bgp=10,10</i></td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Unassigned submodule parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td><a href="org.mixim.base.modules.BaseWorldUtility.html">world</a>.coreDebug</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>debug switch for the base framework</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.base.modules.BaseWorldUtility.html">world</a>.useTorus</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>use the playground as torus?</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.base.modules.BaseWorldUtility.html">world</a>.use2D</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>use a 2-dimensional world?</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.baseMobility.TestHost.html">node</a>.<a href="org.mixim.base.modules.BaseUtility.html">blackboard</a>.coreDebug</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>debug switch for the base framework</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.baseMobility.TestHost.html">node</a>.<a href="org.mixim.tests.baseMobility.BaseMobilityTest.html">mobility</a>.x</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>starting point of the host</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.baseMobility.TestHost.html">node</a>.<a href="org.mixim.tests.baseMobility.BaseMobilityTest.html">mobility</a>.y</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.baseMobility.TestHost.html">node</a>.<a href="org.mixim.tests.baseMobility.BaseMobilityTest.html">mobility</a>.z</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.baseMobility.TestHost.html">node</a>.<a href="org.mixim.tests.baseMobility.BaseMobilityTest.html">mobility</a>.outX</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>point outside playground</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.baseMobility.TestHost.html">node</a>.<a href="org.mixim.tests.baseMobility.BaseMobilityTest.html">mobility</a>.outY</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.baseMobility.TestHost.html">node</a>.<a href="org.mixim.tests.baseMobility.BaseMobilityTest.html">mobility</a>.outZ</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.baseMobility.CrashHost.html">node2</a>.<a href="org.mixim.base.modules.BaseUtility.html">blackboard</a>.coreDebug</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>debug switch for the base framework</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.baseMobility.CrashHost.html">node2</a>.<a href="org.mixim.tests.baseMobility.TestBMBaseMobility.html">mobility</a>.coreDebug</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>debug switch for the core framework</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #800000; font-weight: bold; ">network</span><span style="color: #000000; "> </span><span style="color: #000000; ">bmSim</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">playgroundSizeX</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">m</span><span style="color: #000000; ">); </span><span style="color: #808080; font-style: italic; ">// x size of the area the nodes are in (in meters)
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">playgroundSizeY</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">m</span><span style="color: #000000; ">); </span><span style="color: #808080; font-style: italic; ">// y size of the area the nodes are in (in meters)
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">playgroundSizeZ</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">m</span><span style="color: #000000; ">); </span><span style="color: #808080; font-style: italic; ">// z size of the area the nodes are in (in meters)
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">numHosts</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// total number of hosts in the network
+</span><span style="color: #000000; ">
+        </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;bgb=$playgroundSizeX,$playgroundSizeY,white,,;bgp=10,10&quot;</span><span style="color: #000000; ">);
+    </span><span style="color: #800000; font-weight: bold; ">submodules</span><span style="color: #000000; ">:
+        </span><span style="color: #000000; ">world</span><span style="color: #000000; ">: </span><span style="color: #000000; ">BaseWorldUtility</span><span style="color: #000000; "> {
+            </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+                </span><span style="color: #000000; ">playgroundSizeX</span><span style="color: #000000; "> = </span><span style="color: #000000; ">playgroundSizeX</span><span style="color: #000000; ">;
+                </span><span style="color: #000000; ">playgroundSizeY</span><span style="color: #000000; "> = </span><span style="color: #000000; ">playgroundSizeY</span><span style="color: #000000; ">;
+                </span><span style="color: #000000; ">playgroundSizeZ</span><span style="color: #000000; "> = </span><span style="color: #000000; ">playgroundSizeZ</span><span style="color: #000000; ">;
+        }
+        </span><span style="color: #808080; font-style: italic; ">//      channelcontrol: ConnectionManager; 
+</span><span style="color: #000000; ">        </span><span style="color: #808080; font-style: italic; ">//            display: &quot;p=60,30;i=eye14&quot;;
+</span><span style="color: #000000; ">        </span><span style="color: #000000; ">node</span><span style="color: #000000; ">[</span><span style="color: #000000; ">numHosts</span><span style="color: #000000; ">]: </span><span style="color: #000000; ">TestHost</span><span style="color: #000000; "> {
+            </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+                </span><span style="color: #000000; ">numHosts</span><span style="color: #000000; "> = </span><span style="color: #000000; ">numHosts</span><span style="color: #000000; ">;
+                </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=50,50;i=laptop&quot;</span><span style="color: #000000; ">);
+        }
+        </span><span style="color: #000000; ">node2</span><span style="color: #000000; ">[</span><span style="color: #000000; ">numHosts</span><span style="color: #000000; ">]: </span><span style="color: #000000; ">CrashHost</span><span style="color: #000000; "> {
+            </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+                </span><span style="color: #000000; ">numHosts</span><span style="color: #000000; "> = </span><span style="color: #000000; ">numHosts</span><span style="color: #000000; ">;
+                </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=50,50;i=laptop&quot;</span><span style="color: #000000; ">);
+</span><span style="color: #808080; font-style: italic; ">//    connections nocheck: 
+// all connections and gates are to be generated dynamically
+</span><span style="color: #000000; ">
+        }
+}
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

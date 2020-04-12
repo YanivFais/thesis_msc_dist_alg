@@ -1,0 +1,2 @@
+C:\RescueProject\WpfApp1\bin\Release\WpfApp1.exe
+C:\RescueProject\WpfApp1\bin\Release\WpfApp1.pdb

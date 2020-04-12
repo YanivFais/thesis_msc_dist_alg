@@ -1,0 +1,4 @@
+<area shape="rect" href="org.mixim.examples.multiConnectionManager.Network.html" title="Compound Module Network" alt="" coords="157,5,229,32">
+<area shape="rect" href="org.mixim.examples.multiConnectionManager.PhyMacHost.html" title="Compound Module PhyMacHost" alt="" coords="5,80,101,107">
+<area shape="rect" href="org.mixim.base.connectionManager.ConnectionManager.html" title="Simple Module ConnectionManager" alt="" coords="125,80,261,107">
+<area shape="rect" href="org.mixim.base.modules.BaseWorldUtility.html" title="Simple Module BaseWorldUtility" alt="" coords="285,80,403,107">

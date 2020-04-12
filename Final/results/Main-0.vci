@@ -1,0 +1,622 @@
+file 1306229 1308426164                                         
+version 2
+run Main-0-20110618-16:54:02-9216
+attr configname Main
+attr datetime 20110618-16:54:02
+attr experiment Main
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network sim
+attr processid 9216
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+vector 0  sim.channel1_node[0].mobility  Initial_Positions_X  ETV
+vector 1  sim.channel1_node[0].mobility  Initial_Positions_Y  ETV
+1	501 733 0 0 1 49 49 0 857.143 21000 13000004.000004
+0	1234 733 0 0 1 49 49 0 857.143 21000 13000004.000004
+vector 2  sim.channel1_node[0].mobility  PlaygroundSize  ETV
+2	2029 12 0 0 1 1 1 1000 1000 1000 1000000
+vector 19  sim.channel1_node[0].appl  Rounds  ETV
+vector 17  sim.channel1_node[0].appl  Slots  ETV
+vector 18  sim.channel1_node[0].appl  roundTime  ETV
+vector 20  sim.channel1_node[0].appl  MsgSizeBits  ETV
+vector 15  sim.channel1_node[0].appl  Sources  ETV
+vector 16  sim.channel1_node[0].appl  Destinations  ETV
+20	2361 14 0 0 1 1 1 16000 16000 16000 256000000
+19	2375 11 0 0 1 1 1 26 26 26 676
+18	2386 10 0 0 1 1 1 1 1 1 1
+17	2396 12 0 0 1 1 1 200 200 200 40000
+16	2408 132 0 0 1 12 12 1 38 204 5000
+15	2540 130 0 0 1 12 12 2 49 228 6744
+vector 28  sim.channel1_node[0].nic.mac  TX_POWER_mW  ETV
+28	2729 12 0 0 1 1 1 100 100 100 10000
+vector 29  sim.channel1_node[0].nic.phy  PathLossAlpha  ETV
+vector 30  sim.channel1_node[0].nic.phy  PathLossBeta  ETV
+vector 31  sim.channel1_node[0].nic.phy  noise_dBm  ETV
+31	2919 13 0 0 1 1 1 -100 -100 -100 10000
+30	2932 16 0 0 1 1 1 24.3892 24.3892 24.3892 594.83307664
+29	2948 16 0 0 1 1 1 41.7749 41.7749 41.7749 1745.14227001
+vector 21  sim.channel1_node[0].appl  Table_From  ETV
+vector 22  sim.channel1_node[0].appl  Table_To  ETV
+vector 23  sim.channel1_node[0].appl  Table_Slot  ETV
+vector 24  sim.channel1_node[0].appl  Table_Channel  ETV
+vector 25  sim.channel1_node[0].appl  Table_Stream  ETV
+vector 26  sim.channel1_node[0].appl  Table_MCS  ETV
+vector 27  sim.channel1_node[0].appl  Table_Data  ETV
+vector 32  sim.channel1_node[1].appl  "n1:Q length_mean_str5[#msg]"  ETV
+vector 33  sim.channel1_node[1].appl  "n1:Q length_max_str5[#msg]"  ETV
+vector 34  sim.channel1_node[1].appl  "n1:Q length_mean_str8[#msg]"  ETV
+vector 35  sim.channel1_node[1].appl  "n1:Q length_max_str8[#msg]"  ETV
+vector 36  sim.channel1_node[1].appl  "n1:Q length_mean_str10[#msg]"  ETV
+vector 37  sim.channel1_node[1].appl  "n1:Q length_max_str10[#msg]"  ETV
+vector 38  sim.channel1_node[1].appl  "n1:Q length_mean_str12[#msg]"  ETV
+vector 39  sim.channel1_node[1].appl  "n1:Q length_max_str12[#msg]"  ETV
+vector 40  sim.channel1_node[2].appl  "n2:Q length_mean_str5[#msg]"  ETV
+vector 41  sim.channel1_node[2].appl  "n2:Q length_max_str5[#msg]"  ETV
+vector 42  sim.channel1_node[2].appl  "n2:Q length_mean_str7[#msg]"  ETV
+vector 43  sim.channel1_node[2].appl  "n2:Q length_max_str7[#msg]"  ETV
+vector 44  sim.channel1_node[2].appl  "n2:Q length_mean_str8[#msg]"  ETV
+vector 45  sim.channel1_node[2].appl  "n2:Q length_max_str8[#msg]"  ETV
+vector 46  sim.channel1_node[2].appl  "n2:Q length_mean_str10[#msg]"  ETV
+vector 47  sim.channel1_node[2].appl  "n2:Q length_max_str10[#msg]"  ETV
+vector 48  sim.channel1_node[2].appl  "n2:Q length_mean_str12[#msg]"  ETV
+vector 49  sim.channel1_node[2].appl  "n2:Q length_max_str12[#msg]"  ETV
+vector 50  sim.channel1_node[3].appl  "n3:Q length_mean_str5[#msg]"  ETV
+vector 51  sim.channel1_node[3].appl  "n3:Q length_max_str5[#msg]"  ETV
+vector 52  sim.channel1_node[3].appl  "n3:Q length_mean_str7[#msg]"  ETV
+vector 53  sim.channel1_node[3].appl  "n3:Q length_max_str7[#msg]"  ETV
+vector 54  sim.channel1_node[3].appl  "n3:Q length_mean_str8[#msg]"  ETV
+vector 55  sim.channel1_node[3].appl  "n3:Q length_max_str8[#msg]"  ETV
+vector 56  sim.channel1_node[3].appl  "n3:Q length_mean_str10[#msg]"  ETV
+vector 57  sim.channel1_node[3].appl  "n3:Q length_max_str10[#msg]"  ETV
+vector 58  sim.channel1_node[4].appl  "n4:Q length_mean_str5[#msg]"  ETV
+vector 59  sim.channel1_node[4].appl  "n4:Q length_max_str5[#msg]"  ETV
+vector 60  sim.channel1_node[4].appl  "n4:Q length_mean_str8[#msg]"  ETV
+vector 61  sim.channel1_node[4].appl  "n4:Q length_max_str8[#msg]"  ETV
+vector 62  sim.channel1_node[4].appl  "n4:Q length_mean_str10[#msg]"  ETV
+vector 63  sim.channel1_node[4].appl  "n4:Q length_max_str10[#msg]"  ETV
+vector 64  sim.channel1_node[5].appl  "n5:Q length_mean_str5[#msg]"  ETV
+vector 65  sim.channel1_node[5].appl  "n5:Q length_max_str5[#msg]"  ETV
+vector 66  sim.channel1_node[6].appl  "n6:Q length_mean_str4[#msg]"  ETV
+vector 67  sim.channel1_node[6].appl  "n6:Q length_max_str4[#msg]"  ETV
+vector 68  sim.channel1_node[7].appl  "n7:Q length_mean_str2[#msg]"  ETV
+vector 69  sim.channel1_node[7].appl  "n7:Q length_max_str2[#msg]"  ETV
+vector 70  sim.channel1_node[8].appl  "n8:Q length_mean_str5[#msg]"  ETV
+vector 71  sim.channel1_node[8].appl  "n8:Q length_max_str5[#msg]"  ETV
+vector 72  sim.channel1_node[8].appl  "n8:Q length_mean_str8[#msg]"  ETV
+vector 73  sim.channel1_node[8].appl  "n8:Q length_max_str8[#msg]"  ETV
+vector 74  sim.channel1_node[8].appl  "n8:Q length_mean_str10[#msg]"  ETV
+vector 75  sim.channel1_node[8].appl  "n8:Q length_max_str10[#msg]"  ETV
+vector 76  sim.channel1_node[9].appl  "n9:Q length_mean_str7[#msg]"  ETV
+vector 77  sim.channel1_node[9].appl  "n9:Q length_max_str7[#msg]"  ETV
+vector 78  sim.channel1_node[9].appl  "n9:Q length_mean_str10[#msg]"  ETV
+vector 79  sim.channel1_node[9].appl  "n9:Q length_max_str10[#msg]"  ETV
+vector 80  sim.channel1_node[10].appl  "n10:Q length_mean_str1[#msg]"  ETV
+vector 81  sim.channel1_node[10].appl  "n10:Q length_max_str1[#msg]"  ETV
+vector 82  sim.channel1_node[10].appl  "n10:Q length_mean_str7[#msg]"  ETV
+vector 83  sim.channel1_node[10].appl  "n10:Q length_max_str7[#msg]"  ETV
+vector 84  sim.channel1_node[10].appl  "n10:Q length_mean_str10[#msg]"  ETV
+vector 85  sim.channel1_node[10].appl  "n10:Q length_max_str10[#msg]"  ETV
+vector 86  sim.channel1_node[11].appl  "n11:Q length_mean_str1[#msg]"  ETV
+vector 87  sim.channel1_node[11].appl  "n11:Q length_max_str1[#msg]"  ETV
+vector 88  sim.channel1_node[11].appl  "n11:Q length_mean_str8[#msg]"  ETV
+vector 89  sim.channel1_node[11].appl  "n11:Q length_max_str8[#msg]"  ETV
+vector 90  sim.channel1_node[12].appl  "n12:Q length_mean_str1[#msg]"  ETV
+vector 91  sim.channel1_node[12].appl  "n12:Q length_max_str1[#msg]"  ETV
+vector 92  sim.channel1_node[12].appl  "n12:Q length_mean_str5[#msg]"  ETV
+vector 93  sim.channel1_node[12].appl  "n12:Q length_max_str5[#msg]"  ETV
+vector 94  sim.channel1_node[13].appl  "n13:Q length_mean_str1[#msg]"  ETV
+vector 95  sim.channel1_node[13].appl  "n13:Q length_max_str1[#msg]"  ETV
+vector 96  sim.channel1_node[13].appl  "n13:Q length_mean_str3[#msg]"  ETV
+vector 97  sim.channel1_node[13].appl  "n13:Q length_max_str3[#msg]"  ETV
+vector 98  sim.channel1_node[13].appl  "n13:Q length_mean_str4[#msg]"  ETV
+vector 99  sim.channel1_node[13].appl  "n13:Q length_max_str4[#msg]"  ETV
+vector 100  sim.channel1_node[14].appl  "n14:Q length_mean_str2[#msg]"  ETV
+vector 101  sim.channel1_node[14].appl  "n14:Q length_max_str2[#msg]"  ETV
+vector 102  sim.channel1_node[14].appl  "n14:Q length_mean_str3[#msg]"  ETV
+vector 103  sim.channel1_node[14].appl  "n14:Q length_max_str3[#msg]"  ETV
+vector 104  sim.channel1_node[15].appl  "n15:Q length_mean_str5[#msg]"  ETV
+vector 105  sim.channel1_node[15].appl  "n15:Q length_max_str5[#msg]"  ETV
+vector 106  sim.channel1_node[15].appl  "n15:Q length_mean_str6[#msg]"  ETV
+vector 107  sim.channel1_node[15].appl  "n15:Q length_max_str6[#msg]"  ETV
+vector 108  sim.channel1_node[15].appl  "n15:Q length_mean_str8[#msg]"  ETV
+vector 109  sim.channel1_node[15].appl  "n15:Q length_max_str8[#msg]"  ETV
+vector 110  sim.channel1_node[15].appl  "n15:Q length_mean_str10[#msg]"  ETV
+vector 111  sim.channel1_node[15].appl  "n15:Q length_max_str10[#msg]"  ETV
+vector 112  sim.channel1_node[16].appl  "n16:Q length_mean_str6[#msg]"  ETV
+vector 113  sim.channel1_node[16].appl  "n16:Q length_max_str6[#msg]"  ETV
+vector 114  sim.channel1_node[16].appl  "n16:Q length_mean_str10[#msg]"  ETV
+vector 115  sim.channel1_node[16].appl  "n16:Q length_max_str10[#msg]"  ETV
+vector 116  sim.channel1_node[17].appl  "n17:Q length_mean_str1[#msg]"  ETV
+vector 117  sim.channel1_node[17].appl  "n17:Q length_max_str1[#msg]"  ETV
+vector 118  sim.channel1_node[17].appl  "n17:Q length_mean_str9[#msg]"  ETV
+vector 119  sim.channel1_node[17].appl  "n17:Q length_max_str9[#msg]"  ETV
+vector 120  sim.channel1_node[17].appl  "n17:Q length_mean_str10[#msg]"  ETV
+vector 121  sim.channel1_node[17].appl  "n17:Q length_max_str10[#msg]"  ETV
+vector 122  sim.channel1_node[18].appl  "n18:Q length_mean_str1[#msg]"  ETV
+vector 123  sim.channel1_node[18].appl  "n18:Q length_max_str1[#msg]"  ETV
+vector 124  sim.channel1_node[18].appl  "n18:Q length_mean_str8[#msg]"  ETV
+vector 125  sim.channel1_node[18].appl  "n18:Q length_max_str8[#msg]"  ETV
+vector 126  sim.channel1_node[19].appl  "n19:Q length_mean_str1[#msg]"  ETV
+vector 127  sim.channel1_node[19].appl  "n19:Q length_max_str1[#msg]"  ETV
+vector 128  sim.channel1_node[19].appl  "n19:Q length_mean_str5[#msg]"  ETV
+vector 129  sim.channel1_node[19].appl  "n19:Q length_max_str5[#msg]"  ETV
+vector 130  sim.channel1_node[20].appl  "n20:Q length_mean_str1[#msg]"  ETV
+vector 131  sim.channel1_node[20].appl  "n20:Q length_max_str1[#msg]"  ETV
+vector 132  sim.channel1_node[20].appl  "n20:Q length_mean_str3[#msg]"  ETV
+vector 133  sim.channel1_node[20].appl  "n20:Q length_max_str3[#msg]"  ETV
+vector 134  sim.channel1_node[20].appl  "n20:Q length_mean_str4[#msg]"  ETV
+vector 135  sim.channel1_node[20].appl  "n20:Q length_max_str4[#msg]"  ETV
+vector 136  sim.channel1_node[21].appl  "n21:Q length_mean_str2[#msg]"  ETV
+vector 137  sim.channel1_node[21].appl  "n21:Q length_max_str2[#msg]"  ETV
+vector 138  sim.channel1_node[21].appl  "n21:Q length_mean_str3[#msg]"  ETV
+vector 139  sim.channel1_node[21].appl  "n21:Q length_max_str3[#msg]"  ETV
+vector 140  sim.channel1_node[22].appl  "n22:Q length_mean_str5[#msg]"  ETV
+vector 141  sim.channel1_node[22].appl  "n22:Q length_max_str5[#msg]"  ETV
+vector 142  sim.channel1_node[22].appl  "n22:Q length_mean_str6[#msg]"  ETV
+vector 143  sim.channel1_node[22].appl  "n22:Q length_max_str6[#msg]"  ETV
+vector 144  sim.channel1_node[22].appl  "n22:Q length_mean_str8[#msg]"  ETV
+vector 145  sim.channel1_node[22].appl  "n22:Q length_max_str8[#msg]"  ETV
+vector 146  sim.channel1_node[22].appl  "n22:Q length_mean_str9[#msg]"  ETV
+vector 147  sim.channel1_node[22].appl  "n22:Q length_max_str9[#msg]"  ETV
+vector 148  sim.channel1_node[22].appl  "n22:Q length_mean_str10[#msg]"  ETV
+vector 149  sim.channel1_node[22].appl  "n22:Q length_max_str10[#msg]"  ETV
+vector 150  sim.channel1_node[23].appl  "n23:Q length_mean_str10[#msg]"  ETV
+vector 151  sim.channel1_node[23].appl  "n23:Q length_max_str10[#msg]"  ETV
+vector 152  sim.channel1_node[24].appl  "n24:Q length_mean_str1[#msg]"  ETV
+vector 153  sim.channel1_node[24].appl  "n24:Q length_max_str1[#msg]"  ETV
+vector 154  sim.channel1_node[24].appl  "n24:Q length_mean_str9[#msg]"  ETV
+vector 155  sim.channel1_node[24].appl  "n24:Q length_max_str9[#msg]"  ETV
+vector 156  sim.channel1_node[24].appl  "n24:Q length_mean_str10[#msg]"  ETV
+vector 157  sim.channel1_node[24].appl  "n24:Q length_max_str10[#msg]"  ETV
+vector 158  sim.channel1_node[25].appl  "n25:Q length_mean_str1[#msg]"  ETV
+vector 159  sim.channel1_node[25].appl  "n25:Q length_max_str1[#msg]"  ETV
+vector 160  sim.channel1_node[25].appl  "n25:Q length_mean_str8[#msg]"  ETV
+vector 161  sim.channel1_node[25].appl  "n25:Q length_max_str8[#msg]"  ETV
+vector 162  sim.channel1_node[26].appl  "n26:Q length_mean_str1[#msg]"  ETV
+vector 163  sim.channel1_node[26].appl  "n26:Q length_max_str1[#msg]"  ETV
+vector 164  sim.channel1_node[26].appl  "n26:Q length_mean_str5[#msg]"  ETV
+vector 165  sim.channel1_node[26].appl  "n26:Q length_max_str5[#msg]"  ETV
+vector 166  sim.channel1_node[27].appl  "n27:Q length_mean_str1[#msg]"  ETV
+vector 167  sim.channel1_node[27].appl  "n27:Q length_max_str1[#msg]"  ETV
+vector 168  sim.channel1_node[27].appl  "n27:Q length_mean_str3[#msg]"  ETV
+vector 169  sim.channel1_node[27].appl  "n27:Q length_max_str3[#msg]"  ETV
+vector 170  sim.channel1_node[27].appl  "n27:Q length_mean_str4[#msg]"  ETV
+vector 171  sim.channel1_node[27].appl  "n27:Q length_max_str4[#msg]"  ETV
+vector 172  sim.channel1_node[28].appl  "n28:Q length_mean_str2[#msg]"  ETV
+vector 173  sim.channel1_node[28].appl  "n28:Q length_max_str2[#msg]"  ETV
+vector 174  sim.channel1_node[28].appl  "n28:Q length_mean_str3[#msg]"  ETV
+vector 175  sim.channel1_node[28].appl  "n28:Q length_max_str3[#msg]"  ETV
+vector 176  sim.channel1_node[28].appl  "n28:Q length_mean_str11[#msg]"  ETV
+vector 177  sim.channel1_node[28].appl  "n28:Q length_max_str11[#msg]"  ETV
+vector 178  sim.channel1_node[29].appl  "n29:Q length_mean_str5[#msg]"  ETV
+vector 179  sim.channel1_node[29].appl  "n29:Q length_max_str5[#msg]"  ETV
+vector 180  sim.channel1_node[29].appl  "n29:Q length_mean_str6[#msg]"  ETV
+vector 181  sim.channel1_node[29].appl  "n29:Q length_max_str6[#msg]"  ETV
+vector 182  sim.channel1_node[29].appl  "n29:Q length_mean_str8[#msg]"  ETV
+vector 183  sim.channel1_node[29].appl  "n29:Q length_max_str8[#msg]"  ETV
+vector 184  sim.channel1_node[29].appl  "n29:Q length_mean_str9[#msg]"  ETV
+vector 185  sim.channel1_node[29].appl  "n29:Q length_max_str9[#msg]"  ETV
+vector 186  sim.channel1_node[29].appl  "n29:Q length_mean_str11[#msg]"  ETV
+vector 187  sim.channel1_node[29].appl  "n29:Q length_max_str11[#msg]"  ETV
+vector 188  sim.channel1_node[30].appl  "n30:Q length_mean_str5[#msg]"  ETV
+vector 189  sim.channel1_node[30].appl  "n30:Q length_max_str5[#msg]"  ETV
+vector 190  sim.channel1_node[30].appl  "n30:Q length_mean_str6[#msg]"  ETV
+vector 191  sim.channel1_node[30].appl  "n30:Q length_max_str6[#msg]"  ETV
+vector 192  sim.channel1_node[30].appl  "n30:Q length_mean_str8[#msg]"  ETV
+vector 193  sim.channel1_node[30].appl  "n30:Q length_max_str8[#msg]"  ETV
+vector 194  sim.channel1_node[30].appl  "n30:Q length_mean_str9[#msg]"  ETV
+vector 195  sim.channel1_node[30].appl  "n30:Q length_max_str9[#msg]"  ETV
+vector 196  sim.channel1_node[30].appl  "n30:Q length_mean_str11[#msg]"  ETV
+vector 197  sim.channel1_node[30].appl  "n30:Q length_max_str11[#msg]"  ETV
+vector 198  sim.channel1_node[31].appl  "n31:Q length_mean_str1[#msg]"  ETV
+vector 199  sim.channel1_node[31].appl  "n31:Q length_max_str1[#msg]"  ETV
+vector 200  sim.channel1_node[31].appl  "n31:Q length_mean_str5[#msg]"  ETV
+vector 201  sim.channel1_node[31].appl  "n31:Q length_max_str5[#msg]"  ETV
+vector 202  sim.channel1_node[31].appl  "n31:Q length_mean_str8[#msg]"  ETV
+vector 203  sim.channel1_node[31].appl  "n31:Q length_max_str8[#msg]"  ETV
+vector 204  sim.channel1_node[31].appl  "n31:Q length_mean_str9[#msg]"  ETV
+vector 205  sim.channel1_node[31].appl  "n31:Q length_max_str9[#msg]"  ETV
+vector 206  sim.channel1_node[32].appl  "n32:Q length_mean_str5[#msg]"  ETV
+vector 207  sim.channel1_node[32].appl  "n32:Q length_max_str5[#msg]"  ETV
+vector 208  sim.channel1_node[32].appl  "n32:Q length_mean_str8[#msg]"  ETV
+vector 209  sim.channel1_node[32].appl  "n32:Q length_max_str8[#msg]"  ETV
+vector 210  sim.channel1_node[33].appl  "n33:Q length_mean_str5[#msg]"  ETV
+vector 211  sim.channel1_node[33].appl  "n33:Q length_max_str5[#msg]"  ETV
+vector 212  sim.channel1_node[34].appl  "n34:Q length_mean_str1[#msg]"  ETV
+vector 213  sim.channel1_node[34].appl  "n34:Q length_max_str1[#msg]"  ETV
+vector 214  sim.channel1_node[34].appl  "n34:Q length_mean_str3[#msg]"  ETV
+vector 215  sim.channel1_node[34].appl  "n34:Q length_max_str3[#msg]"  ETV
+vector 216  sim.channel1_node[35].appl  "n35:Q length_mean_str2[#msg]"  ETV
+vector 217  sim.channel1_node[35].appl  "n35:Q length_max_str2[#msg]"  ETV
+vector 218  sim.channel1_node[35].appl  "n35:Q length_mean_str3[#msg]"  ETV
+vector 219  sim.channel1_node[35].appl  "n35:Q length_max_str3[#msg]"  ETV
+vector 220  sim.channel1_node[35].appl  "n35:Q length_mean_str11[#msg]"  ETV
+vector 221  sim.channel1_node[35].appl  "n35:Q length_max_str11[#msg]"  ETV
+vector 222  sim.channel1_node[36].appl  "n36:Q length_mean_str11[#msg]"  ETV
+vector 223  sim.channel1_node[36].appl  "n36:Q length_max_str11[#msg]"  ETV
+vector 224  sim.channel1_node[37].appl  "n37:Q length_mean_str2[#msg]"  ETV
+vector 225  sim.channel1_node[37].appl  "n37:Q length_max_str2[#msg]"  ETV
+vector 226  sim.channel1_node[37].appl  "n37:Q length_mean_str11[#msg]"  ETV
+vector 227  sim.channel1_node[37].appl  "n37:Q length_max_str11[#msg]"  ETV
+vector 228  sim.channel1_node[38].appl  "n38:Q length_mean_str1[#msg]"  ETV
+vector 229  sim.channel1_node[38].appl  "n38:Q length_max_str1[#msg]"  ETV
+vector 230  sim.channel1_node[38].appl  "n38:Q length_mean_str2[#msg]"  ETV
+vector 231  sim.channel1_node[38].appl  "n38:Q length_max_str2[#msg]"  ETV
+vector 232  sim.channel1_node[38].appl  "n38:Q length_mean_str11[#msg]"  ETV
+vector 233  sim.channel1_node[38].appl  "n38:Q length_max_str11[#msg]"  ETV
+vector 234  sim.channel1_node[39].appl  "n39:Q length_mean_str1[#msg]"  ETV
+vector 235  sim.channel1_node[39].appl  "n39:Q length_max_str1[#msg]"  ETV
+vector 236  sim.channel1_node[39].appl  "n39:Q length_mean_str2[#msg]"  ETV
+vector 237  sim.channel1_node[39].appl  "n39:Q length_max_str2[#msg]"  ETV
+vector 238  sim.channel1_node[39].appl  "n39:Q length_mean_str11[#msg]"  ETV
+vector 239  sim.channel1_node[39].appl  "n39:Q length_max_str11[#msg]"  ETV
+vector 240  sim.channel1_node[40].appl  "n40:Q length_mean_str1[#msg]"  ETV
+vector 241  sim.channel1_node[40].appl  "n40:Q length_max_str1[#msg]"  ETV
+vector 242  sim.channel1_node[40].appl  "n40:Q length_mean_str2[#msg]"  ETV
+vector 243  sim.channel1_node[40].appl  "n40:Q length_max_str2[#msg]"  ETV
+vector 244  sim.channel1_node[40].appl  "n40:Q length_mean_str11[#msg]"  ETV
+vector 245  sim.channel1_node[40].appl  "n40:Q length_max_str11[#msg]"  ETV
+vector 246  sim.channel1_node[41].appl  "n41:Q length_mean_str1[#msg]"  ETV
+vector 247  sim.channel1_node[41].appl  "n41:Q length_max_str1[#msg]"  ETV
+vector 248  sim.channel1_node[41].appl  "n41:Q length_mean_str2[#msg]"  ETV
+vector 249  sim.channel1_node[41].appl  "n41:Q length_max_str2[#msg]"  ETV
+vector 250  sim.channel1_node[41].appl  "n41:Q length_mean_str3[#msg]"  ETV
+vector 251  sim.channel1_node[41].appl  "n41:Q length_max_str3[#msg]"  ETV
+vector 252  sim.channel1_node[41].appl  "n41:Q length_mean_str11[#msg]"  ETV
+vector 253  sim.channel1_node[41].appl  "n41:Q length_max_str11[#msg]"  ETV
+vector 254  sim.channel1_node[42].appl  "n42:Q length_mean_str2[#msg]"  ETV
+vector 255  sim.channel1_node[42].appl  "n42:Q length_max_str2[#msg]"  ETV
+vector 256  sim.channel1_node[42].appl  "n42:Q length_mean_str3[#msg]"  ETV
+vector 257  sim.channel1_node[42].appl  "n42:Q length_max_str3[#msg]"  ETV
+vector 258  sim.channel1_node[42].appl  "n42:Q length_mean_str11[#msg]"  ETV
+vector 259  sim.channel1_node[42].appl  "n42:Q length_max_str11[#msg]"  ETV
+vector 260  sim.channel1_node[43].appl  "n43:Q length_mean_str11[#msg]"  ETV
+vector 261  sim.channel1_node[43].appl  "n43:Q length_max_str11[#msg]"  ETV
+vector 262  sim.channel1_node[44].appl  "n44:Q length_mean_str2[#msg]"  ETV
+vector 263  sim.channel1_node[44].appl  "n44:Q length_max_str2[#msg]"  ETV
+vector 264  sim.channel1_node[44].appl  "n44:Q length_mean_str11[#msg]"  ETV
+vector 265  sim.channel1_node[44].appl  "n44:Q length_max_str11[#msg]"  ETV
+vector 266  sim.channel1_node[45].appl  "n45:Q length_mean_str2[#msg]"  ETV
+vector 267  sim.channel1_node[45].appl  "n45:Q length_max_str2[#msg]"  ETV
+vector 268  sim.channel1_node[45].appl  "n45:Q length_mean_str11[#msg]"  ETV
+vector 269  sim.channel1_node[45].appl  "n45:Q length_max_str11[#msg]"  ETV
+vector 270  sim.channel1_node[46].appl  "n46:Q length_mean_str2[#msg]"  ETV
+vector 271  sim.channel1_node[46].appl  "n46:Q length_max_str2[#msg]"  ETV
+vector 272  sim.channel1_node[46].appl  "n46:Q length_mean_str11[#msg]"  ETV
+vector 273  sim.channel1_node[46].appl  "n46:Q length_max_str11[#msg]"  ETV
+vector 274  sim.channel1_node[47].appl  "n47:Q length_mean_str2[#msg]"  ETV
+vector 275  sim.channel1_node[47].appl  "n47:Q length_max_str2[#msg]"  ETV
+vector 276  sim.channel1_node[47].appl  "n47:Q length_mean_str11[#msg]"  ETV
+vector 277  sim.channel1_node[47].appl  "n47:Q length_max_str11[#msg]"  ETV
+vector 278  sim.channel1_node[48].appl  "n48:Q length_mean_str2[#msg]"  ETV
+vector 279  sim.channel1_node[48].appl  "n48:Q length_max_str2[#msg]"  ETV
+vector 280  sim.channel1_node[48].appl  "n48:Q length_mean_str3[#msg]"  ETV
+vector 281  sim.channel1_node[48].appl  "n48:Q length_max_str3[#msg]"  ETV
+vector 282  sim.channel1_node[48].appl  "n48:Q length_mean_str11[#msg]"  ETV
+vector 283  sim.channel1_node[48].appl  "n48:Q length_max_str11[#msg]"  ETV
+vector 284  sim.channel1_node[49].appl  "n49:Q length_mean_str2[#msg]"  ETV
+vector 285  sim.channel1_node[49].appl  "n49:Q length_max_str2[#msg]"  ETV
+vector 286  sim.channel1_node[49].appl  "n49:Q length_mean_str3[#msg]"  ETV
+vector 287  sim.channel1_node[49].appl  "n49:Q length_max_str3[#msg]"  ETV
+vector 288  sim.channel1_node[49].appl  "n49:Q length_mean_str11[#msg]"  ETV
+vector 289  sim.channel1_node[49].appl  "n49:Q length_max_str11[#msg]"  ETV
+vector 3  sim.channel1_node[0].appl  "Throughput str1(24->13)[Mbps]"  ETV
+vector 4  sim.channel1_node[0].appl  "Throughput str2(7->38)[Mbps]"  ETV
+vector 5  sim.channel1_node[0].appl  "Throughput str3(49->13)[Mbps]"  ETV
+vector 6  sim.channel1_node[0].appl  "Throughput str4(6->27)[Mbps]"  ETV
+vector 7  sim.channel1_node[0].appl  "Throughput str5(31->5)[Mbps]"  ETV
+vector 8  sim.channel1_node[0].appl  "Throughput str6(30->16)[Mbps]"  ETV
+vector 9  sim.channel1_node[0].appl  "Throughput str7(2->10)[Mbps]"  ETV
+vector 10  sim.channel1_node[0].appl  "Throughput str8(4->31)[Mbps]"  ETV
+vector 11  sim.channel1_node[0].appl  "Throughput str9(22->17)[Mbps]"  ETV
+vector 12  sim.channel1_node[0].appl  "Throughput str10(23->4)[Mbps]"  ETV
+vector 13  sim.channel1_node[0].appl  "Throughput str11(28->29)[Mbps]"  ETV
+vector 14  sim.channel1_node[0].appl  "Throughput str12(2->1)[Mbps]"  ETV
+3	23890 579 745632 39132676 1 25 25 0.10624 0.754304 15.332832 10.025502446592
+4	24469 579 745632 39132676 1 25 25 0.191232 0.711808 14.015456 8.434312139776
+5	25048 578 745632 39132676 1 25 25 0.084992 0.53168 9.19216 3.637737624576
+6	25626 580 745632 39132676 1 25 25 0.21248 0.69056 14.015456 8.369504719872
+7	26206 578 745632 39132676 1 25 25 0.169984 0.669792 12.952576 7.178285174784
+8	26784 581 745632 39132676 1 25 25 0.223104 0.680416 14.206688 8.551767684096
+9	27365 579 745632 39132676 1 25 25 0.201856 0.63744 13.462528 7.600129708032
+10	27944 600 745632 39132676 1 25 25 0.15936 0.679936 13.876864 8.174921084928
+11	28544 607 745632 39132676 1 25 25 0.223104 0.63792 13.133664 7.227000779776
+12	29151 602 745632 39132676 1 25 25 0.254976 0.701664 13.484256 7.594112965632
+13	29753 608 745632 39132676 1 25 25 0.308096 0.563072 11.891136 5.744316710912
+14	30361 607 745632 39132676 1 25 25 0.541824 1.614848 26.785504 31.015294030848
+21	30968 19504 0 0 1 1491 1491 1 49 37601 1256349
+22	50472 19544 0 0 1 1491 1491 1 49 37010 1220806
+23	70016 20332 0 0 1 1491 1491 1 200 134839 16797255
+24	90348 18276 0 0 1 1491 1491 1 3 2921 6725
+25	108624 18721 0 0 1 1491 1491 1 12 9488 81874
+27	127345 28643 0 0 1 1491 1491 7e-006 0.027258 35.530448 0.92154143822199
+26	155988 18276 0 0 1 1491 1491 2 2 2982 5964
+32	174264 2305 160851 40797224 1 129 129 0 1 7 7
+33	176569 2305 160851 40797224 1 129 129 0 2 25 27
+34	178874 2305 160851 40797224 1 129 129 0 3 49 105
+35	181179 2305 160851 40797224 1 129 129 0 6 116 546
+36	183484 2305 160851 40797224 1 129 129 0 3 89 173
+37	185789 2305 160851 40797224 1 129 129 0 6 223 1049
+38	188094 2602 160851 40797224 1 129 129 17 1717 107340 119229392
+39	190696 2603 160851 40797224 1 129 129 35 1723 108206 120723194
+40	193299 2305 160852 40797225 1 129 129 0 0 0 0
+41	195604 2305 160852 40797225 1 129 129 0 1 19 19
+42	197909 2393 160852 40797225 1 129 129 0 66 2408 71344
+43	200302 2407 160852 40797225 1 129 129 1 71 3022 102196
+44	202709 2305 160852 40797225 1 129 129 0 3 47 95
+45	205014 2305 160852 40797225 1 129 129 0 6 113 543
+46	207319 2305 160852 40797225 1 129 129 0 3 45 89
+47	209624 2305 160852 40797225 1 129 129 0 5 111 519
+48	211929 2306 160852 40797225 1 129 129 0 10 162 556
+49	214235 2334 160852 40797225 1 129 129 0 25 670 6546
+50	216569 2305 160853 40797226 1 129 129 0 0 0 0
+51	218874 2305 160853 40797226 1 129 129 0 1 22 22
+52	221179 2305 160853 40797226 1 129 129 0 6 243 1219
+53	223484 2339 160853 40797226 1 129 129 0 13 514 5360
+54	225823 2305 160853 40797226 1 129 129 0 3 47 95
+55	228128 2305 160853 40797226 1 129 129 0 6 113 543
+56	230433 2305 160853 40797226 1 129 129 0 7 272 1106
+57	232738 2328 160853 40797226 1 129 129 0 14 643 5489
+58	235066 2305 160854 40797227 1 129 129 0 0 0 0
+59	237371 2305 160854 40797227 1 129 129 0 1 22 22
+60	239676 2394 160854 40797227 1 129 129 0 47 2213 54031
+61	242070 2408 160854 40797227 1 129 129 1 53 2917 88331
+62	244478 2541 160854 40797227 1 129 129 0 866 51407 28491033
+63	247019 2542 160854 40797227 1 129 129 0 875 51842 28875638
+64	249561 2540 160855 40797228 1 129 129 0 829 49261 26130851
+65	252101 2541 160855 40797228 1 129 129 0 836 49681 26484307
+66	254642 2376 160856 40797229 1 129 129 1 45 1771 38835
+67	257018 2396 160856 40797229 1 129 129 2 50 2412 64436
+68	259414 2393 160857 40797230 1 129 129 0 52 2337 62647
+69	261807 2407 160857 40797230 1 129 129 1 57 3000 94918
+70	264214 2305 160858 40797231 1 129 129 0 0 0 0
+71	266519 2305 160858 40797231 1 129 129 0 1 22 22
+72	268824 2305 160858 40797231 1 129 129 0 3 98 210
+73	271129 2305 160858 40797231 1 129 129 0 6 221 1039
+74	273434 2305 160858 40797231 1 129 129 0 3 45 89
+75	275739 2305 160858 40797231 1 129 129 0 5 111 519
+76	278044 2305 160859 40797232 1 129 129 0 6 160 568
+77	280349 2316 160859 40797232 1 129 129 0 11 278 2006
+78	282665 2305 160859 40797232 1 129 129 0 3 46 100
+79	284970 2305 160859 40797232 1 129 129 0 6 121 461
+80	287275 2305 160860 40797233 1 129 129 0 3 89 221
+81	289580 2305 160860 40797233 1 129 129 0 8 217 1275
+82	291885 2545 160860 40797233 1 129 129 2 874 53655 30525423
+83	294430 2546 160860 40797233 1 129 129 5 874 54093 30910359
+84	296976 2305 160860 40797233 1 129 129 0 6 274 978
+85	299281 2324 160860 40797233 1 129 129 0 11 590 4266
+86	301605 2305 160861 40797234 1 129 129 0 4 126 390
+87	303910 2305 160861 40797234 1 129 129 0 8 265 1595
+88	306215 2347 160861 40797234 1 129 129 0 21 757 11221
+89	308562 2353 160861 40797234 1 129 129 0 29 1309 31339
+90	310915 2305 160862 40797235 1 129 129 0 4 126 370
+91	313220 2305 160862 40797235 1 129 129 0 8 273 1661
+92	315525 2305 160862 40797235 1 129 129 0 5 227 849
+93	317830 2310 160862 40797235 1 129 129 0 10 511 3741
+94	320140 2542 160863 40797236 1 129 129 2 996 59526 38443346
+95	322682 2542 160863 40797236 1 129 129 5 996 60025 38942889
+96	325224 2529 160863 40797236 1 129 129 0 601 34318 12799516
+97	327753 2529 160863 40797236 1 129 129 0 607 34618 12983062
+98	330282 2351 160863 40797236 1 129 129 0 21 925 12585
+99	332633 2365 160863 40797236 1 129 129 0 27 1529 30961
+100	334998 2434 160864 40797237 1 129 129 0 8 218 1132
+101	337432 2467 160864 40797237 1 129 129 0 12 474 4524
+102	339899 2434 160864 40797237 1 129 129 0 9 256 954
+103	342333 2438 160864 40797237 1 129 129 0 13 569 4331
+104	344771 2434 160865 40797238 1 129 129 0 0 0 0
+105	347205 2434 160865 40797238 1 129 129 0 1 22 22
+106	349639 2434 160865 40797238 1 129 129 0 7 441 2389
+107	352073 2484 160865 40797238 1 129 129 0 12 791 7343
+108	354557 2434 160865 40797238 1 129 129 0 3 47 95
+109	356991 2434 160865 40797238 1 129 129 0 6 113 543
+110	359425 2434 160865 40797238 1 129 129 0 3 45 89
+111	361859 2434 160865 40797238 1 129 129 0 6 112 530
+112	364293 2672 160866 40797239 1 129 129 2 910 54749 32008113
+113	366965 2673 160866 40797239 1 129 129 5 915 55217 32440077
+114	369638 2434 160866 40797239 1 129 129 0 3 89 183
+115	372072 2434 160866 40797239 1 129 129 0 7 166 644
+116	374506 2434 160867 40797240 1 129 129 0 6 110 506
+117	376940 2452 160867 40797240 1 129 129 0 13 272 3160
+118	379392 2671 160867 40797240 1 129 129 0 848 51361 28064005
+119	382063 2672 160867 40797240 1 129 129 0 853 51791 28432277
+120	384735 2434 160867 40797240 1 129 129 0 7 316 1204
+121	387169 2457 160867 40797240 1 129 129 0 11 605 4269
+122	389626 2434 160868 40797241 1 129 129 0 0 0 0
+123	392060 2434 160868 40797241 1 129 129 0 1 19 19
+124	394494 2457 160868 40797241 1 129 129 0 16 561 6221
+125	396951 2479 160868 40797241 1 129 129 0 25 1028 18136
+126	399430 2434 160869 40797242 1 129 129 0 0 0 0
+127	401864 2434 160869 40797242 1 129 129 0 1 38 38
+128	404298 2434 160869 40797242 1 129 129 0 6 240 1002
+129	406732 2459 160869 40797242 1 129 129 0 11 523 4461
+130	409191 2434 160870 40797243 1 129 129 0 3 93 197
+131	411625 2434 160870 40797243 1 129 129 0 7 225 1141
+132	414059 2434 160870 40797243 1 129 129 0 3 88 232
+133	416493 2434 160870 40797243 1 129 129 0 6 195 819
+134	418927 2434 160870 40797243 1 129 129 0 7 356 1608
+135	421361 2468 160870 40797243 1 129 129 0 13 766 7064
+136	423829 2434 160871 40797244 1 129 129 0 8 227 1103
+137	426263 2455 160871 40797244 1 129 129 0 16 562 5674
+138	428718 2434 160871 40797244 1 129 129 0 8 202 946
+139	431152 2450 160871 40797244 1 129 129 0 13 379 2987
+140	433602 2434 160872 40797245 1 129 129 0 0 0 0
+141	436036 2434 160872 40797245 1 129 129 0 1 22 22
+142	438470 2450 160872 40797245 1 129 129 0 12 482 3508
+143	440920 2474 160872 40797245 1 129 129 0 19 918 10746
+144	443394 2434 160872 40797245 1 129 129 0 3 47 95
+145	445828 2434 160872 40797245 1 129 129 0 5 112 532
+146	448262 2528 160872 40797245 1 129 129 0 46 2433 67741
+147	450790 2533 160872 40797245 1 129 129 0 51 2931 91187
+148	453323 2434 160872 40797245 1 129 129 0 3 45 89
+149	455757 2434 160872 40797245 1 129 129 0 6 112 530
+150	458191 2537 160873 40797246 1 129 129 0 52 2916 93414
+151	460728 2542 160873 40797246 1 129 129 0 57 3434 121200
+152	463270 2535 160874 40797247 1 129 129 1 53 2755 81701
+153	465805 2545 160874 40797247 1 129 129 3 59 3681 135911
+154	468350 2436 160874 40797247 1 129 129 0 11 572 3308
+155	470786 2480 160874 40797247 1 129 129 0 13 997 9579
+156	473266 2473 160874 40797247 1 129 129 0 15 710 6986
+157	475739 2499 160874 40797247 1 129 129 0 18 1081 13765
+158	478238 2434 160875 40797248 1 129 129 0 9 333 1709
+159	480672 2438 160875 40797248 1 129 129 0 11 381 2203
+160	483110 2434 160875 40797248 1 129 129 0 7 376 1968
+161	485544 2472 160875 40797248 1 129 129 0 13 757 7231
+162	488016 2434 160876 40797249 1 129 129 0 3 61 153
+163	490450 2434 160876 40797249 1 129 129 0 8 157 993
+164	492884 2434 160876 40797249 1 129 129 0 8 392 2158
+165	495318 2467 160876 40797249 1 129 129 0 14 705 6617
+166	497785 2434 160877 40797250 1 129 129 0 4 128 368
+167	500219 2434 160877 40797250 1 129 129 0 8 286 1770
+168	502653 2434 160877 40797250 1 129 129 0 4 127 337
+169	505087 2434 160877 40797250 1 129 129 0 7 270 1356
+170	507521 2672 160877 40797250 1 129 129 0 913 53730 31113460
+171	510193 2673 160877 40797250 1 129 129 0 919 54186 31534282
+172	512866 2434 160878 40797251 1 129 129 0 6 200 722
+173	515300 2453 160878 40797251 1 129 129 0 11 480 3638
+174	517753 2434 160878 40797251 1 129 129 0 8 349 2081
+175	520187 2485 160878 40797251 1 129 129 0 13 716 7978
+176	522672 2496 160878 40797251 1 129 129 0 31 1274 18542
+177	525168 2523 160878 40797251 1 129 129 1 34 1692 28762
+178	527691 2434 160879 40797252 1 129 129 0 0 0 0
+179	530125 2434 160879 40797252 1 129 129 0 1 22 22
+180	532559 2434 160879 40797252 1 129 129 0 9 280 1576
+181	534993 2456 160879 40797252 1 129 129 0 20 651 8419
+182	537449 2434 160879 40797252 1 129 129 0 3 47 95
+183	539883 2434 160879 40797252 1 129 129 0 5 112 532
+184	542317 2475 160879 40797252 1 129 129 0 16 792 8228
+185	544792 2482 160879 40797252 1 129 129 0 22 1246 18918
+186	547274 2668 160879 40797252 1 129 129 0 743 47598 23874580
+187	549942 2669 160879 40797252 1 129 129 0 743 47968 24152942
+188	552611 2434 160880 40797253 1 129 129 0 1 15 15
+189	555045 2434 160880 40797253 1 129 129 0 2 27 33
+190	557479 2509 160880 40797253 1 129 129 1 45 1934 45244
+191	559988 2525 160880 40797253 1 129 129 3 50 2585 73063
+192	562513 2434 160880 40797253 1 129 129 0 3 52 120
+193	564947 2434 160880 40797253 1 129 129 0 5 111 523
+194	567381 2435 160880 40797253 1 129 129 0 10 344 2418
+195	569816 2478 160880 40797253 1 129 129 0 17 640 7192
+196	572294 2434 160880 40797253 1 129 129 0 4 100 400
+197	574728 2441 160880 40797253 1 129 129 0 10 232 2158
+198	577169 2434 160881 40797254 1 129 129 0 4 95 279
+199	579603 2434 160881 40797254 1 129 129 0 7 195 983
+200	582037 2529 160881 40797254 1 129 129 0 49 2469 66623
+201	584566 2538 160881 40797254 1 129 129 0 54 3089 98677
+202	587104 2667 160881 40797254 1 129 129 0 901 53608 31048244
+203	589771 2668 160881 40797254 1 129 129 0 906 54064 31465942
+204	592439 2434 160881 40797254 1 129 129 0 8 362 1930
+205	594873 2484 160881 40797254 1 129 129 0 17 817 8811
+206	597357 2489 160882 40797255 1 129 129 0 30 1299 23381
+207	599846 2521 160882 40797255 1 129 129 0 37 1949 44973
+208	602367 2442 160882 40797255 1 129 129 0 12 538 3494
+209	604809 2461 160882 40797255 1 129 129 0 21 928 10776
+210	607270 2434 160883 40797256 1 129 129 0 9 453 2805
+211	609704 2492 160883 40797256 1 129 129 0 16 964 11808
+212	612196 2434 160884 40797257 1 129 129 0 4 81 207
+213	614630 2434 160884 40797257 1 129 129 0 8 194 1020
+214	617064 2434 160884 40797257 1 129 129 0 4 142 398
+215	619498 2434 160884 40797257 1 129 129 0 7 276 1360
+216	621932 2434 160885 40797258 1 129 129 0 6 214 836
+217	624366 2454 160885 40797258 1 129 129 0 11 503 4199
+218	626820 2438 160885 40797258 1 129 129 0 12 374 2182
+219	629258 2466 160885 40797258 1 129 129 0 12 579 5049
+220	631724 2434 160885 40797258 1 129 129 0 9 576 3492
+221	634158 2457 160885 40797258 1 129 129 0 11 973 8495
+222	636615 2434 160886 40797259 1 129 129 0 3 62 142
+223	639049 2434 160886 40797259 1 129 129 0 8 186 1168
+224	641483 2434 160887 40797260 1 129 129 0 1 8 8
+225	643917 2434 160887 40797260 1 129 129 0 3 23 59
+226	646351 2434 160887 40797260 1 129 129 0 5 199 765
+227	648785 2438 160887 40797260 1 129 129 0 10 432 3446
+228	651223 2434 160888 40797261 1 129 129 0 4 93 231
+229	653657 2434 160888 40797261 1 129 129 0 8 193 1027
+230	656091 2671 160888 40797261 1 129 129 1 913 53413 30884531
+231	658762 2672 160888 40797261 1 129 129 2 917 53866 31304056
+232	661434 2434 160888 40797261 1 129 129 0 6 193 821
+233	663868 2453 160888 40797261 1 129 129 0 11 413 3533
+234	666321 2434 160889 40797262 1 129 129 0 4 84 204
+235	668755 2434 160889 40797262 1 129 129 0 7 192 998
+236	671189 2434 160889 40797262 1 129 129 0 1 9 9
+237	673623 2434 160889 40797262 1 129 129 0 3 34 56
+238	676057 2434 160889 40797262 1 129 129 0 5 191 791
+239	678491 2449 160889 40797262 1 129 129 0 10 402 3400
+240	680940 2434 160890 40797263 1 129 129 0 4 88 228
+241	683374 2434 160890 40797263 1 129 129 0 8 197 1057
+242	685808 2434 160890 40797263 1 129 129 0 2 48 56
+243	688242 2434 160890 40797263 1 129 129 0 3 78 156
+244	690676 2434 160890 40797263 1 129 129 0 5 197 845
+245	693110 2437 160890 40797263 1 129 129 0 10 416 3200
+246	695547 2434 160891 40797264 1 129 129 0 4 81 207
+247	697981 2434 160891 40797264 1 129 129 0 7 194 1012
+248	700415 2434 160891 40797264 1 129 129 0 1 13 13
+249	702849 2434 160891 40797264 1 129 129 0 3 40 70
+250	705283 2434 160891 40797264 1 129 129 0 5 147 547
+251	707717 2434 160891 40797264 1 129 129 0 9 255 1461
+252	710151 2434 160891 40797264 1 129 129 0 6 315 1423
+253	712585 2447 160891 40797264 1 129 129 0 11 615 5175
+254	715032 2434 160892 40797265 1 129 129 0 6 221 799
+255	717466 2454 160892 40797265 1 129 129 0 12 533 4451
+256	719920 2434 160892 40797265 1 129 129 0 8 176 978
+257	722354 2455 160892 40797265 1 129 129 0 13 350 3628
+258	724809 2434 160892 40797265 1 129 129 0 8 269 1173
+259	727243 2447 160892 40797265 1 129 129 0 13 502 3952
+260	729690 2434 160893 40797266 1 129 129 0 3 61 139
+261	732124 2434 160893 40797266 1 129 129 0 8 185 1167
+262	734558 2434 160894 40797267 1 129 129 0 1 8 8
+263	736992 2434 160894 40797267 1 129 129 0 3 23 59
+264	739426 2434 160894 40797267 1 129 129 0 3 59 129
+265	741860 2434 160894 40797267 1 129 129 0 8 188 1226
+266	744294 2434 160895 40797268 1 129 129 0 9 370 1684
+267	746728 2452 160895 40797268 1 129 129 0 15 641 4915
+268	749180 2434 160895 40797268 1 129 129 0 3 58 144
+269	751614 2434 160895 40797268 1 129 129 0 8 165 1117
+270	754048 2434 160896 40797269 1 129 129 0 5 205 629
+271	756482 2452 160896 40797269 1 129 129 0 11 498 3334
+272	758934 2434 160896 40797269 1 129 129 0 4 147 455
+273	761368 2434 160896 40797269 1 129 129 0 8 350 2492
+274	763802 2434 160897 40797270 1 129 129 0 5 180 548
+275	766236 2442 160897 40797270 1 129 129 0 10 445 2881
+276	768678 2434 160897 40797270 1 129 129 0 4 95 277
+277	771112 2434 160897 40797270 1 129 129 0 8 220 1266
+278	773546 2434 160898 40797271 1 129 129 0 5 203 697
+279	775980 2442 160898 40797271 1 129 129 0 10 505 3865
+280	778422 2434 160898 40797271 1 129 129 0 4 66 206
+281	780856 2434 160898 40797271 1 129 129 0 7 137 817
+282	783290 2434 160898 40797271 1 129 129 0 4 110 312
+283	785724 2434 160898 40797271 1 129 129 0 9 238 1510
+284	788158 2434 160899 40797272 1 129 129 0 6 225 819
+285	790592 2461 160899 40797272 1 129 129 0 11 542 4532
+286	793053 2507 160899 40797272 1 129 129 0 38 1579 27409
+287	795560 2529 160899 40797272 1 129 129 0 42 2178 47802
+288	798089 2434 160899 40797272 1 129 129 0 4 124 364
+289	800523 2434 160899 40797272 1 129 129 0 8 276 1702
+vector 297  sim.channel1_node[1].appl  "Packet's End2End delay str7(2->10)[sec]"  ETV
+vector 302  sim.channel1_node[1].appl  "Packet's End2End delay str12(2->1)[sec]"  ETV
+vector 298  sim.channel1_node[1].appl  "Packet's End2End delay str8(4->31)[sec]"  ETV
+vector 294  sim.channel1_node[1].appl  "Packet's End2End delay str4(6->27)[sec]"  ETV
+vector 292  sim.channel1_node[1].appl  "Packet's End2End delay str2(7->38)[sec]"  ETV
+vector 299  sim.channel1_node[1].appl  "Packet's End2End delay str9(22->17)[sec]"  ETV
+vector 300  sim.channel1_node[1].appl  "Packet's End2End delay str10(23->4)[sec]"  ETV
+vector 291  sim.channel1_node[1].appl  "Packet's End2End delay str1(24->13)[sec]"  ETV
+vector 301  sim.channel1_node[1].appl  "Packet's End2End delay str11(28->29)[sec]"  ETV
+vector 296  sim.channel1_node[1].appl  "Packet's End2End delay str6(30->16)[sec]"  ETV
+vector 295  sim.channel1_node[1].appl  "Packet's End2End delay str5(31->5)[sec]"  ETV
+vector 293  sim.channel1_node[1].appl  "Packet's End2End delay str3(49->13)[sec]"  ETV
+291	804008 46161 40987663 40987663 1 1506 1506 0.041385 1.856445666666 1009.2394983452 859.54167228715
+292	850169 40459 40987663 40987663 1 1388 1388 0 2.154768666666 1115.9307068637 998.54217774477
+293	890628 27677 40987663 40987663 1 925 925 0.363522 1.642385 899.321219467 934.7707793099
+294	918305 41923 40987663 40987663 1 1389 1389 0.107454667666 1.259781666666 959.16987234659 746.18948515826
+295	960228 35779 40987663 40987663 1 1282 1282 0.171445666666 3.112955667666 1367.1036575163 1571.3225892252
+296	996007 40265 40987663 40987663 1 1384 1384 0.083574668666 1.196591001 849.37873516165 595.71889046982
+297	1036272 38515 40987663 40987663 1 1321 1321 0.026385 1.921385 770.61905277311 576.2835961467
+298	1074787 43010 40987663 40987663 1 1369 1369 0.212865666666 1.938758001998 1309.9654563436 1356.430159914
+299	1117797 39536 40987663 40987663 1 1300 1300 0.181185 1.645385 1293.1931178412 1408.6412672838
+300	1157333 38552 40987663 40987663 1 1334 1334 0.146445666666 1.65154 1279.0621732878 1359.0470983567
+301	1195885 35692 40987663 40987663 1 1168 1168 0.16623 1.604445666666 963.3531822386 891.63013844695
+302	1231577 74652 40987663 40987663 1 2607 2607 0.001918666666 0.207385 92.66993290047 7.377672140311

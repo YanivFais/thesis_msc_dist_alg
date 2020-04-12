@@ -1,0 +1,336 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body>
+<h2 class="comptitle">Simple Module <i>Mac80211</i></h2>
+<b>Package:</b> org.mixim.modules.mac<br/><b>File: <a href="modules-mac-Mac80211.ned.html">modules/mac/Mac80211.ned</a></b><br/><p><b>C++ definition: <a href="../../doc/doxy/a00017.html" target="mainframe">click here</a></b></p>
+
+<p>Implementation of the 802.11b MAC protocol. This module is intended
+to be used in combination with the Decider80211 as decider for the 
+physical layer.</p>
+<p>This module supports ad-hoc mode only (does not generate or handle
+management frames), and does not support fragmentation, RTS threshold,
+duplication detection and recovery.</p>
+<img src="org.mixim.modules.mac.Mac80211-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="org.mixim.modules.mac.Mac80211.html" title="Mac80211" alt="Mac80211" coords="0,0,110,40">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="org.mixim.modules.mac.Mac80211-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="org.mixim.modules.mac.Mac80211.html" title="Simple Module Mac80211" alt="" coords="61,80,141,107">
+<area shape="rect" href="org.mixim.modules.nic.Nic80211.html" title="Compound Module Nic80211" alt="" coords="5,5,80,32">
+<area shape="rect" href="org.mixim.modules.nic.Nic80211Battery.html" title="Compound Module Nic80211Battery" alt="" coords="104,5,219,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="org.mixim.modules.mac.Mac80211-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="org.mixim.modules.mac.Mac80211.html" title="Simple Module Mac80211" alt="" coords="19,80,99,107">
+<area shape="rect" href="org.mixim.base.modules.BaseMacLayer.html" title="Simple Module BaseMacLayer" alt="" coords="5,5,112,32">
+</map>
+<h3 class="subtitle">Extends:</h3>
+<table>
+<tr>
+   <td>
+      <a href="org.mixim.base.modules.BaseMacLayer.html">BaseMacLayer</a>
+      <i> (simple&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>Base module for every mac layer module</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Used in compound modules:</h3>
+<p>If a module type shows up more than once, that means it has been defined in more than one NED file.</p>
+<table>
+<tr>
+   <td>
+      <a href="org.mixim.modules.nic.Nic80211.html">Nic80211</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>This NIC implements an 802.11 network interface card.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="org.mixim.modules.nic.Nic80211Battery.html">Nic80211Battery</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr class="inherited">
+   <td width="150">notAffectedByHostState</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120">false</td>   <td>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">coreDebug</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>debug switch</p>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">headerLength</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>length of the MAC packet header (in bits)</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">queueLength</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">rtsCtsThreshold</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>   <td>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">bitrate</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">defaultChannel</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>minimum channel support</p>
+<p>auto bit rate selection support: specify borders at which
+to change modulation.</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">autoBitrate</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>use auto bit rate adaptation</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">snr2Mbit</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>threshold to use 2Mbit (in dB)</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">snr5Mbit</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>threshold to use 5.5Mbit (in dB)</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">snr11Mbit</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>threshold to use 11Mbit (in dB)</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">neighborhoodCacheSize</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>keep information on neighborhood</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">neighborhoodCacheMaxAge</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>consider information in cache outdate if older than (in seconds)</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">txPower</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>the power to transmit packets with [mW]</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">centerFrequency</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>the center frequency the Mac uses [Hz]</p>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Properties:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td width="150">class</td>
+   <td width="100"><i>Mac80211</i></td>
+   <td>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Gates:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Direction</th>
+      <th>Size</th>
+      <th>Description</th>
+   </tr>
+<tr class="inherited">
+   <td width="150">upperGateIn</xsl:if></td>
+   <td width="100"><i>input</i></td>
+   <td width="50"></td>   <td>
+<p>from application layer</p>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">upperGateOut</xsl:if></td>
+   <td width="100"><i>output</i></td>
+   <td width="50"></td>   <td>
+<p>to application layer</p>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">upperControlIn</xsl:if></td>
+   <td width="100"><i>input</i></td>
+   <td width="50"></td>   <td>
+<p>control from application layer</p>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">upperControlOut</xsl:if></td>
+   <td width="100"><i>output</i></td>
+   <td width="50"></td>   <td>
+<p>control to application layer</p>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">lowerGateIn</xsl:if></td>
+   <td width="100"><i>input</i></td>
+   <td width="50"></td>   <td>
+<p>from NIC</p>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">lowerGateOut</xsl:if></td>
+   <td width="100"><i>output</i></td>
+   <td width="50"></td>   <td>
+<p>to NIC</p>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">lowerControlIn</xsl:if></td>
+   <td width="100"><i>input</i></td>
+   <td width="50"></td>   <td>
+<p>control from NIC</p>
+</td>
+</tr>
+<tr class="inherited">
+   <td width="150">lowerControlOut</xsl:if></td>
+   <td width="100"><i>output</i></td>
+   <td width="50"></td>   <td>
+<p>control to NIC</p>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// Implementation of the 802.11b MAC protocol. This module is intended
+// to be used in combination with the Decider80211 as decider for the 
+// physical layer.
+//
+// This module supports ad-hoc mode only (does not generate or handle
+// management frames), and does not support fragmentation, RTS threshold,
+// duplication detection and recovery.
+//
+</span><span style="color: #800000; font-weight: bold; ">simple</span><span style="color: #000000; "> </span><span style="color: #000000; ">Mac80211</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #000000; "> </span><span style="color: #000000; ">BaseMacLayer</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000000; font-weight: bold; ">@class</span><span style="color: #000000; ">(</span><span style="color: #000000; ">Mac80211</span><span style="color: #000000; ">);
+
+        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">queueLength</span><span style="color: #000000; ">;
+        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">rtsCtsThreshold</span><span style="color: #000000; ">;
+
+        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">bitrate</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">bps</span><span style="color: #000000; ">);
+        </span><span style="color: #808080; font-style: italic; ">// minimum channel support
+</span><span style="color: #000000; ">        </span><span style="color: #808080; font-style: italic; ">// minimum channel support
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">defaultChannel</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// minimum channel support
+</span><span style="color: #000000; ">
+    	</span><span style="color: #808080; font-style: italic; ">// auto bit rate selection support: specify borders at which
+</span><span style="color: #000000; ">            </span><span style="color: #808080; font-style: italic; ">// to change modulation.	
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">bool</span><span style="color: #000000; "> </span><span style="color: #000000; ">autoBitrate</span><span style="color: #000000; ">;         </span><span style="color: #808080; font-style: italic; ">// use auto bit rate adaptation
+</span><span style="color: #000000; ">        </span><span style="color: #808080; font-style: italic; ">// threshold to use 2Mbit (in dB)
+</span><span style="color: #000000; ">        </span><span style="color: #808080; font-style: italic; ">// threshold to use 2Mbit (in dB)
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">snr2Mbit</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">dB</span><span style="color: #000000; ">);  </span><span style="color: #808080; font-style: italic; ">// threshold to use 2Mbit (in dB)
+</span><span style="color: #000000; ">        </span><span style="color: #808080; font-style: italic; ">// threshold to use 5.5Mbit (in dB)
+</span><span style="color: #000000; ">        </span><span style="color: #808080; font-style: italic; ">// threshold to use 5.5Mbit (in dB)
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">snr5Mbit</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">dB</span><span style="color: #000000; ">);  </span><span style="color: #808080; font-style: italic; ">// threshold to use 5.5Mbit (in dB)
+</span><span style="color: #000000; ">        </span><span style="color: #808080; font-style: italic; ">// threshold to use 11Mbit (in dB)
+</span><span style="color: #000000; ">        </span><span style="color: #808080; font-style: italic; ">// threshold to use 11Mbit (in dB)
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">snr11Mbit</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">dB</span><span style="color: #000000; ">);  </span><span style="color: #808080; font-style: italic; ">// threshold to use 11Mbit (in dB)
+</span><span style="color: #000000; ">
+        </span><span style="color: #808080; font-style: italic; ">// keep information on neighborhood
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">neighborhoodCacheSize</span><span style="color: #000000; ">;
+        </span><span style="color: #808080; font-style: italic; ">// consider information in cache outdate if older than (in seconds)
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">neighborhoodCacheMaxAge</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">s</span><span style="color: #000000; ">);
+        </span><span style="color: #808080; font-style: italic; ">//the power to transmit packets with [mW]
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">txPower</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">mW</span><span style="color: #000000; ">);
+        </span><span style="color: #808080; font-style: italic; ">//the center frequency the Mac uses [Hz]
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">centerFrequency</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">Hz</span><span style="color: #000000; ">);
+}
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

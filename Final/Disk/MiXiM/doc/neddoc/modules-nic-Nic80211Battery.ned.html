@@ -1,0 +1,111 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body>
+<h2 class="comptitle">NED File <i>modules/nic/Nic80211Battery.ned</i></h2>
+<table class="typetable">
+   <tr>
+      <th>Name</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td>
+      <a href="org.mixim.modules.nic.Nic80211Battery.html">Nic80211Battery</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//***************************************************************************
+// * file:        Nic80211.ned
+// *
+// * author:      Marc Loebbers
+// *
+// * copyright:   (C) 2004 Telecommunication Networks Group (TKN) at
+// *              Technische Universitaet Berlin, Germany.
+// *
+// *              This program is free software; you can redistribute it
+// *              and/or modify it under the terms of the GNU General Public
+// *              License as published by the Free Software Foundation; either
+// *              version 2 of the License, or (at your option) any later
+// *              version.
+// *              For further information see file COPYING
+// *              in the top level directory
+// ***************************************************************************
+// * part of:     framework implementation developed by tkn
+// **************************************************************************/
+</span><span style="color: #0000ff; font-style: italic; ">//#
+//# 
+//# Energy Framework for Omnet++, version 0.9
+//#
+//# Author:  Laura Marie Feeney 
+//#
+//######################################################################
+</span><span style="color: #808080; font-style: italic; ">// Based on Nic80211 (above)
+//
+// Extends Nic80211 to use the Energy Framework to record battery
+// consumption.  The relevant changes for communicating with the
+// Battery module are in snrEval; core 80211 functionality is not
+// changed.
+</span><span style="color: #000000; ">
+</span><span style="color: #808080; font-style: italic; ">// parameters: note that the NIC module owns the hardware parameters
+// to allow external access/alternate implementations.
+//
+//      {sleep,idle,rx,tx}Current: respective current in mA 
+</span><span style="color: #800000; font-weight: bold; ">package</span><span style="color: #000000; "> </span><span style="color: #000000; ">org</span><span style="color: #000000; ">.</span><span style="color: #000000; ">mixim</span><span style="color: #000000; ">.</span><span style="color: #000000; ">modules</span><span style="color: #000000; ">.</span><span style="color: #000000; ">nic</span><span style="color: #000000; ">;
+
+</span><span style="color: #800000; font-weight: bold; ">import</span><span style="color: #000000; "> </span><span style="color: #000000; ">org</span><span style="color: #000000; ">.</span><span style="color: #000000; ">mixim</span><span style="color: #000000; ">.</span><span style="color: #000000; ">modules</span><span style="color: #000000; ">.</span><span style="color: #000000; ">mac</span><span style="color: #000000; ">.</span><span style="color: #000000; ">Mac80211</span><span style="color: #000000; ">;
+</span><span style="color: #800000; font-weight: bold; ">import</span><span style="color: #000000; "> </span><span style="color: #000000; ">org</span><span style="color: #000000; ">.</span><span style="color: #000000; ">mixim</span><span style="color: #000000; ">.</span><span style="color: #000000; ">modules</span><span style="color: #000000; ">.</span><span style="color: #000000; ">phy</span><span style="color: #000000; ">.</span><span style="color: #000000; ">PhyLayerBattery</span><span style="color: #000000; ">;
+</span><span style="color: #808080; font-style: italic; ">//import Decider80211;
+//import SnrEval80211Battery;
+</span><span style="color: #000000; ">
+</span><span style="color: #800000; font-weight: bold; ">module</span><span style="color: #000000; "> </span><span style="color: #000000; ">Nic80211Battery</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">sleepCurrent</span><span style="color: #000000; ">;
+        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">idleCurrent</span><span style="color: #000000; ">;
+        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">rxCurrent</span><span style="color: #000000; ">;
+        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">txCurrent</span><span style="color: #000000; ">;
+
+    </span><span style="color: #800000; font-weight: bold; ">gates</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">input</span><span style="color: #000000; "> </span><span style="color: #000000; ">uppergateIn</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// to upper layers
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">output</span><span style="color: #000000; "> </span><span style="color: #000000; ">uppergateOut</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// from upper layers
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">output</span><span style="color: #000000; "> </span><span style="color: #000000; ">upperControlOut</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// control information 
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">input</span><span style="color: #000000; "> </span><span style="color: #000000; ">upperControlIn</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// control information 
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">input</span><span style="color: #000000; "> </span><span style="color: #000000; ">radioIn</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// radioIn gate for sendDirect
+</span><span style="color: #000000; ">
+    </span><span style="color: #800000; font-weight: bold; ">submodules</span><span style="color: #000000; ">:
+        </span><span style="color: #000000; ">mac</span><span style="color: #000000; ">: </span><span style="color: #000000; ">Mac80211</span><span style="color: #000000; "> {
+            </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+                </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=96,87;i=block/layer&quot;</span><span style="color: #000000; ">);
+        }
+        </span><span style="color: #000000; ">phy</span><span style="color: #000000; ">: </span><span style="color: #000000; ">PhyLayerBattery</span><span style="color: #000000; "> {
+            </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+                </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=106,157;i=block/process_s&quot;</span><span style="color: #000000; ">);
+        }
+</span><span style="color: #808080; font-style: italic; ">//        snrEval: SnrEval80211Battery {
+//            parameters:
+//                @display(&quot;p=96,236;i=block/wrxtx&quot;);
+//        }
+//        radio: SingleChannelRadio;
+</span><span style="color: #000000; ">    </span><span style="color: #800000; font-weight: bold; ">connections</span><span style="color: #000000; ">:
+        </span><span style="color: #000000; ">radioIn</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">phy</span><span style="color: #000000; ">.</span><span style="color: #000000; ">radioIn</span><span style="color: #000000; ">;
+        </span><span style="color: #000000; ">phy</span><span style="color: #000000; ">.</span><span style="color: #000000; ">upperGateIn</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">&lt;--</span><span style="color: #000000; "> { </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;m=m,25,0,25,0&quot;</span><span style="color: #000000; ">); } </span><span style="color: #800000; font-weight: bold; ">&lt;--</span><span style="color: #000000; "> </span><span style="color: #000000; ">mac</span><span style="color: #000000; ">.</span><span style="color: #000000; ">lowerGateOut</span><span style="color: #000000; ">;
+        </span><span style="color: #000000; ">phy</span><span style="color: #000000; ">.</span><span style="color: #000000; ">upperGateOut</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">--&gt;</span><span style="color: #000000; "> { </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;m=m,73,0,50,50&quot;</span><span style="color: #000000; ">); } </span><span style="color: #800000; font-weight: bold; ">--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">mac</span><span style="color: #000000; ">.</span><span style="color: #000000; ">lowerGateIn</span><span style="color: #000000; ">;
+        </span><span style="color: #000000; ">phy</span><span style="color: #000000; ">.</span><span style="color: #000000; ">upperControlOut</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">mac</span><span style="color: #000000; ">.</span><span style="color: #000000; ">lowerControlIn</span><span style="color: #000000; ">;
+        </span><span style="color: #000000; ">phy</span><span style="color: #000000; ">.</span><span style="color: #000000; ">upperControlIn</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">&lt;--</span><span style="color: #000000; "> </span><span style="color: #000000; ">mac</span><span style="color: #000000; ">.</span><span style="color: #000000; ">lowerControlOut</span><span style="color: #000000; ">;
+
+        </span><span style="color: #000000; ">mac</span><span style="color: #000000; ">.</span><span style="color: #000000; ">upperGateOut</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">uppergateOut</span><span style="color: #000000; ">;
+        </span><span style="color: #000000; ">mac</span><span style="color: #000000; ">.</span><span style="color: #000000; ">upperControlOut</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">upperControlOut</span><span style="color: #000000; ">;
+        </span><span style="color: #000000; ">mac</span><span style="color: #000000; ">.</span><span style="color: #000000; ">upperGateIn</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">&lt;--</span><span style="color: #000000; "> </span><span style="color: #000000; ">uppergateIn</span><span style="color: #000000; ">;
+        </span><span style="color: #000000; ">mac</span><span style="color: #000000; ">.</span><span style="color: #000000; ">upperControlIn</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">&lt;--</span><span style="color: #000000; "> </span><span style="color: #000000; ">upperControlIn</span><span style="color: #000000; ">;
+}
+
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

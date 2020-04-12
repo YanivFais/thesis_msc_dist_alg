@@ -1,0 +1,38 @@
+#!/usr/bin/perl
+
+&stream_and_record("wildlife2",10);
+#&stream_and_record("wildlife4",15);
+#&stream_and_record("wildlife6",20);
+exit(0);
+
+
+my $num = 1;
+my $name = "wildlife";
+while ($num < 17) {
+	my $fps = 10;
+	while ($fps < 35) {
+		&stream_and_record("wildlife$num",$fps);
+		$fps = $fps + 5;
+	}
+	$num = $num + 1;
+}
+
+sub stream_and_record {
+	my ($file,$fps) = (@_);
+	my $fn = $file."_".$fps.".rtp";
+	system("rtpdump -F dump -o $fn 239.255.42.42/8888 &");
+	sleep(5);
+	system("./stream.sh $file.mpg $fps &");
+	sleep(40);
+	my $ps = `ps -ef | grep rtpdump`;
+	$ps =~ m/^\S+\s+(\d+)/i;
+	my $pid = $1;
+	#print "PS=$ps\nPID=$pid\n\n";
+	`kill -9 $pid`;
+	$ps = `ps -ef | grep vlc | grep 42 `;
+	$ps =~ m/^\S+\s+(\d+)/i;
+	$pid = $1;
+	`kill -9 $pid`;
+	#print "PS=$ps\nPID=$pid\n\n";
+	
+}

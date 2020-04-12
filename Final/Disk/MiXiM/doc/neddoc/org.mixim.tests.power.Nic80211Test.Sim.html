@@ -1,0 +1,767 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body>
+<h2 class="comptitle">Compound Module <i>Sim</i></h2>
+<b>Package:</b> org.mixim.tests.power.Nic80211Test<br/><b>File: <a href="tests-power-Nic80211Test-Network.ned.html">tests/power/Nic80211Test/Network.ned</a></b><br/><p>(no description)</p><img src="org.mixim.tests.power.Nic80211Test.Sim-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="org.mixim.base.modules.BaseWorldUtility.html" title="BaseWorldUtility" alt="BaseWorldUtility" coords="52,96,92,136">
+<area shape="rect" href="org.mixim.base.connectionManager.ConnectionManager.html" title="ConnectionManager" alt="ConnectionManager" coords="32,51,72,91">
+<area shape="rect" href="org.mixim.tests.power.Nic80211Test.Host.html" title="Host" alt="Host" coords="32,76,72,116">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="org.mixim.tests.power.Nic80211Test.Sim-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="org.mixim.tests.power.Nic80211Test.Sim.html" title="Compound Module Sim" alt="" coords="188,5,260,32">
+<area shape="rect" href="org.mixim.base.connectionManager.ConnectionManager.html" title="Simple Module ConnectionManager" alt="" coords="5,80,141,107">
+<area shape="rect" href="org.mixim.base.modules.BaseWorldUtility.html" title="Simple Module BaseWorldUtility" alt="" coords="165,80,283,107">
+<area shape="rect" href="org.mixim.tests.power.Nic80211Test.Host.html" title="Compound Module Host" alt="" coords="307,80,379,107">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="org.mixim.tests.power.Nic80211Test.Sim-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="org.mixim.tests.power.Nic80211Test.Sim.html" title="Compound Module Sim" alt="" coords="5,5,77,32">
+<area shape="rect" href="org.mixim.tests.power.Nic80211Test.sim.html" title="Network sim" alt="" coords="5,80,77,107">
+</map>
+<h3 class="subtitle">Known subclasses:</h3>
+<table>
+<tr>
+   <td>
+      <a href="org.mixim.tests.power.Nic80211Test.sim.html">sim</a>
+      <i> (network)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">playgroundSizeX</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>parametes for the framework</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">playgroundSizeY</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">numHosts</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Properties:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td width="150">display</td>
+   <td width="100"><i>bgb=$playgroundSizeX,$playgroundSizeY,white,,;bgp=0,0</i></td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Unassigned submodule parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td><a href="org.mixim.base.modules.BaseWorldUtility.html">world</a>.coreDebug</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>debug switch for the base framework</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.base.modules.BaseWorldUtility.html">world</a>.playgroundSizeZ</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>z size of the area the nodes are in (in meters)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.base.modules.BaseWorldUtility.html">world</a>.useTorus</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>use the playground as torus?</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.base.modules.BaseWorldUtility.html">world</a>.use2D</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>use a 2-dimensional world?</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.base.connectionManager.ConnectionManager.html">channelcontrol</a>.coreDebug</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>debug switch for core framework</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.base.connectionManager.ConnectionManager.html">channelcontrol</a>.sendDirect</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>send directly to the node or create separate gates for every connection</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.base.connectionManager.ConnectionManager.html">channelcontrol</a>.pMax</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>maximum sending power used for this network [mW]</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.base.connectionManager.ConnectionManager.html">channelcontrol</a>.sat</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>minimum signal attenuation threshold [dBm]</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.base.connectionManager.ConnectionManager.html">channelcontrol</a>.alpha</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>minimum path loss coefficient</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.base.connectionManager.ConnectionManager.html">channelcontrol</a>.carrierFrequency</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>minimum carrier frequency of the channel [Hz]</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.base.modules.BaseUtility.html">blackboard</a>.coreDebug</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>debug switch for the base framework</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.mobility.ConstSpeedMobility.html">mobility</a>.coreDebug</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>debug switch for the core framework</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.mobility.ConstSpeedMobility.html">mobility</a>.x</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>x coordinate of the nodes' position (-1 = random)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.mobility.ConstSpeedMobility.html">mobility</a>.y</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>y coordinate of the nodes' position (-1 = random)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.mobility.ConstSpeedMobility.html">mobility</a>.z</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>z coordinate of the nodes' position (-1 = random)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.mobility.ConstSpeedMobility.html">mobility</a>.debug</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>debug switch</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.mobility.ConstSpeedMobility.html">mobility</a>.speed</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>speed of the host (in m/s)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.mobility.ConstSpeedMobility.html">mobility</a>.updateInterval</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>time interval to update the hosts position (seconds)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.power.battery.SimpleBattery.html">battery</a>.debug</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.power.battery.SimpleBattery.html">battery</a>.nominal</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.power.battery.SimpleBattery.html">battery</a>.capacity</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.power.battery.SimpleBattery.html">battery</a>.voltage</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.power.battery.SimpleBattery.html">battery</a>.resolution</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.power.battery.SimpleBattery.html">battery</a>.publishDelta</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.power.battery.SimpleBattery.html">battery</a>.publishTime</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.power.battery.BatteryStats.html">batteryStats</a>.debug</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.power.battery.BatteryStats.html">batteryStats</a>.detail</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.power.battery.BatteryStats.html">batteryStats</a>.timeSeries</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.application.BurstApplLayerBattery.html">appl</a>.debug</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>debug switch</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.application.BurstApplLayerBattery.html">appl</a>.headerLength</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>length of the application message header (in bits)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.application.BurstApplLayerBattery.html">appl</a>.burstSize</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>size of the burst</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.base.modules.BaseArp.html">arp</a>.coreDebug</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>debug switch for the core framework</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.base.modules.BaseNetwLayer.html">net</a>.notAffectedByHostState</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120">false</td>
+   <td>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.base.modules.BaseNetwLayer.html">net</a>.debug</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>debug switch</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.base.modules.BaseNetwLayer.html">net</a>.stats</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>stats switch</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.base.modules.BaseNetwLayer.html">net</a>.headerLength</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>length of the network packet header (in bits)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.nic.Nic80211Battery.html">nic</a>.<a href="org.mixim.modules.mac.Mac80211.html">mac</a>.notAffectedByHostState</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120">false</td>
+   <td>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.nic.Nic80211Battery.html">nic</a>.<a href="org.mixim.modules.mac.Mac80211.html">mac</a>.coreDebug</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>debug switch</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.nic.Nic80211Battery.html">nic</a>.<a href="org.mixim.modules.mac.Mac80211.html">mac</a>.headerLength</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>length of the MAC packet header (in bits)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.nic.Nic80211Battery.html">nic</a>.<a href="org.mixim.modules.mac.Mac80211.html">mac</a>.queueLength</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.nic.Nic80211Battery.html">nic</a>.<a href="org.mixim.modules.mac.Mac80211.html">mac</a>.rtsCtsThreshold</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>
+   <td>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.nic.Nic80211Battery.html">nic</a>.<a href="org.mixim.modules.mac.Mac80211.html">mac</a>.bitrate</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.nic.Nic80211Battery.html">nic</a>.<a href="org.mixim.modules.mac.Mac80211.html">mac</a>.defaultChannel</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>minimum channel support</p>
+<p>auto bit rate selection support: specify borders at which
+to change modulation.</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.nic.Nic80211Battery.html">nic</a>.<a href="org.mixim.modules.mac.Mac80211.html">mac</a>.autoBitrate</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>use auto bit rate adaptation</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.nic.Nic80211Battery.html">nic</a>.<a href="org.mixim.modules.mac.Mac80211.html">mac</a>.snr2Mbit</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>threshold to use 2Mbit (in dB)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.nic.Nic80211Battery.html">nic</a>.<a href="org.mixim.modules.mac.Mac80211.html">mac</a>.snr5Mbit</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>threshold to use 5.5Mbit (in dB)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.nic.Nic80211Battery.html">nic</a>.<a href="org.mixim.modules.mac.Mac80211.html">mac</a>.snr11Mbit</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>threshold to use 11Mbit (in dB)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.nic.Nic80211Battery.html">nic</a>.<a href="org.mixim.modules.mac.Mac80211.html">mac</a>.neighborhoodCacheSize</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>keep information on neighborhood</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.nic.Nic80211Battery.html">nic</a>.<a href="org.mixim.modules.mac.Mac80211.html">mac</a>.neighborhoodCacheMaxAge</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>consider information in cache outdate if older than (in seconds)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.nic.Nic80211Battery.html">nic</a>.<a href="org.mixim.modules.mac.Mac80211.html">mac</a>.txPower</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>the power to transmit packets with [mW]</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.nic.Nic80211Battery.html">nic</a>.<a href="org.mixim.modules.mac.Mac80211.html">mac</a>.centerFrequency</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>the center frequency the Mac uses [Hz]</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.nic.Nic80211Battery.html">nic</a>.<a href="org.mixim.modules.phy.PhyLayerBattery.html">phy</a>.coreDebug</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.nic.Nic80211Battery.html">nic</a>.<a href="org.mixim.modules.phy.PhyLayerBattery.html">phy</a>.headerLength</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120">0</td>
+   <td>
+<p>defines the length of the phy header (/preamble)</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.nic.Nic80211Battery.html">nic</a>.<a href="org.mixim.modules.phy.PhyLayerBattery.html">phy</a>.usePropagationDelay</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>Should transmission delay be simulated?</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.nic.Nic80211Battery.html">nic</a>.<a href="org.mixim.modules.phy.PhyLayerBattery.html">phy</a>.thermalNoise</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>the strength of the thermal noise [dBm]</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.nic.Nic80211Battery.html">nic</a>.<a href="org.mixim.modules.phy.PhyLayerBattery.html">phy</a>.useThermalNoise</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>should thermal noise be considered?</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.nic.Nic80211Battery.html">nic</a>.<a href="org.mixim.modules.phy.PhyLayerBattery.html">phy</a>.analogueModels</td>
+   <td width="100">
+      <i>xml</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>Specification of the analogue models to use and their parameters</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.nic.Nic80211Battery.html">nic</a>.<a href="org.mixim.modules.phy.PhyLayerBattery.html">phy</a>.decider</td>
+   <td width="100">
+      <i>xml</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>Specification of the decider to use and its parameters</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.nic.Nic80211Battery.html">nic</a>.<a href="org.mixim.modules.phy.PhyLayerBattery.html">phy</a>.sensitivity</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>The sensitivity of the physical layer [dBm]</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.nic.Nic80211Battery.html">nic</a>.<a href="org.mixim.modules.phy.PhyLayerBattery.html">phy</a>.maxTXPower</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>The maximum transimission power of the physical layer [mW]</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.nic.Nic80211Battery.html">nic</a>.<a href="org.mixim.modules.phy.PhyLayerBattery.html">phy</a>.timeRXToTX</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>switchTimes [s]:</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.nic.Nic80211Battery.html">nic</a>.<a href="org.mixim.modules.phy.PhyLayerBattery.html">phy</a>.timeRXToSleep</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.nic.Nic80211Battery.html">nic</a>.<a href="org.mixim.modules.phy.PhyLayerBattery.html">phy</a>.timeTXToRX</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.nic.Nic80211Battery.html">nic</a>.<a href="org.mixim.modules.phy.PhyLayerBattery.html">phy</a>.timeTXToSleep</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.nic.Nic80211Battery.html">nic</a>.<a href="org.mixim.modules.phy.PhyLayerBattery.html">phy</a>.timeSleepToRX</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.nic.Nic80211Battery.html">nic</a>.<a href="org.mixim.modules.phy.PhyLayerBattery.html">phy</a>.timeSleepToTX</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.tests.power.Nic80211Test.Host.html">host</a>.<a href="org.mixim.modules.nic.Nic80211Battery.html">nic</a>.<a href="org.mixim.modules.phy.PhyLayerBattery.html">phy</a>.initialRadioState</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>
+   <td>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #800000; font-weight: bold; ">module</span><span style="color: #000000; "> </span><span style="color: #000000; ">Sim</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #808080; font-style: italic; ">// parametes for the framework
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">playgroundSizeX</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">m</span><span style="color: #000000; ">);
+        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">playgroundSizeY</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">m</span><span style="color: #000000; ">);
+        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">numHosts</span><span style="color: #000000; ">;
+
+
+        </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;bgb=$playgroundSizeX,$playgroundSizeY,white,,;bgp=0,0&quot;</span><span style="color: #000000; ">);
+    </span><span style="color: #800000; font-weight: bold; ">submodules</span><span style="color: #000000; ">:
+        </span><span style="color: #000000; ">world</span><span style="color: #000000; ">: </span><span style="color: #000000; ">BaseWorldUtility</span><span style="color: #000000; "> {
+            </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+                </span><span style="color: #000000; ">playgroundSizeX</span><span style="color: #000000; "> = </span><span style="color: #000000; ">playgroundSizeX</span><span style="color: #000000; ">;
+                </span><span style="color: #000000; ">playgroundSizeY</span><span style="color: #000000; "> = </span><span style="color: #000000; ">playgroundSizeY</span><span style="color: #000000; ">;
+        }
+        </span><span style="color: #000000; ">channelcontrol</span><span style="color: #000000; ">: </span><span style="color: #000000; ">ConnectionManager</span><span style="color: #000000; "> {
+            </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+                </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=50,25;i=eye14&quot;</span><span style="color: #000000; ">);
+        }
+        </span><span style="color: #000000; ">host</span><span style="color: #000000; ">[</span><span style="color: #000000; ">numHosts</span><span style="color: #000000; ">]: </span><span style="color: #000000; ">Host</span><span style="color: #000000; "> {
+            </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+                </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=50,50;i=node&quot;</span><span style="color: #000000; ">);
+
+        }
+    </span><span style="color: #800000; font-weight: bold; ">connections</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">allowunconnected</span><span style="color: #000000; ">:
+    </span><span style="color: #808080; font-style: italic; ">// all connections and gates are to be generated dynamically
+</span><span style="color: #000000; ">
+}
+
+
+
+
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

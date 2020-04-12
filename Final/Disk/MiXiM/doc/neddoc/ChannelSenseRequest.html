@@ -1,0 +1,84 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body>
+<h2 class="comptitle">Packet <i>ChannelSenseRequest</i></h2>
+<b>File: <a href="base-messages-ChannelSenseRequest.msg.html">base/messages/ChannelSenseRequest.msg</a></b><br/>
+<p>The <a href="ChannelSenseRequest.html">ChannelSenseRequest</a> is a control packet from the
+MAC layer to the physical layer.
+It tells the physical layer to sense for a specific time whether
+the channel is currently busy. If the result is determined
+the physical layer stores the result inside the request and
+sends it back to the MAC layer.</p>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="ChannelSenseRequest-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="ChannelSenseRequest.html" title="Packet ChannelSenseRequest" alt="" coords="5,5,157,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-msg-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="ChannelSenseRequest-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="ChannelSenseRequest.html" title="Packet ChannelSenseRequest" alt="" coords="5,5,157,32">
+</map>
+<h3 class="subtitle">Fields:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">result</td>
+   <td width="100">
+      <i>
+ChannelState</i>
+   </td>
+   <td>
+<p>The result of the request containing the current state of the channel.
+See ChannelState for details.</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">senseMode</td>
+   <td width="100">
+      <i>
+int</i>
+   </td>
+   <td>
+<p>defines the sensing mode (see <a href="SenseMode.html">SenseMode</a> enum)</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">senseTimeout</td>
+   <td width="100">
+      <i>
+simtime_t</i>
+   </td>
+   <td>
+<p>Time to listen on the channel to determine if its busy or not.</p>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// The ChannelSenseRequest is a control packet from the
+// MAC layer to the physical layer.
+// It tells the physical layer to sense for a specific time whether
+// the channel is currently busy. If the result is determined
+// the physical layer stores the result inside the request and
+// sends it back to the MAC layer.
+//
+</span><span style="color: #800000; font-weight: bold; ">packet</span><span style="color: #000000; "> </span><span style="color: #000000; ">ChannelSenseRequest</span><span style="color: #000000; ">
+{
+    </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">senseMode</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">enum</span><span style="color: #000000; ">(</span><span style="color: #000000; ">SenseMode</span><span style="color: #000000; ">);	</span><span style="color: #808080; font-style: italic; ">// defines the sensing mode (see SenseMode enum)
+</span><span style="color: #000000; ">    </span><span style="color: #000000; ">simtime_t</span><span style="color: #000000; "> </span><span style="color: #000000; ">senseTimeout</span><span style="color: #000000; ">; 		</span><span style="color: #808080; font-style: italic; ">// Time to listen on the channel to determine if its busy or not.
+</span><span style="color: #000000; ">    </span><span style="color: #000000; ">ChannelState</span><span style="color: #000000; "> </span><span style="color: #000000; ">result</span><span style="color: #000000; ">; 			</span><span style="color: #808080; font-style: italic; ">// The result of the request containing the current state of the channel.
+</span><span style="color: #000000; ">									</span><span style="color: #808080; font-style: italic; ">// See ChannelState for details.
+</span><span style="color: #000000; ">}
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

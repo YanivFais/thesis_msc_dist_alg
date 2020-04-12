@@ -1,0 +1,253 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body>
+<h2 class="comptitle">Compound Module <i>PhyMacNic</i></h2>
+<b>Package:</b> org.mixim.examples.analogueModels<br/><b>File: <a href="examples-analogueModels-PhyMacNic.ned.html">examples/analogueModels/PhyMacNic.ned</a></b><br/><p>(no description)</p><img src="org.mixim.examples.analogueModels.PhyMacNic-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="org.mixim.examples.analogueModels.SamplePhyLayer.html" title="SamplePhyLayer" alt="SamplePhyLayer" coords="22,151,102,181">
+<area shape="rect" href="org.mixim.examples.analogueModels.SimpleMacLayer.html" title="SimpleMacLayer" alt="SimpleMacLayer" coords="22,76,102,106">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="org.mixim.examples.analogueModels.PhyMacNic-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="org.mixim.examples.analogueModels.PhyMacNic.html" title="Compound Module PhyMacNic" alt="" coords="91,80,179,107">
+<area shape="rect" href="org.mixim.examples.analogueModels.SimpleMacLayer.html" title="Simple Module SimpleMacLayer" alt="" coords="5,155,123,181">
+<area shape="rect" href="org.mixim.examples.analogueModels.SamplePhyLayer.html" title="Simple Module SamplePhyLayer" alt="" coords="147,155,267,181">
+<area shape="rect" href="org.mixim.examples.analogueModels.PhyMacHost.html" title="Compound Module PhyMacHost" alt="" coords="87,5,183,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="org.mixim.examples.analogueModels.PhyMacNic-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="org.mixim.examples.analogueModels.PhyMacNic.html" title="Compound Module PhyMacNic" alt="" coords="5,5,93,32">
+</map>
+<h3 class="subtitle">Used in compound modules:</h3>
+<p>If a module type shows up more than once, that means it has been defined in more than one NED file.</p>
+<table>
+<tr>
+   <td>
+      <a href="org.mixim.examples.analogueModels.PhyMacHost.html">PhyMacHost</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">connectionManagerName</td>
+   <td width="100">
+      <i>string</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>name of the <a href="org.mixim.base.connectionManager.ConnectionManager.html">ConnectionManager</a> module</p>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Properties:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Value</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td width="150">display</td>
+   <td width="100"><i>bgb=101,150,white,,;bgp=10,10</i></td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Gates:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Direction</th>
+      <th>Size</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">radioIn</xsl:if></td>
+   <td width="100"><i>input</i></td>
+   <td width="50"></td>   <td>
+<p>radioIn gate for sendDirect</p>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Unassigned submodule parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td><a href="org.mixim.examples.analogueModels.SamplePhyLayer.html">phy</a>.usePropagationDelay</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>Should transmission delay be simulated?</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.analogueModels.SamplePhyLayer.html">phy</a>.thermalNoise</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>the strength of the thermal noise</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.analogueModels.SamplePhyLayer.html">phy</a>.analogueModels</td>
+   <td width="100">
+      <i>xml</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>Specification of the analogue models to use and their parameters</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.analogueModels.SamplePhyLayer.html">phy</a>.decider</td>
+   <td width="100">
+      <i>xml</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>Specification of the decider to use and its parameters</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.analogueModels.SamplePhyLayer.html">phy</a>.sensitivity</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>The sensitivity of the physical layer</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.analogueModels.SamplePhyLayer.html">phy</a>.maxTXPower</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>The maximum transimission power of the physical layer</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.analogueModels.SamplePhyLayer.html">phy</a>.timeRXToTX</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+<p>switchTimes:</p>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.analogueModels.SamplePhyLayer.html">phy</a>.timeRXToSleep</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.analogueModels.SamplePhyLayer.html">phy</a>.timeTXToRX</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.analogueModels.SamplePhyLayer.html">phy</a>.timeTXToSleep</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.analogueModels.SamplePhyLayer.html">phy</a>.timeSleepToRX</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.analogueModels.SamplePhyLayer.html">phy</a>.timeSleepToTX</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>
+   <td>
+   </td>
+</tr>
+<tr>
+   <td><a href="org.mixim.examples.analogueModels.SamplePhyLayer.html">phy</a>.initialRadioState</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>
+   <td>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #800000; font-weight: bold; ">module</span><span style="color: #000000; "> </span><span style="color: #000000; ">PhyMacNic</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">string</span><span style="color: #000000; "> </span><span style="color: #000000; ">connectionManagerName</span><span style="color: #000000; ">; 	</span><span style="color: #808080; font-style: italic; ">//name of the ConnectionManager module
+</span><span style="color: #000000; ">
+        </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;bgb=101,150,white,,;bgp=10,10&quot;</span><span style="color: #000000; ">);
+    </span><span style="color: #800000; font-weight: bold; ">gates</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">input</span><span style="color: #000000; "> </span><span style="color: #000000; ">radioIn</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// radioIn gate for sendDirect
+</span><span style="color: #000000; ">
+    </span><span style="color: #800000; font-weight: bold; ">submodules</span><span style="color: #000000; ">:
+        </span><span style="color: #000000; ">phy</span><span style="color: #000000; ">: </span><span style="color: #000000; ">SamplePhyLayer</span><span style="color: #000000; "> {
+            </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+                </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=60,120;b=80,30,rect,white,,&quot;</span><span style="color: #000000; ">);
+            </span><span style="color: #808080; font-style: italic; ">//display: &quot;p=60,150;i=prot3&quot;;
+</span><span style="color: #000000; ">
+        }
+        </span><span style="color: #000000; ">mac</span><span style="color: #000000; ">: </span><span style="color: #000000; ">SimpleMacLayer</span><span style="color: #000000; "> {
+            </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+                </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=60,45;b=80,30,rect,white,,&quot;</span><span style="color: #000000; ">);
+        	</span><span style="color: #808080; font-style: italic; ">//display: &quot;p=60,70;i=prot3&quot;;
+</span><span style="color: #000000; ">
+        }
+    </span><span style="color: #800000; font-weight: bold; ">connections</span><span style="color: #000000; ">:
+        </span><span style="color: #000000; ">phy</span><span style="color: #000000; ">.</span><span style="color: #000000; ">upperGateOut</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">--&gt;</span><span style="color: #000000; "> { </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;ls=black;m=m,25,50,25,0&quot;</span><span style="color: #000000; ">); } </span><span style="color: #800000; font-weight: bold; ">--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">mac</span><span style="color: #000000; ">.</span><span style="color: #000000; ">lowerGateIn</span><span style="color: #000000; ">;
+        </span><span style="color: #000000; ">phy</span><span style="color: #000000; ">.</span><span style="color: #000000; ">upperGateIn</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">&lt;--</span><span style="color: #000000; "> { </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;ls=black;m=m,15,50,15,0&quot;</span><span style="color: #000000; ">); } </span><span style="color: #800000; font-weight: bold; ">&lt;--</span><span style="color: #000000; "> </span><span style="color: #000000; ">mac</span><span style="color: #000000; ">.</span><span style="color: #000000; ">lowerGateOut</span><span style="color: #000000; ">;
+        </span><span style="color: #000000; ">phy</span><span style="color: #000000; ">.</span><span style="color: #000000; ">upperControlOut</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">--&gt;</span><span style="color: #000000; "> { </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;ls=red;m=m,75,50,75,0&quot;</span><span style="color: #000000; ">); } </span><span style="color: #800000; font-weight: bold; ">--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">mac</span><span style="color: #000000; ">.</span><span style="color: #000000; ">lowerControlIn</span><span style="color: #000000; ">;
+        </span><span style="color: #000000; ">phy</span><span style="color: #000000; ">.</span><span style="color: #000000; ">upperControlIn</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">&lt;--</span><span style="color: #000000; "> { </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;ls=red;m=m,85,0,85,0&quot;</span><span style="color: #000000; ">); } </span><span style="color: #800000; font-weight: bold; ">&lt;--</span><span style="color: #000000; "> </span><span style="color: #000000; ">mac</span><span style="color: #000000; ">.</span><span style="color: #000000; ">lowerControlOut</span><span style="color: #000000; ">;
+
+        </span><span style="color: #000000; ">radioIn</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">phy</span><span style="color: #000000; ">.</span><span style="color: #000000; ">radioIn</span><span style="color: #000000; ">;
+
+}
+
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

@@ -1,0 +1,11 @@
+<area shape="rect" href="$a00174.html" title="base/modules/BatteryAccess.h" alt="" coords="5,155,208,181">
+<area shape="rect" href="$a00158.html" title="base/modules/BaseBattery.h" alt="" coords="79,80,265,107">
+<area shape="rect" href="$a00156.html" title="base/modules/BaseArp.h" alt="" coords="289,80,457,107">
+<area shape="rect" href="$a00165.html" title="base/modules/BaseModule.cc" alt="" coords="481,80,676,107">
+<area shape="rect" href="$a00203.html" title="base/timers/FrameTimer.h" alt="" coords="700,80,873,107">
+<area shape="rect" href="$a00211.html" title="base/timers/RepeatTimerCore.h" alt="" coords="897,80,1103,107">
+<area shape="rect" href="$a00209.html" title="base/timers/RepeatTimer.h" alt="" coords="981,155,1157,181">
+<area shape="rect" href="$a00215.html" title="base/timers/TimerCore.h" alt="" coords="1177,80,1340,107">
+<area shape="rect" href="$a00238.html" title="examples/analogueModels/SimpleMacLayer.h" alt="" coords="1364,80,1649,107">
+<area shape="rect" href="$a00241.html" title="examples/CSMAMac/SimpleNetwLayer.h" alt="" coords="1673,80,1932,107">
+<area shape="rect" href="$a00293.html" title="modules/power/battery/BatteryStats.h" alt="" coords="1956,80,2196,107">

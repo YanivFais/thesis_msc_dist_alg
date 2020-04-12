@@ -1,0 +1,96 @@
+#!/usr/bin/perl
+
+sub log_msg {
+	my ($msg) = (@_);
+	($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst)=localtime(time);
+#	printf "%4d-%02d-%02d %02d:%02d:%02d $msg\n",$year+1900,$mon+1,$mday,$hour,$min,$sec;
+	printf "%02d:%02d:%02d $msg\n",$hour,$min,$sec;
+}
+
+
+my $debug = 1;
+
+my $generator_exe = "../../Rescue/Debug/ScenarioGenerator.exe";
+my $scheduler_exe = "../../Rescue/Debug/ScheduleCalculator.exe";
+my $matlab_exe = "matlab";
+
+my $add_params = '
+// output files
+COMMUNICATION_GRAPH_FILENAME, string, BASE_DIR\CommGraph.txt
+INTERFERENCE_GRAPH_FILENAME, string, BASE_DIR\InterfGraph.txt
+COORDS_FILENAME, string, BASE_DIR\Coords
+REQUESTS_FILENAME, string, BASE_DIR\Requests.txt
+SCHEDULE_FILENAME, string, BASE_DIR\CONFIG\schedule.txt
+LP_REPORT_FILENAME, string, BASE_DIR\CONFIG\flow_summary.txt 
+QUEUES_REPORT_FILENAME, string, BASE_DIR\CONFIG\queues_summary.txt
+SNR_TO_PER_FILE_NAME, string, BASE_DIR\snr2per.txt
+';
+
+require "benchmark.prl";
+
+log_msg("Running Rescue Benchmark");
+
+
+for $scenario_ra (@scenarios) {
+	%scenario = %$scenario_ra;
+	my $dir = $scenario{Dir};
+	log_msg("Runing scenario:$dir");
+	if ($scenario{Generator}) {
+		gen_params_file($dir,"","params_gen.txt",$add_params);
+		psystem("cp $dir/points_metadata.txt .");
+		psystem("$generator_exe $dir/params_gen.txt > $dir/generator.log");
+		psystem("mv debug_comm_graph.csv $dir");
+		psystem("rm points_metadata.txt");
+		psystem("cp $dir/Requests_tmp.txt $dir/Requests.txt") if ($dir=~ m/d$/);
+	}
+	foreach $config_ra (@configurations) {
+		%config_hash = %$config_ra;
+	        $config = $config_hash{Name};
+		log_msg("Running scenario:$dir,configuration:$config");
+		psystem("mkdir $dir/$config") if (not -d "$dir/$config");
+	        $config_params = $config_hash{Params};
+		$add_config_params = "$add_params\n$config_params";
+		gen_params_file($dir,$config,"$config/params",$add_config_params);
+		if ($scenario{Scheduler}) {
+			psystem("$scheduler_exe $dir/$config/params > $dir/$config/scheduler.log");
+		}
+		if ($scenario{Simulation}) {
+			$rel_dir = $dir;
+			$rel_dir =~ s/^..\///g;
+		        psystem("make -C ../results TEST=$rel_dir/$config/ COPY=1 CONFIG=$config > $dir/$config/simulator.log");
+                }
+		if ($scenario{Analyze}) {
+			psystem("rm -rf jpg eps fig");
+			my $config_name = "$dir/$config/$config"."_log.csv";
+		        psystem("$matlab_exe  -minimize -noFigureWindows -nosplash -nodesktop -wait -logfile $dir/$config/analyze.log -r \"try, AdHocWiFi('$dir/$config/$config.csv','$config_name'), catch, 'Got error', end, quit \"");
+			psystem("rm -rf $dir/$config/jpg && mv jpg $dir/$config");
+			psystem("rm -rf $dir/$config/eps && mv eps $dir/$config");
+			psystem("rm -rf $dir/$config/fig && mv fig $dir/$config");
+			psystem("gzip $dir/$config/$config.csv");
+			psystem("gzip $dir/$config/$config"."_log.csv");
+                }		
+	}
+}
+
+sub gen_params_file {
+	my ($dir,$config,$params_file,$add_params_base) = (@_);
+	my $add_params = $add_params_base;
+	$add_params =~ s/BASE_DIR/$dir/g;
+	$add_params =~ s/CONFIG/$config/g;
+	psystem("cp $dir/params1.txt $dir/$params_file");
+	open(PARAMS,">>$dir/$params_file") || die("Cannot Open File $dir/$params_file");
+	print PARAMS $add_params;
+	close(PARAMS);
+}
+
+sub psystem {
+	my ($cmd) = (@_);
+	log_msg("Running: $cmd") if ($debug);
+	eval {
+		system($cmd);
+        };
+	if ($@) {
+            warn "While running $cmd, got error $@\n";
+        }
+}
+

@@ -1,0 +1,8 @@
+<area shape="rect" href="org.mixim.examples.baseNetwork.BaseNode.html" title="Compound Module BaseNode" alt="" coords="327,80,407,107">
+<area shape="rect" href="org.mixim.base.modules.IBaseApplLayer.html" title="Module Interface IBaseApplLayer" alt="" coords="5,155,117,181">
+<area shape="rect" href="org.mixim.base.modules.IBaseNetwLayer.html" title="Module Interface IBaseNetwLayer" alt="" coords="141,155,256,181">
+<area shape="rect" href="org.mixim.base.modules.BaseArp.html" title="Simple Module BaseArp" alt="" coords="280,155,352,181">
+<area shape="rect" href="org.mixim.base.modules.BaseUtility.html" title="Simple Module BaseUtility" alt="" coords="376,155,459,181">
+<area shape="rect" href="org.mixim.examples.baseNetwork.BaseNic.html" title="Compound Module BaseNic" alt="" coords="483,155,555,181">
+<area shape="rect" href="org.mixim.base.modules.IBaseMobility.html" title="Module Interface IBaseMobility" alt="" coords="579,155,677,181">
+<area shape="rect" href="org.mixim.examples.baseNetwork.BaseNetwork.html" title="Compound Module BaseNetwork" alt="" coords="317,5,416,32">

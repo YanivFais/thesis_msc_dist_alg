@@ -1,0 +1,278 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body>
+<h2 class="comptitle">Simple Module <i>BaseMobility</i></h2>
+<b>Package:</b> org.mixim.base.modules<br/><b>File: <a href="base-modules-BaseMobility.ned.html">base/modules/BaseMobility.ned</a></b><br/><p><b>C++ definition: <a href="../../doc/doxy/a00018.html" target="mainframe">click here</a></b></p>
+
+<p>Module which is responsible for mobility
+related information like position and movement
+<a href="org.mixim.base.modules.BaseMobility.html">BaseMobility</a> itself defines a static mobility
+pattern (means only a position, no movement).
+Mobility modules which extend from this module
+willd efien more complex movement patterns.</p>
+<img src="org.mixim.base.modules.BaseMobility-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="org.mixim.base.modules.BaseMobility.html" title="BaseMobility" alt="BaseMobility" coords="0,0,128,40">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="org.mixim.base.modules.BaseMobility-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="org.mixim.base.modules.BaseMobility.html" title="Simple Module BaseMobility" alt="" coords="221,80,317,107">
+<area shape="rect" href="org.mixim.base.modules.BaseObject.html" title="Compound Module BaseObject" alt="" coords="5,5,93,32">
+<area shape="rect" href="org.mixim.tests.connectionManager.BasicHost.html" title="Compound Module BasicHost" alt="" coords="117,5,197,32">
+<area shape="rect" href="org.mixim.examples.multiConnectionManager.PhyMacHost.html" title="Compound Module PhyMacHost" alt="" coords="221,5,317,32">
+<area shape="rect" href="org.mixim.tests.basePhyLayer.TestHost.html" title="Compound Module TestHost" alt="" coords="341,5,413,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="org.mixim.base.modules.BaseMobility-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="org.mixim.base.modules.BaseMobility.html" title="Simple Module BaseMobility" alt="" coords="581,80,677,107">
+<area shape="rect" href="org.mixim.modules.mobility.ANSimMobility.html" title="Simple Module ANSimMobility" alt="" coords="5,155,112,181">
+<area shape="rect" href="org.mixim.modules.mobility.BonnMotionMobility.html" title="Simple Module BonnMotionMobility" alt="" coords="136,155,272,181">
+<area shape="rect" href="org.mixim.modules.mobility.CircleMobility.html" title="Simple Module CircleMobility" alt="" coords="296,155,395,181">
+<area shape="rect" href="org.mixim.modules.mobility.ConstSpeedMobility.html" title="Simple Module ConstSpeedMobility" alt="" coords="419,155,555,181">
+<area shape="rect" href="org.mixim.modules.mobility.LinearMobility.html" title="Simple Module LinearMobility" alt="" coords="579,155,680,181">
+<area shape="rect" href="org.mixim.modules.mobility.MassMobility.html" title="Simple Module MassMobility" alt="" coords="704,155,803,181">
+<area shape="rect" href="org.mixim.modules.mobility.RectangleMobility.html" title="Simple Module RectangleMobility" alt="" coords="827,155,949,181">
+<area shape="rect" href="org.mixim.modules.mobility.TractorMobility.html" title="Simple Module TractorMobility" alt="" coords="973,155,1080,181">
+<area shape="rect" href="org.mixim.modules.mobility.TurtleMobility.html" title="Simple Module TurtleMobility" alt="" coords="1104,155,1203,181">
+<area shape="rect" href="org.mixim.base.modules.IBaseMobility.html" title="Module Interface IBaseMobility" alt="" coords="580,5,679,32">
+</map>
+<h3 class="subtitle">Known subclasses:</h3>
+<table>
+<tr>
+   <td>
+      <a href="org.mixim.modules.mobility.ANSimMobility.html">ANSimMobility</a>
+      <i> (simple&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>Uses the &lt;position_change&gt; elements of the ANSim tool's
+trace file.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="org.mixim.modules.mobility.BonnMotionMobility.html">BonnMotionMobility</a>
+      <i> (simple&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>Uses the native file format of BonnMotion (http://www.cs.uni-bonn.de/IV/BonnMotion/).</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="org.mixim.modules.mobility.CircleMobility.html">CircleMobility</a>
+      <i> (simple&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>Moves the node around a circle.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="org.mixim.modules.mobility.ConstSpeedMobility.html">ConstSpeedMobility</a>
+      <i> (simple&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>Controls all movement related things of a host</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="org.mixim.modules.mobility.LinearMobility.html">LinearMobility</a>
+      <i> (simple&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>This is a linear mobility model with speed, angle and acceleration parameters.
+Angle only changes when the mobile node hits a wall: then it reflects
+off the wall at the same angle.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="org.mixim.modules.mobility.MassMobility.html">MassMobility</a>
+      <i> (simple&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>This is a random mobility model for a mobile host with a mass. It is the
+one used in "Optimized Smooth Handoffs in Mobile IP" by Perkins &amp; Wang.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="org.mixim.modules.mobility.RectangleMobility.html">RectangleMobility</a>
+      <i> (simple&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>Moves the node around a rectangle.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="org.mixim.modules.mobility.TractorMobility.html">TractorMobility</a>
+      <i> (simple&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>Moves a tractor through a field with a certain amount of rows.
+Since the tractor also moves around the field, the tractor travels
+the number of rows PLUS one rows. Consider the following piece of
+ascii-art for rows=2.</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="org.mixim.modules.mobility.TurtleMobility.html">TurtleMobility</a>
+      <i> (simple&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>A LOGO-style movement model, with the script coming from XML. It can be
+useful for describing random as well as deterministic scenarios.</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Used in compound modules:</h3>
+<p>If a module type shows up more than once, that means it has been defined in more than one NED file.</p>
+<table>
+<tr>
+   <td>
+      <a href="org.mixim.base.modules.BaseObject.html">BaseObject</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="org.mixim.tests.connectionManager.BasicHost.html">BasicHost</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>The BasicHost is a compound module that implements a very
+simple host. It only consists of basic modules and is the
+most basic host you can create for the MF</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="org.mixim.examples.analogueModels.PhyMacHost.html">PhyMacHost</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="org.mixim.examples.CSMAMac.PhyMacHost.html">PhyMacHost</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="org.mixim.examples.multiConnectionManager.PhyMacHost.html">PhyMacHost</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="org.mixim.tests.basePhyLayer.TestHost.html">TestHost</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">notAffectedByHostState</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120">true</td>   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">coreDebug</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>debug switch for the core framework</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">x</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>x coordinate of the nodes' position (-1 = random)</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">y</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>y coordinate of the nodes' position (-1 = random)</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">z</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>z coordinate of the nodes' position (-1 = random)</p>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">// Module which is responsible for mobility
+// related information like position and movement
+// BaseMobility itself defines a static mobility
+// pattern (means only a position, no movement).
+// Mobility modules which extend from this module
+// willd efien more complex movement patterns.
+</span><span style="color: #800000; font-weight: bold; ">simple</span><span style="color: #000000; "> </span><span style="color: #000000; ">BaseMobility</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">like</span><span style="color: #000000; "> </span><span style="color: #000000; ">IBaseMobility</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">bool</span><span style="color: #000000; "> </span><span style="color: #000000; ">notAffectedByHostState</span><span style="color: #000000; "> = </span><span style="color: #008000; ">true</span><span style="color: #000000; ">;
+        </span><span style="color: #000080; font-weight: bold; ">bool</span><span style="color: #000000; "> </span><span style="color: #000000; ">coreDebug</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// debug switch for the core framework
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">x</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// x coordinate of the nodes' position (-1 = random)
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">y</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// y coordinate of the nodes' position (-1 = random)
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">z</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// z coordinate of the nodes' position (-1 = random)
+</span><span style="color: #000000; ">}
+
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

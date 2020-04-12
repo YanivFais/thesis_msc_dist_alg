@@ -1,0 +1,83 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body>
+<h2 class="comptitle">Module Interface <i>IBaseApplLayer</i></h2>
+<b>Package:</b> org.mixim.base.modules<br/><b>File: <a href="base-modules-IBaseApplLayer.ned.html">base/modules/IBaseApplLayer.ned</a></b><br/>
+<p>Interface for application layer modules</p>
+<img src="org.mixim.base.modules.IBaseApplLayer-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="org.mixim.base.modules.IBaseApplLayer.html" title="IBaseApplLayer" alt="IBaseApplLayer" coords="0,0,270,40">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="org.mixim.base.modules.IBaseApplLayer-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="org.mixim.base.modules.IBaseApplLayer.html" title="Module Interface IBaseApplLayer" alt="" coords="5,80,117,107">
+<area shape="rect" href="org.mixim.examples.baseNetwork.BaseNode.html" title="Compound Module BaseNode" alt="" coords="21,5,101,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="org.mixim.base.modules.IBaseApplLayer-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="org.mixim.base.modules.IBaseApplLayer.html" title="Module Interface IBaseApplLayer" alt="" coords="5,5,117,32">
+<area shape="rect" href="org.mixim.modules.application.BurstApplLayer.html" title="Simple Module BurstApplLayer" alt="" coords="7,80,116,107">
+</map>
+<h3 class="subtitle">Used in compound modules:</h3>
+<p>If a module type shows up more than once, that means it has been defined in more than one NED file.</p>
+<table>
+<tr>
+   <td>
+      <a href="org.mixim.examples.baseNetwork.BaseNode.html">BaseNode</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">debug</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>debug switch</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">headerLength</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>length of the application message header (in bits)</p>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">// Interface for application layer modules
+</span><span style="color: #800000; font-weight: bold; ">moduleinterface</span><span style="color: #000000; "> </span><span style="color: #000000; ">IBaseApplLayer</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">bool</span><span style="color: #000000; "> </span><span style="color: #000000; ">debug</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// debug switch
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">headerLength</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;bit&quot;</span><span style="color: #000000; ">); </span><span style="color: #808080; font-style: italic; ">// length of the application message header (in bits)
+</span><span style="color: #000000; ">    </span><span style="color: #800000; font-weight: bold; ">gates</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">input</span><span style="color: #000000; "> </span><span style="color: #000000; ">lowerGateIn</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// from network layer
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">output</span><span style="color: #000000; "> </span><span style="color: #000000; ">lowerGateOut</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// to network layer
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">input</span><span style="color: #000000; "> </span><span style="color: #000000; ">lowerControlIn</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// control from network layer
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">output</span><span style="color: #000000; "> </span><span style="color: #000000; ">lowerControlOut</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// control to network layer
+</span><span style="color: #000000; ">}
+
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

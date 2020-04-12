@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<AnalogueModels>
+
+		<AnalogueModel type="AdHocWiFiPathLossModel">
+	        </AnalogueModel>
+
+	<!-- This is all comment:
+
+	    		<parameter name="alpha" type="double" value="4"/>
+	    		<parameter name="beta" type="double" value="4.5"/>
+
+	    <AnalogueModel type="SimplePathlossModel">
+	    	<parameter name="alpha" type="double" value="2.0"/>
+	    	<parameter name="carrierFrequency" type="double" value="0"/>
+	    </AnalogueModel>
+
+
+
+		<AnalogueModel type="LogNormalShadowing">
+	    		<parameter name="stdDev" type="double" value="10"/>
+	    		<parameter name="mean" type="double" value="100"/>
+	    	<parameter name="interval" type="double" value="0.01"/>	
+
+ 
+	    <AnalogueModel type="SimplePathlossModel">
+	    	<parameter name="alpha" type="double" value="2.0"/>
+	    	<parameter name="carrierFrequency" type="double" value="0"/>
+	    </AnalogueModel>
+
+	    <AnalogueModel type="RandomFreqTimeModel">
+	        <parameter name="seed" type="long" value="123654"/>
+	    </AnalogueModel>
+
+	    <AnalogueModel type="RandomFrequencyOnlyModel">
+	    	<parameter name="seed" type="long" value="123654"/>
+	    </AnalogueModel> -->
+
+	</AnalogueModels>
+
+	<Decider type="AdHocWiFiDecider">
+		<!-- SNR threshold [NOT dB]-->
+		<parameter name="threshold" type="double" value="1"/>
+
+		<!-- phy mode g or b-->
+		<parameter name="phyOpMode" type="string" value="g"/>
+		<!-- channel mode r (rayley/awgn)-->
+		<parameter name="channelModel" type="string" value="awgn"/>
+		<!-- mode for decision,legal values:Default,Sorin,MinPayload-->
+		<parameter name="deciderMode" type="string" value="Sorin"/>
+
+		<parameter name="payloadBerThreshold" type="double" value="0.01"/>
+
+		<!-- The center frequency on which the phy listens-->
+		<parameter name="centerFrequency" type="double" value="0"/>
+	</Decider>
+</root>

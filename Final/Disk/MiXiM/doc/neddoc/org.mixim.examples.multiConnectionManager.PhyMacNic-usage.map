@@ -1,0 +1,4 @@
+<area shape="rect" href="org.mixim.examples.multiConnectionManager.PhyMacNic.html" title="Compound Module PhyMacNic" alt="" coords="77,80,165,107">
+<area shape="rect" href="org.mixim.modules.mac.CSMAMacLayer.html" title="Simple Module CSMAMacLayer" alt="" coords="5,155,120,181">
+<area shape="rect" href="org.mixim.modules.phy.PhyLayer.html" title="Simple Module PhyLayer" alt="" coords="144,155,219,181">
+<area shape="rect" href="org.mixim.examples.multiConnectionManager.PhyMacHost.html" title="Compound Module PhyMacHost" alt="" coords="73,5,169,32">

@@ -1,0 +1,154 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body>
+<h2 class="comptitle">Simple Module <i>BaseLayer</i></h2>
+<b>Package:</b> org.mixim.base.modules<br/><b>File: <a href="base-modules-BaseLayer.ned.html">base/modules/BaseLayer.ned</a></b><br/><p><b>C++ definition: <a href="../../doc/doxy/a00016.html" target="mainframe">click here</a></b></p>
+
+<p>Base module for all layer modules. Defines the in and out gates</p>
+<img src="org.mixim.base.modules.BaseLayer-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="org.mixim.base.modules.BaseLayer.html" title="BaseLayer" alt="BaseLayer" coords="0,0,112,40">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="org.mixim.base.modules.BaseLayer-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="org.mixim.base.modules.BaseLayer.html" title="Simple Module BaseLayer" alt="" coords="5,5,88,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="org.mixim.base.modules.BaseLayer-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="org.mixim.base.modules.BaseLayer.html" title="Simple Module BaseLayer" alt="" coords="84,5,167,32">
+<area shape="rect" href="org.mixim.base.modules.BaseMacLayer.html" title="Simple Module BaseMacLayer" alt="" coords="5,80,112,107">
+<area shape="rect" href="org.mixim.base.modules.BaseNetwLayer.html" title="Simple Module BaseNetwLayer" alt="" coords="136,80,248,107">
+</map>
+<h3 class="subtitle">Known subclasses:</h3>
+<table>
+<tr>
+   <td>
+      <a href="org.mixim.base.modules.BaseMacLayer.html">BaseMacLayer</a>
+      <i> (simple&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>Base module for every mac layer module</p>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="org.mixim.base.modules.BaseNetwLayer.html">BaseNetwLayer</a>
+      <i> (simple&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>Base module for every network layer module</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">notAffectedByHostState</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120">false</td>   <td>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Gates:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Direction</th>
+      <th>Size</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">upperGateIn</xsl:if></td>
+   <td width="100"><i>input</i></td>
+   <td width="50"></td>   <td>
+<p>from application layer</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">upperGateOut</xsl:if></td>
+   <td width="100"><i>output</i></td>
+   <td width="50"></td>   <td>
+<p>to application layer</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">upperControlIn</xsl:if></td>
+   <td width="100"><i>input</i></td>
+   <td width="50"></td>   <td>
+<p>control from application layer</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">upperControlOut</xsl:if></td>
+   <td width="100"><i>output</i></td>
+   <td width="50"></td>   <td>
+<p>control to application layer</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">lowerGateIn</xsl:if></td>
+   <td width="100"><i>input</i></td>
+   <td width="50"></td>   <td>
+<p>from NIC</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">lowerGateOut</xsl:if></td>
+   <td width="100"><i>output</i></td>
+   <td width="50"></td>   <td>
+<p>to NIC</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">lowerControlIn</xsl:if></td>
+   <td width="100"><i>input</i></td>
+   <td width="50"></td>   <td>
+<p>control from NIC</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">lowerControlOut</xsl:if></td>
+   <td width="100"><i>output</i></td>
+   <td width="50"></td>   <td>
+<p>control to NIC</p>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// Base module for all layer modules. Defines the in and out gates
+//
+</span><span style="color: #800000; font-weight: bold; ">simple</span><span style="color: #000000; "> </span><span style="color: #000000; ">BaseLayer</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">bool</span><span style="color: #000000; "> </span><span style="color: #000000; ">notAffectedByHostState</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">false</span><span style="color: #000000; ">);
+
+    </span><span style="color: #800000; font-weight: bold; ">gates</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">input</span><span style="color: #000000; "> </span><span style="color: #000000; ">upperGateIn</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// from application layer
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">output</span><span style="color: #000000; "> </span><span style="color: #000000; ">upperGateOut</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// to application layer
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">input</span><span style="color: #000000; "> </span><span style="color: #000000; ">upperControlIn</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// control from application layer
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">output</span><span style="color: #000000; "> </span><span style="color: #000000; ">upperControlOut</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// control to application layer
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">input</span><span style="color: #000000; "> </span><span style="color: #000000; ">lowerGateIn</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// from NIC
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">output</span><span style="color: #000000; "> </span><span style="color: #000000; ">lowerGateOut</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// to NIC
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">input</span><span style="color: #000000; "> </span><span style="color: #000000; ">lowerControlIn</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// control from NIC
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">output</span><span style="color: #000000; "> </span><span style="color: #000000; ">lowerControlOut</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// control to NIC
+</span><span style="color: #000000; ">}
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

@@ -1,0 +1,5 @@
+<area shape="rect" href="org.mixim.base.modules.BaseMobility.html" title="Simple Module BaseMobility" alt="" coords="221,80,317,107">
+<area shape="rect" href="org.mixim.base.modules.BaseObject.html" title="Compound Module BaseObject" alt="" coords="5,5,93,32">
+<area shape="rect" href="org.mixim.tests.connectionManager.BasicHost.html" title="Compound Module BasicHost" alt="" coords="117,5,197,32">
+<area shape="rect" href="org.mixim.examples.multiConnectionManager.PhyMacHost.html" title="Compound Module PhyMacHost" alt="" coords="221,5,317,32">
+<area shape="rect" href="org.mixim.tests.basePhyLayer.TestHost.html" title="Compound Module TestHost" alt="" coords="341,5,413,32">

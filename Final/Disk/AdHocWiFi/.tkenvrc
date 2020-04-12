@@ -1,0 +1,3 @@
+# Partial Tkenv config file -- see $HOME/.tkenvrc as well
+inspector "sim" "sim" "2" "565x413+108+140:normal"
+

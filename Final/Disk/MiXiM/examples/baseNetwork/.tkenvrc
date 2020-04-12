@@ -1,0 +1,3 @@
+# Partial Tkenv config file -- see $HOME/.tkenvrc as well
+inspector "baseSim" "baseSim" "2" "607x420+3+84"
+

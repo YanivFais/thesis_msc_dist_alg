@@ -1,0 +1,10 @@
+Video playback example:
+-----------------------
+
+This directory contains an example of playing an video as a result of simulation.
+The simulation was done on a grid and the destination node is 2 hops away from the source,the packet arrival times results are saved in the node1_str12.txt files and are replayed to RTP and played using VLC.
+The example shows the original video as well as the network processed video (with some artifacts and delay).
+
+To run this example run the play.sh file *inside a Cygwin shell*, you need to have VLC installed under c:/Program Files (x86)/VideoLAN/VLC or c:/Program Files/VideoLAN/VLC (otherwise change the play.sh script).
+The script would open two windows, you may want to move them to be one next to the other.
+

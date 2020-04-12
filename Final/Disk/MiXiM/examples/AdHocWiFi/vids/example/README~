@@ -1,0 +1,5 @@
+Video playback example:
+-----------------------
+
+This directory contains an example of playing an video as a result of simulation.
+The simulation was done on a grid and the destination node is 2 hops away from the source,

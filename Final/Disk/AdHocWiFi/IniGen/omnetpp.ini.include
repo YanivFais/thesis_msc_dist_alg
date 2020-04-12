@@ -1,0 +1,281 @@
+[General]
+sim.channel*node[*].appl.headerLength = 16000bit
+sim.channel*node[*].nic.phy.pathloss_alpha = 41.7749
+sim.channel*node[*].nic.phy.pathloss_beta = 24.3892
+sim.channel*node[*].nic.phy.pathloss_c = 0
+sim.channel*node[*].nic.phy.pathloss_htr = 3
+sim.channel*node[*].nic.phy.pathloss_hrc = 3
+sim.channel*node[*].nic.phy.pathloss_model = "Elbit"
+sim.channel*.alpha = 4.17749
+**.phy.thermalNoise = -100dBm
+**.mac.txPower = 100mW
+sim.channel*node[*].appl.slots = 200
+sim.channel*node[*].appl.slotMaxTime = 0.005s
+sim.channel*node[*].mobility.updateInterval = 1s
+sim.channel*node[*].appl.schedule_file = "../experiments1/grid_49_1000_41_50_12r\\Main\\schedule.txt"
+sim.channel*node[*].appl.requests_file = "../experiments1/grid_49_1000_41_50_12r\\Requests.txt"
+sim.channel*node[*].appl.channels = 3
+**.mac.min_snr_comm = 3
+**.mac.min_snr_intrf = -5
+**.phy.sensitivity = -105dBm
+sim.channel*node[*].mobility.coords_file = "../experiments1/grid_49_1000_41_50_12r\\Coords"
+sim.channel*node[*].mobility.coords_number = 26
+sim.channel*node[*].appl.rounds = 26
+sim.playgroundSizeX = 1000m
+sim.playgroundSizeY = 1000m
+
+
+sim.numNodes = 50
+
+sim.channel*node[0].mobility.x = 0
+sim.channel*node[0].mobility.y = 0
+sim.channel*node[0].mobility.angle = 0deg
+sim.channel*node[0].mobility.speed = 0mps
+
+
+
+sim.channel*node[1].mobility.x = 0
+sim.channel*node[1].mobility.y = 0
+sim.channel*node[1].mobility.speed = 0mps
+
+sim.channel*node[1].mobility.angle = 0deg
+sim.channel*node[2].mobility.x = 0
+sim.channel*node[2].mobility.y = 142.857
+sim.channel*node[2].mobility.speed = 0mps
+
+sim.channel*node[2].mobility.angle = 0deg
+sim.channel*node[3].mobility.x = 0
+sim.channel*node[3].mobility.y = 285.714
+sim.channel*node[3].mobility.speed = 0mps
+
+sim.channel*node[3].mobility.angle = 0deg
+sim.channel*node[4].mobility.x = 0
+sim.channel*node[4].mobility.y = 428.571
+sim.channel*node[4].mobility.speed = 0mps
+
+sim.channel*node[4].mobility.angle = 0deg
+sim.channel*node[5].mobility.x = 0
+sim.channel*node[5].mobility.y = 571.429
+sim.channel*node[5].mobility.speed = 0mps
+
+sim.channel*node[5].mobility.angle = 0deg
+sim.channel*node[6].mobility.x = 0
+sim.channel*node[6].mobility.y = 714.286
+sim.channel*node[6].mobility.speed = 0mps
+
+sim.channel*node[6].mobility.angle = 0deg
+sim.channel*node[7].mobility.x = 0
+sim.channel*node[7].mobility.y = 857.143
+sim.channel*node[7].mobility.speed = 0mps
+
+sim.channel*node[7].mobility.angle = 0deg
+sim.channel*node[8].mobility.x = 142.857
+sim.channel*node[8].mobility.y = 0
+sim.channel*node[8].mobility.speed = 0mps
+
+sim.channel*node[8].mobility.angle = 0deg
+sim.channel*node[9].mobility.x = 142.857
+sim.channel*node[9].mobility.y = 142.857
+sim.channel*node[9].mobility.speed = 0mps
+
+sim.channel*node[9].mobility.angle = 0deg
+sim.channel*node[10].mobility.x = 142.857
+sim.channel*node[10].mobility.y = 285.714
+sim.channel*node[10].mobility.speed = 0mps
+
+sim.channel*node[10].mobility.angle = 0deg
+sim.channel*node[11].mobility.x = 142.857
+sim.channel*node[11].mobility.y = 428.571
+sim.channel*node[11].mobility.speed = 0mps
+
+sim.channel*node[11].mobility.angle = 0deg
+sim.channel*node[12].mobility.x = 142.857
+sim.channel*node[12].mobility.y = 571.429
+sim.channel*node[12].mobility.speed = 0mps
+
+sim.channel*node[12].mobility.angle = 0deg
+sim.channel*node[13].mobility.x = 142.857
+sim.channel*node[13].mobility.y = 714.286
+sim.channel*node[13].mobility.speed = 0mps
+
+sim.channel*node[13].mobility.angle = 0deg
+sim.channel*node[14].mobility.x = 142.857
+sim.channel*node[14].mobility.y = 857.143
+sim.channel*node[14].mobility.speed = 0mps
+
+sim.channel*node[14].mobility.angle = 0deg
+sim.channel*node[15].mobility.x = 285.714
+sim.channel*node[15].mobility.y = 0
+sim.channel*node[15].mobility.speed = 0mps
+
+sim.channel*node[15].mobility.angle = 0deg
+sim.channel*node[16].mobility.x = 285.714
+sim.channel*node[16].mobility.y = 142.857
+sim.channel*node[16].mobility.speed = 0mps
+
+sim.channel*node[16].mobility.angle = 0deg
+sim.channel*node[17].mobility.x = 285.714
+sim.channel*node[17].mobility.y = 285.714
+sim.channel*node[17].mobility.speed = 0mps
+
+sim.channel*node[17].mobility.angle = 0deg
+sim.channel*node[18].mobility.x = 285.714
+sim.channel*node[18].mobility.y = 428.571
+sim.channel*node[18].mobility.speed = 0mps
+
+sim.channel*node[18].mobility.angle = 0deg
+sim.channel*node[19].mobility.x = 285.714
+sim.channel*node[19].mobility.y = 571.429
+sim.channel*node[19].mobility.speed = 0mps
+
+sim.channel*node[19].mobility.angle = 0deg
+sim.channel*node[20].mobility.x = 285.714
+sim.channel*node[20].mobility.y = 714.286
+sim.channel*node[20].mobility.speed = 0mps
+
+sim.channel*node[20].mobility.angle = 0deg
+sim.channel*node[21].mobility.x = 285.714
+sim.channel*node[21].mobility.y = 857.143
+sim.channel*node[21].mobility.speed = 0mps
+
+sim.channel*node[21].mobility.angle = 0deg
+sim.channel*node[22].mobility.x = 428.571
+sim.channel*node[22].mobility.y = 0
+sim.channel*node[22].mobility.speed = 0mps
+
+sim.channel*node[22].mobility.angle = 0deg
+sim.channel*node[23].mobility.x = 428.571
+sim.channel*node[23].mobility.y = 142.857
+sim.channel*node[23].mobility.speed = 0mps
+
+sim.channel*node[23].mobility.angle = 0deg
+sim.channel*node[24].mobility.x = 428.571
+sim.channel*node[24].mobility.y = 285.714
+sim.channel*node[24].mobility.speed = 0mps
+
+sim.channel*node[24].mobility.angle = 0deg
+sim.channel*node[25].mobility.x = 428.571
+sim.channel*node[25].mobility.y = 428.571
+sim.channel*node[25].mobility.speed = 0mps
+
+sim.channel*node[25].mobility.angle = 0deg
+sim.channel*node[26].mobility.x = 428.571
+sim.channel*node[26].mobility.y = 571.429
+sim.channel*node[26].mobility.speed = 0mps
+
+sim.channel*node[26].mobility.angle = 0deg
+sim.channel*node[27].mobility.x = 428.571
+sim.channel*node[27].mobility.y = 714.286
+sim.channel*node[27].mobility.speed = 0mps
+
+sim.channel*node[27].mobility.angle = 0deg
+sim.channel*node[28].mobility.x = 428.571
+sim.channel*node[28].mobility.y = 857.143
+sim.channel*node[28].mobility.speed = 0mps
+
+sim.channel*node[28].mobility.angle = 0deg
+sim.channel*node[29].mobility.x = 571.429
+sim.channel*node[29].mobility.y = 0
+sim.channel*node[29].mobility.speed = 0mps
+
+sim.channel*node[29].mobility.angle = 0deg
+sim.channel*node[30].mobility.x = 571.429
+sim.channel*node[30].mobility.y = 142.857
+sim.channel*node[30].mobility.speed = 0mps
+
+sim.channel*node[30].mobility.angle = 0deg
+sim.channel*node[31].mobility.x = 571.429
+sim.channel*node[31].mobility.y = 285.714
+sim.channel*node[31].mobility.speed = 0mps
+
+sim.channel*node[31].mobility.angle = 0deg
+sim.channel*node[32].mobility.x = 571.429
+sim.channel*node[32].mobility.y = 428.571
+sim.channel*node[32].mobility.speed = 0mps
+
+sim.channel*node[32].mobility.angle = 0deg
+sim.channel*node[33].mobility.x = 571.429
+sim.channel*node[33].mobility.y = 571.429
+sim.channel*node[33].mobility.speed = 0mps
+
+sim.channel*node[33].mobility.angle = 0deg
+sim.channel*node[34].mobility.x = 571.429
+sim.channel*node[34].mobility.y = 714.286
+sim.channel*node[34].mobility.speed = 0mps
+
+sim.channel*node[34].mobility.angle = 0deg
+sim.channel*node[35].mobility.x = 571.429
+sim.channel*node[35].mobility.y = 857.143
+sim.channel*node[35].mobility.speed = 0mps
+
+sim.channel*node[35].mobility.angle = 0deg
+sim.channel*node[36].mobility.x = 714.286
+sim.channel*node[36].mobility.y = 0
+sim.channel*node[36].mobility.speed = 0mps
+
+sim.channel*node[36].mobility.angle = 0deg
+sim.channel*node[37].mobility.x = 714.286
+sim.channel*node[37].mobility.y = 142.857
+sim.channel*node[37].mobility.speed = 0mps
+
+sim.channel*node[37].mobility.angle = 0deg
+sim.channel*node[38].mobility.x = 714.286
+sim.channel*node[38].mobility.y = 285.714
+sim.channel*node[38].mobility.speed = 0mps
+
+sim.channel*node[38].mobility.angle = 0deg
+sim.channel*node[39].mobility.x = 714.286
+sim.channel*node[39].mobility.y = 428.571
+sim.channel*node[39].mobility.speed = 0mps
+
+sim.channel*node[39].mobility.angle = 0deg
+sim.channel*node[40].mobility.x = 714.286
+sim.channel*node[40].mobility.y = 571.429
+sim.channel*node[40].mobility.speed = 0mps
+
+sim.channel*node[40].mobility.angle = 0deg
+sim.channel*node[41].mobility.x = 714.286
+sim.channel*node[41].mobility.y = 714.286
+sim.channel*node[41].mobility.speed = 0mps
+
+sim.channel*node[41].mobility.angle = 0deg
+sim.channel*node[42].mobility.x = 714.286
+sim.channel*node[42].mobility.y = 857.143
+sim.channel*node[42].mobility.speed = 0mps
+
+sim.channel*node[42].mobility.angle = 0deg
+sim.channel*node[43].mobility.x = 857.143
+sim.channel*node[43].mobility.y = 0
+sim.channel*node[43].mobility.speed = 0mps
+
+sim.channel*node[43].mobility.angle = 0deg
+sim.channel*node[44].mobility.x = 857.143
+sim.channel*node[44].mobility.y = 142.857
+sim.channel*node[44].mobility.speed = 0mps
+
+sim.channel*node[44].mobility.angle = 0deg
+sim.channel*node[45].mobility.x = 857.143
+sim.channel*node[45].mobility.y = 285.714
+sim.channel*node[45].mobility.speed = 0mps
+
+sim.channel*node[45].mobility.angle = 0deg
+sim.channel*node[46].mobility.x = 857.143
+sim.channel*node[46].mobility.y = 428.571
+sim.channel*node[46].mobility.speed = 0mps
+
+sim.channel*node[46].mobility.angle = 0deg
+sim.channel*node[47].mobility.x = 857.143
+sim.channel*node[47].mobility.y = 571.429
+sim.channel*node[47].mobility.speed = 0mps
+
+sim.channel*node[47].mobility.angle = 0deg
+sim.channel*node[48].mobility.x = 857.143
+sim.channel*node[48].mobility.y = 714.286
+sim.channel*node[48].mobility.speed = 0mps
+
+sim.channel*node[48].mobility.angle = 0deg
+sim.channel*node[49].mobility.x = 857.143
+sim.channel*node[49].mobility.y = 857.143
+sim.channel*node[49].mobility.speed = 0mps
+
+sim.channel*node[49].mobility.angle = 0deg

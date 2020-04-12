@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="RescueProject">
+</Property><Property Name="Solution File" Value="C:\Users\Yaniv\pre\RescueProject\RescueProject.sln">
+</Property><Property Name="User Options File" Value="C:\Users\Yaniv\pre\RescueProject\RescueProject.suo">
+</Property><Property Name="Date" Value="שבת 12 מרץ 2011">
+</Property><Property Name="Time" Value="11:31">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="RescueProject.sln" Description="File successfully backed up as C:\Users\Yaniv\pre\RescueProject\RescueProject.sln.old">
+</Event><Event ErrorLevel="0" Project="" Source="RescueProject.suo" Description="File successfully backed up as C:\Users\Yaniv\pre\RescueProject\RescueProject.suo.old">
+</Event><Event ErrorLevel="0" Project="ConfigReader" Source="ConfigReader\ConfigReader.vcproj" Description="Converting project file 'c:\Users\Yaniv\pre\RescueProject\ConfigReader\ConfigReader.vcproj'.">
+</Event><Event ErrorLevel="1" Project="ConfigReader" Source="ConfigReader\ConfigReader.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="ConfigReader" Source="ConfigReader\ConfigReader.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="ConfigReader" Source="ConfigReader\ConfigReader.vcproj" Description="MSB8012: $(TargetPath) ('c:\Users\Yaniv\pre\RescueProject\ConfigReader\Release\ConfigReader.lib') does not match the Librarian's OutputFile property value 'Release\ConfigReader.lib' ('C:\Users\Yaniv\pre\RescueProject\Release\ConfigReader.lib') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Lib.OutputFile).">
+</Event><Event ErrorLevel="0" Project="ConfigReader" Source="ConfigReader\ConfigReader.vcproj" Description="Done converting to new project file 'c:\Users\Yaniv\pre\RescueProject\ConfigReader\ConfigReader.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="ConfigReader" Source="ConfigReader\ConfigReader.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ScenarioGenerator" Source="ScenarioGenerator\ScenarioGenerator.vcproj" Description="Converting project file 'c:\Users\Yaniv\pre\RescueProject\ScenarioGenerator\ScenarioGenerator.vcproj'.">
+</Event><Event ErrorLevel="1" Project="ScenarioGenerator" Source="ScenarioGenerator\ScenarioGenerator.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="ScenarioGenerator" Source="ScenarioGenerator\ScenarioGenerator.vcproj" Description="Done converting to new project file 'c:\Users\Yaniv\pre\RescueProject\ScenarioGenerator\ScenarioGenerator.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="ScenarioGenerator" Source="ScenarioGenerator\ScenarioGenerator.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="RescueDataStructures" Source="RescueDataStructures\RescueDataStructures.vcproj" Description="Converting project file 'c:\Users\Yaniv\pre\RescueProject\RescueDataStructures\RescueDataStructures.vcproj'.">
+</Event><Event ErrorLevel="1" Project="RescueDataStructures" Source="RescueDataStructures\RescueDataStructures.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="RescueDataStructures" Source="RescueDataStructures\RescueDataStructures.vcproj" Description="Done converting to new project file 'c:\Users\Yaniv\pre\RescueProject\RescueDataStructures\RescueDataStructures.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="RescueDataStructures" Source="RescueDataStructures\RescueDataStructures.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="libClp" Source="Clp-1.9.0\Clp\MSVisualStudio\v9\libClp\libClp.vcproj" Description="Converting project file 'c:\Users\Yaniv\pre\RescueProject\Clp-1.9.0\Clp\MSVisualStudio\v9\libClp\libClp.vcproj'.">
+</Event><Event ErrorLevel="1" Project="libClp" Source="Clp-1.9.0\Clp\MSVisualStudio\v9\libClp\libClp.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="libClp" Source="Clp-1.9.0\Clp\MSVisualStudio\v9\libClp\libClp.vcproj" Description="Done converting to new project file 'c:\Users\Yaniv\pre\RescueProject\Clp-1.9.0\Clp\MSVisualStudio\v9\libClp\libClp.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="libClp" Source="Clp-1.9.0\Clp\MSVisualStudio\v9\libClp\libClp.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="libCoinUtils" Source="Clp-1.9.0\CoinUtils\MSVisualStudio\v9\libCoinUtils\libCoinUtils.vcproj" Description="Converting project file 'c:\Users\Yaniv\pre\RescueProject\Clp-1.9.0\CoinUtils\MSVisualStudio\v9\libCoinUtils\libCoinUtils.vcproj'.">
+</Event><Event ErrorLevel="1" Project="libCoinUtils" Source="Clp-1.9.0\CoinUtils\MSVisualStudio\v9\libCoinUtils\libCoinUtils.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="libCoinUtils" Source="Clp-1.9.0\CoinUtils\MSVisualStudio\v9\libCoinUtils\libCoinUtils.vcproj" Description="Done converting to new project file 'c:\Users\Yaniv\pre\RescueProject\Clp-1.9.0\CoinUtils\MSVisualStudio\v9\libCoinUtils\libCoinUtils.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="libCoinUtils" Source="Clp-1.9.0\CoinUtils\MSVisualStudio\v9\libCoinUtils\libCoinUtils.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ScheduleCalculator" Source="ScheduleCalculator\ScheduleCalculator.vcproj" Description="Converting project file 'c:\Users\Yaniv\pre\RescueProject\ScheduleCalculator\ScheduleCalculator.vcproj'.">
+</Event><Event ErrorLevel="1" Project="ScheduleCalculator" Source="ScheduleCalculator\ScheduleCalculator.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="ScheduleCalculator" Source="ScheduleCalculator\ScheduleCalculator.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="ScheduleCalculator" Source="ScheduleCalculator\ScheduleCalculator.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="0" Project="ScheduleCalculator" Source="ScheduleCalculator\ScheduleCalculator.vcproj" Description="Done converting to new project file 'c:\Users\Yaniv\pre\RescueProject\ScheduleCalculator\ScheduleCalculator.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="ScheduleCalculator" Source="ScheduleCalculator\ScheduleCalculator.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="PerCalculator" Source="PerCalculator\PerCalculator.vcproj" Description="Converting project file 'c:\Users\Yaniv\pre\RescueProject\PerCalculator\PerCalculator.vcproj'.">
+</Event><Event ErrorLevel="1" Project="PerCalculator" Source="PerCalculator\PerCalculator.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="PerCalculator" Source="PerCalculator\PerCalculator.vcproj" Description="Done converting to new project file 'c:\Users\Yaniv\pre\RescueProject\PerCalculator\PerCalculator.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="PerCalculator" Source="PerCalculator\PerCalculator.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="WpfApp1" Source="WpfApp1\WpfApp1.csproj" Description="Project file successfully backed up as c:\Users\Yaniv\pre\RescueProject\WpfApp1\WpfApp1.csproj.old">
+</Event><Event ErrorLevel="0" Project="WpfApp1" Source="WpfApp1\WpfApp1.csproj.user" Description="Project user file successfully backed up as c:\Users\Yaniv\pre\RescueProject\WpfApp1\WpfApp1.csproj.user.old">
+</Event><Event ErrorLevel="0" Project="WpfApp1" Source="WpfApp1\WpfApp1.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="WpfApp1" Source="WpfApp1\WpfApp1.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="grid" Source="grid\grid.vcproj" Description="Converting project file 'c:\Users\Yaniv\pre\RescueProject\grid\grid.vcproj'.">
+</Event><Event ErrorLevel="1" Project="grid" Source="grid\grid.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="grid" Source="grid\grid.vcproj" Description="Done converting to new project file 'c:\Users\Yaniv\pre\RescueProject\grid\grid.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="grid" Source="grid\grid.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="RescueProject.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="RescueProject.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="WpfApp1" Source="WpfApp1\WpfApp1.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

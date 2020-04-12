@@ -1,0 +1,173 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body>
+<h2 class="comptitle">Simple Module <i>BurstApplLayer</i></h2>
+<b>Package:</b> org.mixim.modules.application<br/><b>File: <a href="modules-application-BurstApplLayer.ned.html">modules/application/BurstApplLayer.ned</a></b><br/><p><b>C++ definition: <a href="../../doc/doxy/a00032.html" target="mainframe">click here</a></b></p>
+
+<p>Application layer to test lower layer implementations</p>
+<p>This application layer does exactly the same as the
+TestApplLayer. The only difference is that is sends a burst of
+broadcast messages instead of just one. The burst size is specified
+in burstSize and can be set in omnetpp.ini</p>
+<p>@sa TestApplALyer</p>
+<p><b>Author:</b> Daniel Willkomm</p>
+<img src="org.mixim.modules.application.BurstApplLayer-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="org.mixim.modules.application.BurstApplLayer.html" title="BurstApplLayer" alt="BurstApplLayer" coords="0,0,143,40">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="org.mixim.modules.application.BurstApplLayer-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="org.mixim.modules.application.BurstApplLayer.html" title="Simple Module BurstApplLayer" alt="" coords="40,80,149,107">
+<area shape="rect" href="org.mixim.examples.Mac80211.Host.html" title="Compound Module Host" alt="" coords="5,5,77,32">
+<area shape="rect" href="org.mixim.examples.multiConnectionManager.PhyMacHost.html" title="Compound Module PhyMacHost" alt="" coords="101,5,197,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="org.mixim.modules.application.BurstApplLayer-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="org.mixim.modules.application.BurstApplLayer.html" title="Simple Module BurstApplLayer" alt="" coords="27,80,136,107">
+<area shape="rect" href="org.mixim.modules.application.BurstApplLayerBattery.html" title="Simple Module BurstApplLayerBattery" alt="" coords="5,155,157,181">
+<area shape="rect" href="org.mixim.base.modules.IBaseApplLayer.html" title="Module Interface IBaseApplLayer" alt="" coords="25,5,137,32">
+</map>
+<h3 class="subtitle">Known subclasses:</h3>
+<table>
+<tr>
+   <td>
+      <a href="org.mixim.modules.application.BurstApplLayerBattery.html">BurstApplLayerBattery</a>
+      <i> (simple&nbsp;module)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Used in compound modules:</h3>
+<p>If a module type shows up more than once, that means it has been defined in more than one NED file.</p>
+<table>
+<tr>
+   <td>
+      <a href="org.mixim.examples.Mac80211.Host.html">Host</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+<tr>
+   <td>
+      <a href="org.mixim.examples.multiConnectionManager.PhyMacHost.html">PhyMacHost</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">debug</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>debug switch</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">headerLength</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>length of the application message header (in bits)</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">burstSize</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>size of the burst</p>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Gates:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Direction</th>
+      <th>Size</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">lowerGateIn</xsl:if></td>
+   <td width="100"><i>input</i></td>
+   <td width="50"></td>   <td>
+<p>from network layer</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">lowerGateOut</xsl:if></td>
+   <td width="100"><i>output</i></td>
+   <td width="50"></td>   <td>
+<p>to network layer</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">lowerControlIn</xsl:if></td>
+   <td width="100"><i>input</i></td>
+   <td width="50"></td>   <td>
+<p>control from network layer</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">lowerControlOut</xsl:if></td>
+   <td width="100"><i>output</i></td>
+   <td width="50"></td>   <td>
+<p>control to network layer</p>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">// Application layer to test lower layer implementations
+//
+// This application layer does exactly the same as the
+// TestApplLayer. The only difference is that is sends a burst of
+// broadcast messages instead of just one. The burst size is specified
+// in burstSize and can be set in omnetpp.ini
+//
+// @sa TestApplALyer
+// </span><span style="color: #000080; ">@author</span><span style="color: #808080; font-style: italic; "> Daniel Willkomm
+</span><span style="color: #800000; font-weight: bold; ">simple</span><span style="color: #000000; "> </span><span style="color: #000000; ">BurstApplLayer</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">like</span><span style="color: #000000; "> </span><span style="color: #000000; ">IBaseApplLayer</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #808080; font-style: italic; ">// debug switch
+</span><span style="color: #000000; ">        </span><span style="color: #808080; font-style: italic; ">// debug switch
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">bool</span><span style="color: #000000; "> </span><span style="color: #000000; ">debug</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// debug switch
+</span><span style="color: #000000; ">        </span><span style="color: #808080; font-style: italic; ">// length of the application message header (in bits)
+</span><span style="color: #000000; ">        </span><span style="color: #808080; font-style: italic; ">// length of the application message header (in bits)
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">headerLength</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;bit&quot;</span><span style="color: #000000; ">); </span><span style="color: #808080; font-style: italic; ">// length of the application message header (in bits)
+</span><span style="color: #000000; ">        </span><span style="color: #808080; font-style: italic; ">// size of the burst
+</span><span style="color: #000000; ">        </span><span style="color: #808080; font-style: italic; ">// size of the burst
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">burstSize</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// size of the burst
+</span><span style="color: #000000; ">    </span><span style="color: #800000; font-weight: bold; ">gates</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">input</span><span style="color: #000000; "> </span><span style="color: #000000; ">lowerGateIn</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// from network layer
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">output</span><span style="color: #000000; "> </span><span style="color: #000000; ">lowerGateOut</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// to network layer
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">input</span><span style="color: #000000; "> </span><span style="color: #000000; ">lowerControlIn</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// control from network layer
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">output</span><span style="color: #000000; "> </span><span style="color: #000000; ">lowerControlOut</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// control to network layer
+</span><span style="color: #000000; ">}
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

@@ -1,0 +1,8 @@
+<area shape="rect" href="org.mixim.examples.Mac80211.Host.html" title="Compound Module Host" alt="" coords="339,80,411,107">
+<area shape="rect" href="org.mixim.base.modules.BaseNetwLayer.html" title="Simple Module BaseNetwLayer" alt="" coords="5,155,117,181">
+<area shape="rect" href="org.mixim.modules.application.BurstApplLayer.html" title="Simple Module BurstApplLayer" alt="" coords="141,155,251,181">
+<area shape="rect" href="org.mixim.base.modules.BaseArp.html" title="Simple Module BaseArp" alt="" coords="275,155,347,181">
+<area shape="rect" href="org.mixim.modules.mobility.ConstSpeedMobility.html" title="Simple Module ConstSpeedMobility" alt="" coords="371,155,507,181">
+<area shape="rect" href="org.mixim.base.modules.BaseUtility.html" title="Simple Module BaseUtility" alt="" coords="531,155,613,181">
+<area shape="rect" href="org.mixim.modules.nic.Nic80211.html" title="Compound Module Nic80211" alt="" coords="637,155,712,181">
+<area shape="rect" href="org.mixim.examples.Mac80211.Sim.html" title="Compound Module Sim" alt="" coords="339,5,411,32">

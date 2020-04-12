@@ -1,0 +1,6 @@
+<area shape="rect" href="$a00052.html" title="The basic Decider class." alt="" coords="7,56,71,83">
+<area shape="rect" href="$a00011.html" title="Provides some base functionality for most common deciders." alt="" coords="133,31,229,57">
+<area shape="rect" href="$a00134.html" title="A simple Decider implementation which only checks for a received signal if the receiving..." alt="" coords="120,81,243,108">
+<area shape="rect" href="$a00053.html" title="Decider for the 802.11 modules." alt="" coords="316,5,415,32">
+<area shape="rect" href="$a00132.html" title="BaseDecider implementation which decides a signals correctness by checking its SNR..." alt="" coords="291,56,440,83">
+<area shape="rect" href="$a00054.html" title="Extends Decider80211 by drawing power during receiving of messages." alt="" coords="489,5,631,32">

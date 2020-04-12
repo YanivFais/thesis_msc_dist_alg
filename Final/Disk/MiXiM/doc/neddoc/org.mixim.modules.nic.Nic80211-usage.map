@@ -1,0 +1,4 @@
+<area shape="rect" href="org.mixim.modules.nic.Nic80211.html" title="Compound Module Nic80211" alt="" coords="59,80,133,107">
+<area shape="rect" href="org.mixim.modules.mac.Mac80211.html" title="Simple Module Mac80211" alt="" coords="5,155,85,181">
+<area shape="rect" href="org.mixim.modules.phy.PhyLayer.html" title="Simple Module PhyLayer" alt="" coords="109,155,184,181">
+<area shape="rect" href="org.mixim.examples.Mac80211.Host.html" title="Compound Module Host" alt="" coords="60,5,132,32">

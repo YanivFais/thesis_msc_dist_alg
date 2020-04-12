@@ -1,0 +1,119 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body>
+<h2 class="comptitle">Simple Module <i>BaseMobilityTest</i></h2>
+<b>Package:</b> org.mixim.tests.baseMobility<br/><b>File: <a href="tests-baseMobility-BaseMobilityTest.ned.html">tests/baseMobility/BaseMobilityTest.ned</a></b><br/>
+<img src="org.mixim.tests.baseMobility.BaseMobilityTest-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="org.mixim.tests.baseMobility.BaseMobilityTest.html" title="BaseMobilityTest" alt="BaseMobilityTest" coords="0,0,154,40">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="org.mixim.tests.baseMobility.BaseMobilityTest-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="org.mixim.tests.baseMobility.BaseMobilityTest.html" title="Simple Module BaseMobilityTest" alt="" coords="5,80,125,107">
+<area shape="rect" href="org.mixim.tests.baseMobility.TestHost.html" title="Compound Module TestHost" alt="" coords="29,5,101,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="org.mixim.tests.baseMobility.BaseMobilityTest-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="org.mixim.tests.baseMobility.BaseMobilityTest.html" title="Simple Module BaseMobilityTest" alt="" coords="5,5,125,32">
+</map>
+<h3 class="subtitle">Used in compound modules:</h3>
+<p>If a module type shows up more than once, that means it has been defined in more than one NED file.</p>
+<table>
+<tr>
+   <td>
+      <a href="org.mixim.tests.baseMobility.TestHost.html">TestHost</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">borderPolicy</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>border policy to use</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">x</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>starting point of the host</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">y</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">z</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">outX</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>point outside playground</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">outY</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">outZ</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #800000; font-weight: bold; ">simple</span><span style="color: #000000; "> </span><span style="color: #000000; ">BaseMobilityTest</span><span style="color: #000000; ">
+
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">borderPolicy</span><span style="color: #000000; ">;	</span><span style="color: #808080; font-style: italic; ">// border policy to use
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">x</span><span style="color: #000000; ">;				</span><span style="color: #808080; font-style: italic; ">// starting point of the host
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">y</span><span style="color: #000000; ">;
+        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">z</span><span style="color: #000000; ">;
+        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">outX</span><span style="color: #000000; ">;			</span><span style="color: #808080; font-style: italic; ">// point outside playground
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">outY</span><span style="color: #000000; ">;
+        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">outZ</span><span style="color: #000000; ">;
+
+}
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

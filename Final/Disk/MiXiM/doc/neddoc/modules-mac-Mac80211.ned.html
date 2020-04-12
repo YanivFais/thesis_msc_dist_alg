@@ -1,0 +1,89 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body>
+<h2 class="comptitle">NED File <i>modules/mac/Mac80211.ned</i></h2>
+<table class="typetable">
+   <tr>
+      <th>Name</th>
+      <th>Description</th>
+   </tr>
+<tr>
+   <td>
+      <a href="org.mixim.modules.mac.Mac80211.html">Mac80211</a>
+      <i> (simple&nbsp;module)</i>
+   </td>
+   <td>
+
+<p>Implementation of the 802.11b MAC protocol. This module is intended
+to be used in combination with the Decider80211 as decider for the 
+physical layer.</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//***************************************************************************
+//* file:        Mac80211.ned
+//*
+//* author:      Marc L&#65533;bbers
+//*
+//* copyright:   (C) 2004 Telecommunication Networks Group (TKN) at
+//*              Technische Universitaet Berlin, Germany.
+//*
+//*              This program is free software; you can redistribute it
+//*              and/or modify it under the terms of the GNU General Public
+//*              License as published by the Free Software Foundation; either
+//*              version 2 of the License, or (at your option) any later
+//*              version.
+//*              For further information see file COPYING
+//*              in the top level directory
+//***************************************************************************
+//* part of:     framework implementation developed by tkn
+//* description: MAC layer class for 802.11
+//**************************************************************************/
+</span><span style="color: #000000; ">
+</span><span style="color: #800000; font-weight: bold; ">package</span><span style="color: #000000; "> </span><span style="color: #000000; ">org</span><span style="color: #000000; ">.</span><span style="color: #000000; ">mixim</span><span style="color: #000000; ">.</span><span style="color: #000000; ">modules</span><span style="color: #000000; ">.</span><span style="color: #000000; ">mac</span><span style="color: #000000; ">;
+
+</span><span style="color: #800000; font-weight: bold; ">import</span><span style="color: #000000; "> </span><span style="color: #000000; ">org</span><span style="color: #000000; ">.</span><span style="color: #000000; ">mixim</span><span style="color: #000000; ">.</span><span style="color: #000000; ">base</span><span style="color: #000000; ">.</span><span style="color: #000000; ">modules</span><span style="color: #000000; ">.</span><span style="color: #000000; ">BaseMacLayer</span><span style="color: #000000; ">;
+
+</span><span style="color: #808080; font-style: italic; ">//
+// Implementation of the 802.11b MAC protocol. This module is intended
+// to be used in combination with the Decider80211 as decider for the 
+// physical layer.
+//
+// This module supports ad-hoc mode only (does not generate or handle
+// management frames), and does not support fragmentation, RTS threshold,
+// duplication detection and recovery.
+//
+</span><span style="color: #800000; font-weight: bold; ">simple</span><span style="color: #000000; "> </span><span style="color: #000000; ">Mac80211</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">extends</span><span style="color: #000000; "> </span><span style="color: #000000; ">BaseMacLayer</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000000; font-weight: bold; ">@class</span><span style="color: #000000; ">(</span><span style="color: #000000; ">Mac80211</span><span style="color: #000000; ">);
+        
+        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">queueLength</span><span style="color: #000000; ">;
+        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">rtsCtsThreshold</span><span style="color: #000000; ">;
+
+        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">bitrate</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">bps</span><span style="color: #000000; ">);
+		</span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">defaultChannel</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// minimum channel support
+</span><span style="color: #000000; ">
+    	</span><span style="color: #808080; font-style: italic; ">// auto bit rate selection support: specify borders at which
+</span><span style="color: #000000; ">            </span><span style="color: #808080; font-style: italic; ">// to change modulation.	
+</span><span style="color: #000000; ">    	</span><span style="color: #000080; font-weight: bold; ">bool</span><span style="color: #000000; "> </span><span style="color: #000000; ">autoBitrate</span><span style="color: #000000; ">;         </span><span style="color: #808080; font-style: italic; ">// use auto bit rate adaptation
+</span><span style="color: #000000; ">    	</span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">snr2Mbit</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">dB</span><span style="color: #000000; ">);  </span><span style="color: #808080; font-style: italic; ">// threshold to use 2Mbit (in dB)
+</span><span style="color: #000000; ">    	</span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">snr5Mbit</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">dB</span><span style="color: #000000; ">);  </span><span style="color: #808080; font-style: italic; ">// threshold to use 5.5Mbit (in dB)
+</span><span style="color: #000000; ">    	</span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">snr11Mbit</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">dB</span><span style="color: #000000; ">);  </span><span style="color: #808080; font-style: italic; ">// threshold to use 11Mbit (in dB)
+</span><span style="color: #000000; ">
+    	</span><span style="color: #808080; font-style: italic; ">// keep information on neighborhood
+</span><span style="color: #000000; ">    	</span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">neighborhoodCacheSize</span><span style="color: #000000; ">;	
+    	</span><span style="color: #808080; font-style: italic; ">// consider information in cache outdate if older than (in seconds)
+</span><span style="color: #000000; ">    	</span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">neighborhoodCacheMaxAge</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">s</span><span style="color: #000000; ">); 
+    	</span><span style="color: #808080; font-style: italic; ">//the power to transmit packets with [mW]
+</span><span style="color: #000000; ">    	</span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">txPower</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">mW</span><span style="color: #000000; ">);
+    	</span><span style="color: #808080; font-style: italic; ">//the center frequency the Mac uses [Hz]
+</span><span style="color: #000000; ">    	</span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">centerFrequency</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">Hz</span><span style="color: #000000; ">);
+}
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

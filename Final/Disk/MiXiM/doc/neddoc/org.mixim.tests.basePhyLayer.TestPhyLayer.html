@@ -1,0 +1,266 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body>
+<h2 class="comptitle">Simple Module <i>TestPhyLayer</i></h2>
+<b>Package:</b> org.mixim.tests.basePhyLayer<br/><b>File: <a href="tests-basePhyLayer-TestPhyLayer.ned.html">tests/basePhyLayer/TestPhyLayer.ned</a></b><br/><p>(no description)</p><img src="org.mixim.tests.basePhyLayer.TestPhyLayer-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="org.mixim.tests.basePhyLayer.TestPhyLayer.html" title="TestPhyLayer" alt="TestPhyLayer" coords="0,0,130,40">
+</map>
+<h3 class="subtitle">Usage diagram:</h3>
+<p>The following diagram shows usage relationships between types.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-usage-diagram.html">here</a> to see the full picture.</p>
+<img src="org.mixim.tests.basePhyLayer.TestPhyLayer-usage.png" ismap="yes" usemap="#usage-diagram"/><map name="usage-diagram"><area shape="rect" href="org.mixim.tests.basePhyLayer.TestPhyLayer.html" title="Simple Module TestPhyLayer" alt="" coords="5,80,104,107">
+<area shape="rect" href="org.mixim.tests.basePhyLayer.TestNic.html" title="Compound Module TestNic" alt="" coords="19,5,91,32">
+</map>
+<h3 class="subtitle">Inheritance diagram:</h3>
+<p>The following diagram shows inheritance relationships for this type.
+Unresolved types are missing from the diagram.
+Click <a href="full-ned-inheritance-diagram.html">here</a> to see the full picture.</p>
+<img src="org.mixim.tests.basePhyLayer.TestPhyLayer-inheritance.png" ismap="yes" usemap="#inheritance-diagram"/><map name="inheritance-diagram"><area shape="rect" href="org.mixim.tests.basePhyLayer.TestPhyLayer.html" title="Simple Module TestPhyLayer" alt="" coords="5,5,104,32">
+</map>
+<h3 class="subtitle">Used in compound modules:</h3>
+<p>If a module type shows up more than once, that means it has been defined in more than one NED file.</p>
+<table>
+<tr>
+   <td>
+      <a href="org.mixim.tests.basePhyLayer.TestNic.html">TestNic</a>
+      <i> (compound&nbsp;module)</i>
+   </td>
+   <td>
+<i>(no description)</i>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Parameters:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default value</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">testBaseDecider</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>shall a TestBaseDecider be used as Decider?</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">coreDebug</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">usePropagationDelay</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>Should transmission delay be simulated?</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">thermalNoise</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>the strength of the thermal noise [dBm]</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">useThermalNoise</td>
+   <td width="100">
+      <i>bool</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>should thermal noise be considered?</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">analogueModels</td>
+   <td width="100">
+      <i>xml</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>Specification of the analogue models to use and their parameters</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">decider</td>
+   <td width="100">
+      <i>xml</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>Specification of the decider to use and its parameters</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">sensitivity</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>The sensitivity of the physical layer [dBm]</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">maxTXPower</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>The maximum transimission power of the physical layer [mW]</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">timeRXToTX</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+<p>switchTimes [s]:</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">timeRXToSleep</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">timeTXToRX</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">timeTXToSleep</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">timeSleepToRX</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td></td>
+</tr>
+<tr class="local">
+   <td width="150">timeSleepToTX</td>
+   <td width="100">
+      <i>double</i>
+   </td>
+   <td width="120"></td>   <td>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">initialRadioState</td>
+   <td width="100">
+      <i>int</i>
+   </td>
+   <td width="120"></td>   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Gates:</h3>
+<table class="paramtable">
+   <tr>
+      <th>Name</th>
+      <th>Direction</th>
+      <th>Size</th>
+      <th>Description</th>
+   </tr>
+<tr class="local">
+   <td width="150">upperGateIn</xsl:if></td>
+   <td width="100"><i>input</i></td>
+   <td width="50"></td>   <td>
+<p>from the MAC layer</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">upperGateOut</xsl:if></td>
+   <td width="100"><i>output</i></td>
+   <td width="50"></td>   <td>
+<p>to the MAC layer</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">upperControlIn</xsl:if></td>
+   <td width="100"><i>input</i></td>
+   <td width="50"></td>   <td>
+<p>control from the MAC layer</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">upperControlOut</xsl:if></td>
+   <td width="100"><i>output</i></td>
+   <td width="50"></td>   <td>
+<p>control to the MAC layer</p>
+</td>
+</tr>
+<tr class="local">
+   <td width="150">radioIn</xsl:if></td>
+   <td width="100"><i>input</i></td>
+   <td width="50"></td>   <td>
+<p>for sendDirect from other physical layers</p>
+</td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #800000; font-weight: bold; ">simple</span><span style="color: #000000; "> </span><span style="color: #000000; ">TestPhyLayer</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">bool</span><span style="color: #000000; "> </span><span style="color: #000000; ">testBaseDecider</span><span style="color: #000000; ">; 			</span><span style="color: #808080; font-style: italic; ">//shall a TestBaseDecider be used as Decider?
+</span><span style="color: #000000; ">
+        </span><span style="color: #000080; font-weight: bold; ">bool</span><span style="color: #000000; "> </span><span style="color: #000000; ">coreDebug</span><span style="color: #000000; ">;
+        </span><span style="color: #000080; font-weight: bold; ">bool</span><span style="color: #000000; "> </span><span style="color: #000000; ">usePropagationDelay</span><span style="color: #000000; ">;		</span><span style="color: #808080; font-style: italic; ">//Should transmission delay be simulated?
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">thermalNoise</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">dBm</span><span style="color: #000000; ">);	</span><span style="color: #808080; font-style: italic; ">//the strength of the thermal noise [dBm]
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">bool</span><span style="color: #000000; "> </span><span style="color: #000000; ">useThermalNoise</span><span style="color: #000000; ">;			</span><span style="color: #808080; font-style: italic; ">//should thermal noise be considered?
+</span><span style="color: #000000; ">
+        </span><span style="color: #000080; font-weight: bold; ">xml</span><span style="color: #000000; "> </span><span style="color: #000000; ">analogueModels</span><span style="color: #000000; ">; 			</span><span style="color: #808080; font-style: italic; ">//Specification of the analogue models to use and their parameters
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">xml</span><span style="color: #000000; "> </span><span style="color: #000000; ">decider</span><span style="color: #000000; ">;					</span><span style="color: #808080; font-style: italic; ">//Specification of the decider to use and its parameters
+</span><span style="color: #000000; ">
+        </span><span style="color: #808080; font-style: italic; ">//The sensitivity of the physical layer [dBm]
+</span><span style="color: #000000; ">        </span><span style="color: #808080; font-style: italic; ">//The sensitivity of the physical layer [dBm]
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">sensitivity</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">dBm</span><span style="color: #000000; ">);	</span><span style="color: #808080; font-style: italic; ">//The sensitivity of the physical layer [dBm]
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">maxTXPower</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">mW</span><span style="color: #000000; ">);	</span><span style="color: #808080; font-style: italic; ">//The maximum transimission power of the physical layer [mW]
+</span><span style="color: #000000; ">
+        </span><span style="color: #808080; font-style: italic; ">//switchTimes [s]:
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">timeRXToTX</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">s</span><span style="color: #000000; ">);
+        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">timeRXToSleep</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">s</span><span style="color: #000000; ">);
+
+        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">timeTXToRX</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">s</span><span style="color: #000000; ">);
+        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">timeTXToSleep</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">s</span><span style="color: #000000; ">);
+
+        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">timeSleepToRX</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">s</span><span style="color: #000000; ">);
+        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">timeSleepToTX</span><span style="color: #000000; "> </span><span style="color: #000000; font-weight: bold; ">@unit</span><span style="color: #000000; ">(</span><span style="color: #000000; ">s</span><span style="color: #000000; ">);
+
+        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">initialRadioState</span><span style="color: #000000; ">;
+    </span><span style="color: #800000; font-weight: bold; ">gates</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">input</span><span style="color: #000000; "> </span><span style="color: #000000; ">upperGateIn</span><span style="color: #000000; ">; 	</span><span style="color: #808080; font-style: italic; ">// from the MAC layer
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">output</span><span style="color: #000000; "> </span><span style="color: #000000; ">upperGateOut</span><span style="color: #000000; ">; 	</span><span style="color: #808080; font-style: italic; ">// to the MAC layer
+</span><span style="color: #000000; ">
+        </span><span style="color: #000080; font-weight: bold; ">input</span><span style="color: #000000; "> </span><span style="color: #000000; ">upperControlIn</span><span style="color: #000000; ">; 	</span><span style="color: #808080; font-style: italic; ">// control from the MAC layer        
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">output</span><span style="color: #000000; "> </span><span style="color: #000000; ">upperControlOut</span><span style="color: #000000; ">; 	</span><span style="color: #808080; font-style: italic; ">// control to the MAC layer
+</span><span style="color: #000000; ">
+        </span><span style="color: #000080; font-weight: bold; ">input</span><span style="color: #000000; "> </span><span style="color: #000000; ">radioIn</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// for sendDirect from other physical layers
+</span><span style="color: #000000; ">
+}
+
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

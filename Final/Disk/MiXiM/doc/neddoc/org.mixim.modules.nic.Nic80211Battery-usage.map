@@ -1,0 +1,4 @@
+<area shape="rect" href="org.mixim.modules.nic.Nic80211Battery.html" title="Compound Module Nic80211Battery" alt="" coords="49,80,164,107">
+<area shape="rect" href="org.mixim.modules.mac.Mac80211.html" title="Simple Module Mac80211" alt="" coords="5,155,85,181">
+<area shape="rect" href="org.mixim.modules.phy.PhyLayerBattery.html" title="Simple Module PhyLayerBattery" alt="" coords="109,155,227,181">
+<area shape="rect" href="org.mixim.tests.power.Nic80211Test.Host.html" title="Compound Module Host" alt="" coords="71,5,143,32">

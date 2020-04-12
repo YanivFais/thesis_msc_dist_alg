@@ -1,0 +1,7 @@
+# Num of edegs
+45
+# edge number (start from 0),from,to
+0,0,1
+1,0,3
+2,2,1
+3,2,3

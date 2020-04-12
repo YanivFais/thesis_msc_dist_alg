@@ -1,0 +1,5 @@
+#!/bin/sh
+PATH="/cygdrive/c/Program Files (x86)/VideoLAN/VLC:/cygdrive/c/Program Files/VideoLAN/VLC:$PATH"
+echo $PATH
+vlc ../wildlife &
+../../rtpreplay/bin/rtpreplay.exe  -f ../wildlife -t node1_str12.txt 239.255.42.42/8888

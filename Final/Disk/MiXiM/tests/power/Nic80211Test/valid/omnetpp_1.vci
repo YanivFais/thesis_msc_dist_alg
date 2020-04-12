@@ -1,0 +1,21 @@
+file 2393 1254150852                                            
+version 2
+run One-0-20090924-13:56:35-18863
+attr configname One
+attr datetime 20090924-13:56:35
+attr experiment One
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network sim
+attr processid 18863
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+vector 2  sim.host[0].batteryStats  capacity(relative)  ETV
+2	469 975 0 169 0 10 33 0.664999338667 0.666666666667 21.976337260089 14.635138566196
+vector 7  sim.host[1].batteryStats  capacity(relative)  ETV
+7	1444 949 0 169 0 10 32 0.664999338667 0.666666666667 21.311337563023 14.192913968048

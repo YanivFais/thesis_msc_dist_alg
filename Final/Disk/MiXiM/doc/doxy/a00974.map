@@ -1,0 +1,5 @@
+<area shape="rect" href="$a00092.html" title="Represents a changeable mapping (mathematical function) from at least time to double..." alt="" coords="7,8,76,35">
+<area shape="rect" href="$a00048.html" title="Wraps an ConstMapping into a Mapping interface." alt="" coords="548,37,700,64">
+<area shape="rect" href="$a00074.html" title="InterpolateableMap\&lt; double, Mapping *, Interpolator\&lt; double, Mapping *, std::map\&lt; double, Mapping * \&gt;::value_type, std::map\&lt; double, Mapping * \&gt;::const_iterator \&gt; \&gt;" alt="" coords="128,88,1120,115">
+<area shape="rect" href="$a00042.html" title="Represents a constant mathematical mapping (f(x) = c)." alt="" coords="527,139,721,165">
+<area shape="rect" href="$a00060.html" title="Specifies a dimension for mappings (like time, frequency, etc.)." alt="" coords="583,245,665,272">
