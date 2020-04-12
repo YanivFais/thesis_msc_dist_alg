@@ -1,0 +1,13 @@
+<feature label="%featureName" maven-baseVersion="0.6.0-SNAPSHOT" provider-name="%providerName" maven-groupId="org.eclipse.jgit" version="0.6.0.201001271946" id="org.eclipse.jgit">
+  <description url="http://www.eclipse.org/jgit/">%description</description>
+  <copyright>%copyright</copyright>
+  <license url="%licenseURL">%license</license>
+  <url>
+    <update label="%updateSiteName" url="http://download.eclipse.org/egit/updates"/>
+    <discovery label="%updateSiteName" url="http://download.eclipse.org/egit/updates"/>
+  </url>
+  <requires>
+    <import plugin="com.jcraft.jsch"/>
+  </requires>
+  <plugin unpack="false" install-size="1487" download-size="793" version="0.6.0.201001271939" id="org.eclipse.jgit"/>
+</feature>

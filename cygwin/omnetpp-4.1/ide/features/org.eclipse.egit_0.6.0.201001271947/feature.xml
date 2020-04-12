@@ -1,0 +1,29 @@
+<feature version="0.6.0.201001271947" provider-name="%providerName" plugin="org.eclipse.egit" maven-groupId="org.eclipse.egit" label="%featureName" maven-baseVersion="0.6.0-SNAPSHOT" id="org.eclipse.egit">
+  <description url="http://www.eclipse.org/egit/">%description</description>
+  <copyright>%copyright</copyright>
+  <license url="%licenseURL">%license</license>
+  <url>
+    <update url="http://www.eclipse.org/egit/updates" label="%updateSiteName"/>
+    <discovery url="http://www.eclipse.org/egit/updates" label="%updateSiteName"/>
+  </url>
+  <requires>
+    <import version="3.4" plugin="org.eclipse.core.runtime" match="greaterOrEqual"/>
+    <import plugin="org.eclipse.core.resources"/>
+    <import plugin="org.eclipse.core.filesystem"/>
+    <import plugin="org.eclipse.ui"/>
+    <import plugin="org.eclipse.team.ui"/>
+    <import plugin="org.eclipse.jface.text"/>
+    <import plugin="org.eclipse.ui.ide"/>
+    <import plugin="org.eclipse.ui.workbench.texteditor"/>
+    <import plugin="org.eclipse.compare"/>
+    <import plugin="org.eclipse.core.net"/>
+    <import version="3.4.0" plugin="org.eclipse.team.core" match="greaterOrEqual"/>
+    <import version="1.1.100" plugin="org.eclipse.jsch.ui" match="greaterOrEqual"/>
+    <import plugin="org.eclipse.jsch.core"/>
+    <import plugin="com.jcraft.jsch"/>
+    <import version="0.6.0" match="greaterOrEqual" feature="org.eclipse.jgit"/>
+  </requires>
+  <plugin download-size="88" version="0.6.0.201001271947" install-size="171" id="org.eclipse.egit.core" unpack="false"/>
+  <plugin download-size="456" version="0.6.0.201001271947" install-size="905" id="org.eclipse.egit.ui" unpack="false"/>
+  <plugin download-size="4" version="0.6.0.201001271947" install-size="5" id="org.eclipse.egit" unpack="false"/>
+</feature>

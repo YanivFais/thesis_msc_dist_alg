@@ -1,0 +1,3 @@
+#!/bin/sh
+git `echo "$0" | sed 's!.*/git-!!'` "$@"
+

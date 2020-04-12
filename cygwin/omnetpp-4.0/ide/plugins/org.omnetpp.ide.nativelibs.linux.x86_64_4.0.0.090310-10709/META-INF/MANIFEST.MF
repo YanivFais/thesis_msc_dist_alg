@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-Name: OMNeT++ Linux.x86 64bit native library fragment
+Bundle-Vendor: OpenSim Ltd.
+Bundle-ManifestVersion: 2
+Fragment-Host: org.omnetpp.ide.nativelibs;bundle-version="[4.0.0,5.0.0
+ )"
+Bundle-SymbolicName: org.omnetpp.ide.nativelibs.linux.x86_64
+Eclipse-PlatformFilter: (& (osgi.os=linux) (osgi.arch=x86_64))
+Bundle-Version: 4.0.0.090310-10709
+

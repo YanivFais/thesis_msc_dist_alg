@@ -1,0 +1,13 @@
+This directory contains the GNU Compiler Collection (GCC).
+
+The GNU Compiler Collection is free software.  See the file COPYING
+for copying permission.  The manuals, and some of the runtime
+libraries, are under different terms; see the individual source files
+for details.
+
+Online manuals (and downloadable PDF and HTML versions) are available at:
+http://gcc.gnu.org/onlinedocs/
+
+Please report any bugs following directions at http://www.mingw.org/bugs.shtml
+See http://gcc.gnu.org/bugs.html for how to report bugs usefully.
+

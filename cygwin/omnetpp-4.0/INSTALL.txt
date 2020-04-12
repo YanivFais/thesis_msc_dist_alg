@@ -1,0 +1,14 @@
+INSTALLATION INSTRUCTIONS
+=========================
+
+Please see the Readme.<yourplatform> file in the doc/ subdirectory for 
+installation instructions:
+
+  Linux users: doc/Readme.Unix
+  Windows users: doc/Readme.MinGW
+  Mac OS X users: doc/Readme.MacOSX
+
+If you find an error or missing information in these documents, please help us
+improve them by letting us know about it.
+
+

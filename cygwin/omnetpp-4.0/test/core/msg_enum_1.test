@@ -1,0 +1,30 @@
+%description:
+Check enums
+
+%file: test.msg
+
+namespace @TESTNAME@;
+
+enum MyEnum
+{
+    ECC = 1;
+    PECC = 2;
+    KIMEHECC = 5;
+};
+
+%includes:
+#include "test_m.h"
+
+%activity:
+
+#define PRINT(X) ev << #X << ":" << X << endl
+
+PRINT(ECC);
+PRINT(PECC);
+PRINT(KIMEHECC);
+
+%contains: stdout
+ECC:1
+PECC:2
+KIMEHECC:5
+

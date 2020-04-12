@@ -1,0 +1,70 @@
+# Copyright (C) 2001, 2002  Earnie Boyd  <earnie@users.sf.net>
+# This file is part of the Minimal SYStem.
+#   http://www.mingw.org/msys.shtml
+#
+#         File:	profile
+# Description:	Shell environment initialization script
+# Last Revised:	2002.05.04
+#
+# Some details customized for OMNeT++.
+#
+if [ -z "$MSYSTEM" ]; then
+  MSYSTEM=MINGW32
+fi
+
+# CHANGE: change to the omnetpp root directory
+cd /
+cd `pwd -W`/..
+HOME=`pwd`
+export OMNETPP_ROOT=$HOME
+export TCL_LIBRARY=/usr/lib/tcl8.4
+export TERM=ansi
+# END CHANGE
+
+# My decision to add a . to the PATH and as the first item in the path list
+# is to mimick the Win32 method of finding executables.
+#
+# I filter the PATH value setting in order to get ready for self hosting the
+# MSYS runtime and wanting different paths searched first for files.
+export PATH=".:/usr/local/bin:$HOME/mingw/bin:/bin:$HOME/bin:$PATH"
+
+if [ -z "$USERNAME" ]; then
+  LOGNAME="`id -un`"
+else
+  LOGNAME="$USERNAME"
+fi
+
+if [ "x$HISTFILE" == "x/.bash_history" ]; then
+  HISTFILE=$HOME/.bash_history
+fi
+
+export HOME LOGNAME MSYSTEM HISTFILE
+
+for i in /etc/profile.d/*.sh ; do
+  if [ -f $i ]; then
+    . $i
+  fi
+done
+
+export MAKE_MODE=unix
+export PS1='\[\033]0;$MSYSTEM:\w\007
+\033[32m\]\u@\h \[\033[33m\w\033[0m\]
+$ '
+
+alias clear=clsb
+
+. /etc/git-completion.bash
+export LESS=-FRSX
+
+cd "$HOME"
+
+echo 'Welcome to OMNeT++ 4.1!'
+
+if [ ! -f Makefile.inc ]; then
+cat <<__END__
+
+Type "./configure" and "make" to build the simulation libraries.
+
+When done, type "omnetpp" to start the IDE.
+__END__
+fi

@@ -1,0 +1,5 @@
+#Eclipse Product File
+#Tue Mar 10 17:15:30 CET 2009
+version=4.0.0.090310-10709
+name=OMNeT++ IDE
+id=org.omnetpp.main.product

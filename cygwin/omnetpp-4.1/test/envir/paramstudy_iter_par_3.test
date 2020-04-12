@@ -1,0 +1,32 @@
+%description:
+Tests scenario generation: parallel iterations: alpha values
+
+%inifile: omnetpp.ini
+[Config Test]
+**.a = ${i=1..4}
+**.b = ${alpha,beta,gamma,delta ! i}
+
+%extraargs: -G -x Test
+
+%contains: stdout
+Config: Test
+Number of runs: 4
+Run 0:
+	# $i=1, $repetition=0
+	**.a = 1
+	**.b = alpha
+Run 1:
+	# $i=2, $repetition=0
+	**.a = 2
+	**.b = beta
+Run 2:
+	# $i=3, $repetition=0
+	**.a = 3
+	**.b = gamma
+Run 3:
+	# $i=4, $repetition=0
+	**.a = 4
+	**.b = delta
+
+End.
+

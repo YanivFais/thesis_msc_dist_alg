@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config transient="false">
+	<site policy="USER-EXCLUDE" enabled="true" url="platform:/base/" updateable="true">
+		<feature url="features/org.eclipse.cdt_6.0.2.201002161416/" id="org.eclipse.cdt" version="6.0.2.201002161416">
+		</feature>
+		<feature url="features/org.eclipse.platform_3.5.2.R35x_v20100210-0800-9hEiFzmFst-TiEn9hNYgDWg1XN8ulH_JvCNGB/" id="org.eclipse.platform" version="3.5.2.R35x_v20100210-0800-9hEiFzmFst-TiEn9hNYgDWg1XN8ulH_JvCNGB">
+		</feature>
+		<feature url="features/org.eclipse.equinox.p2.user.ui_1.1.2.R35x_v20091106-7u6FbQFUAtsCKD5Fxz0qz0fb2932/" id="org.eclipse.equinox.p2.user.ui" version="1.1.2.R35x_v20091106-7u6FbQFUAtsCKD5Fxz0qz0fb2932">
+		</feature>
+		<feature url="features/org.polarion.eclipse.team.svn.connector_2.2.0.I20090505-1500/" id="org.polarion.eclipse.team.svn.connector" version="2.2.0.I20090505-1500">
+		</feature>
+		<feature plugin-identifier="org.omnetpp.main" url="features/org.omnetpp.ide.academic_4.1.0.100611-4b63c38/" id="org.omnetpp.ide.academic" version="4.1.0.100611-4b63c38">
+		</feature>
+		<feature url="features/org.eclipse.team.svn_0.7.8.I20090904-1300/" id="org.eclipse.team.svn" version="0.7.8.I20090904-1300">
+		</feature>
+		<feature url="features/org.eclipse.emf.ecore.edit_2.5.0.v200906151043/" id="org.eclipse.emf.ecore.edit" version="2.5.0.v200906151043">
+		</feature>
+		<feature url="features/org.eclipse.cdt.gnu.debug_6.0.0.201002161416/" id="org.eclipse.cdt.gnu.debug" version="6.0.0.201002161416">
+		</feature>
+		<feature url="features/org.eclipse.emf.ecore_2.5.0.v200906151043/" id="org.eclipse.emf.ecore" version="2.5.0.v200906151043">
+		</feature>
+		<feature url="features/org.eclipse.cdt.platform_6.0.2.201002161416/" id="org.eclipse.cdt.platform" version="6.0.2.201002161416">
+		</feature>
+		<feature url="features/org.eclipse.cdt.gnu.dsf_2.0.0.201002161416/" id="org.eclipse.cdt.gnu.dsf" version="2.0.0.201002161416">
+		</feature>
+		<feature url="features/org.eclipse.gef_3.5.2.v20100111-1352-777928194B66D5D476C33B2A/" id="org.eclipse.gef" version="3.5.2.v20100111-1352-777928194B66D5D476C33B2A">
+		</feature>
+		<feature url="features/org.polarion.eclipse.team.svn.connector.svnkit15_2.2.0.I20090505-1500/" id="org.polarion.eclipse.team.svn.connector.svnkit15" version="2.2.0.I20090505-1500">
+		</feature>
+		<feature url="features/org.eclipse.egit_0.6.0.201001271947/" id="org.eclipse.egit" version="0.6.0.201001271947">
+		</feature>
+		<feature url="features/org.polarion.eclipse.team.svn.connector.svnkit16_2.2.0.I20090505-1500/" id="org.polarion.eclipse.team.svn.connector.svnkit16" version="2.2.0.I20090505-1500">
+		</feature>
+		<feature url="features/de.unikassel.imageexport_0.11.0/" id="de.unikassel.imageexport" version="0.11.0">
+		</feature>
+		<feature url="features/com.lowagie.itext_1.5.4.v20080225-1437w31191339/" id="com.lowagie.itext" version="1.5.4.v20080225-1437w31191339">
+		</feature>
+		<feature plugin-identifier="org.eclipse.help.base" url="features/org.eclipse.help_1.1.2.R35x_v20100119-7e7eFAnFEx2X_fZltJhDjz-D/" id="org.eclipse.help" version="1.1.2.R35x_v20100119-7e7eFAnFEx2X_fZltJhDjz-D">
+		</feature>
+		<feature url="features/org.eclipse.cdt.gnu.build_6.0.0.201002161416/" id="org.eclipse.cdt.gnu.build" version="6.0.0.201002161416">
+		</feature>
+		<feature url="features/org.eclipse.gmf.runtime.thirdparty_1.2.0.v20090729-2029-7P8W5FHV2CJug06-fEj-aw311A16/" id="org.eclipse.gmf.runtime.thirdparty" version="1.2.0.v20090729-2029-7P8W5FHV2CJug06-fEj-aw311A16">
+		</feature>
+		<feature url="features/org.eclipse.emf.common.ui_2.5.0.v200906151043/" id="org.eclipse.emf.common.ui" version="2.5.0.v200906151043">
+		</feature>
+		<feature url="features/org.eclipse.emf.edit_2.5.0.v200906151043/" id="org.eclipse.emf.edit" version="2.5.0.v200906151043">
+		</feature>
+		<feature url="features/org.eclipse.rcp_3.5.2.R35x_v20100119-9SA0FxwFnoCU5XxWItFdXXb27BA6/" id="org.eclipse.rcp" version="3.5.2.R35x_v20100119-9SA0FxwFnoCU5XxWItFdXXb27BA6">
+		</feature>
+		<feature url="features/org.omnetpp.ide.source_4.1.0.100611-4b63c38/" id="org.omnetpp.ide.source" version="4.1.0.100611-4b63c38">
+		</feature>
+		<feature url="features/org.eclipse.emf.edit.ui_2.5.0.v200906151043/" id="org.eclipse.emf.edit.ui" version="2.5.0.v200906151043">
+		</feature>
+		<feature url="features/org.eclipse.emf.common_2.5.0.v200906151043/" id="org.eclipse.emf.common" version="2.5.0.v200906151043">
+		</feature>
+		<feature url="features/org.eclipse.jgit_0.6.0.201001271946/" id="org.eclipse.jgit" version="0.6.0.201001271946">
+		</feature>
+		<feature url="features/org.eclipse.draw2d_3.5.2.v20100111-1352-4417w311A223702A19/" id="org.eclipse.draw2d" version="3.5.2.v20100111-1352-4417w311A223702A19">
+		</feature>
+		<feature url="features/org.omnetpp.ide_4.1.0.100611-4b63c38/" id="org.omnetpp.ide" version="4.1.0.100611-4b63c38">
+		</feature>
+	</site>
+</config>
